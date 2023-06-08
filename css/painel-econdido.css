@@ -1,0 +1,46 @@
+.centralizar{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1300px;
+    height: 800px;
+    border: solid 2px white;
+}
+
+
+.painel-escondido {
+    width: 100px;
+    height: 100px;
+    color: red;
+
+}
+
+
+.caixa {
+    width: 200px;
+    height: 250px;
+    background-color: green;
+}
+
+
+@keyframes mudaPainel {
+    from {
+        width: 0;
+        height: 0;
+        border-radius: 20px;
+    }
+
+
+    to {
+        width: calc(100% - 30px);
+        height: calc(100% - 30px);
+        background-color: grey;
+        border-radius: 20px;
+    }
+}
+
+
+.mostra {
+    animation: mudaPainel 2s forwards;
+}

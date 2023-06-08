@@ -1,0 +1,254 @@
+@import url(painel-econdido.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-azul-fundo: #ac1f15;
+    --cor-azul-claro: #ffffff;
+}
+
+
+body {
+    position: relative;
+    background-color: #ffffff;
+    font-family: 'IBM Plex Mono', monospace;
+   display: flex;
+
+}
+
+.portifolio {
+    background-color: var(--cor-azul-claro);
+}
+
+.painel-perfil {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    background-image: linear-gradient(var(--cor-azul-fundo) 50%, rgba(255, 255, 255, 0) 50%);
+    height: 98vh;
+}
+
+
+
+
+/* Fazer depois */
+.botao {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 200px;
+
+}
+
+
+.perfil-img {
+    text-align: center;
+    position: relative;
+}
+
+.imgUm {
+    width: calc(100% - 60%);
+
+}
+
+.texto-efeito {
+    color: white;
+    display: inline-block;
+    font-size: 2vw;
+    position: absolute;
+    left: 65%;
+    bottom: 60%;
+
+}
+
+
+.painel-texto {
+    margin: 60px auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 800px;
+}
+
+.painel-texto p {
+    font-size: 1.3vw;
+}
+
+
+.links {
+    display: flex;
+    width: 200px;
+    margin: 0 auto;
+    justify-content: space-between;
+
+}
+
+
+.linkedin,
+.github {
+    font-size: 50px;
+}
+
+.linkedin {
+    color: rgb(3, 120, 209);
+    transition: transform 0.2s linear;
+
+}
+
+.github {
+    color: var(--cor-azul-fundo);
+    transition: transform 0.2s linear;
+
+
+}
+
+
+.linkedin:hover {
+    transform: scale(1.5);
+}
+
+.github:hover {
+    transform: scale(1.5);
+}
+
+
+.painel-apresentacao {
+    padding: 10vw;
+    height: 98vw;
+  
+}
+
+.painel-perfil-imgDois{
+    display: flex;
+    justify-content: end;
+    margin-right: 10vw;
+}
+
+.apresentacao {
+    text-align: end;
+}
+
+
+.imgDois {
+    margin-top: 50px;
+    width: calc(100% - 60%);
+    border-radius: 50%;
+    background-color: var(--cor-azul-fundo);
+
+}
+
+.informacoes {
+    text-align: start;
+    width: 90%;
+}
+
+.sobre-mim {
+    font-size: 2.3vw;
+    position: relative;
+}
+.sobre {
+    color: var(--cor-azul-fundo);
+}
+
+
+span {
+    color: var(--color-verdeclaro-texto--);
+    font-size: 2.3vw;
+    font-weight: 1000;
+}
+
+
+.descricao {
+    font-size: 100%;
+    margin: 30px 0;
+
+}
+
+
+
+
+.skill {
+    color: var(--cor-azul-fundo);
+    font-size: 2.3vw;
+    font-weight: 1000;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.painel-habilidadesUm {
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.painel-habilidadesDois {
+    position: relative;
+    width: 100%;
+    animation: moveDiv 20s linear infinite;
+}
+
+.hablilidades {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    width: calc(100% - 100px);
+}
+
+.caixa-habilidade {
+    width: 130px;
+    height: 150px;
+    box-shadow: 0 0 30px var(--cor-azul-fundo);
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+
+}
+
+.img-habilidades {
+    width: 80px;
+    
+
+}
+
+
+@keyframes moveDiv {
+    0% {
+        left: -150%;
+    }
+
+    40% {
+        left: 5%;
+    }
+
+    40% {
+        left: 5%;
+    }
+
+
+    60% {
+        left: 5%;
+    }
+
+    70% {
+        left: 5%;
+    }
+
+
+    80% {
+        left: 5%;
+    }
+
+    100% {
+        left: 150%;
+    }
+
+}
