@@ -1,0 +1,74 @@
+
+.painel-texto-skill {
+    text-align: center;
+    margin: 100px 0 130px 0;
+}
+
+
+
+.painel-habilidadesUm {
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.painel-habilidadesDois {
+    position: relative;
+    width: 100%;
+    animation: moveDiv 30s linear infinite;
+
+}
+
+.hablilidades {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 200px;
+    align-items: center;
+    height: 250px;
+    width: calc(100% - 100px);
+
+}
+
+.caixa-habilidade {
+    width: 130px;
+    height: 150px;
+    box-shadow: 0 0 20px 2px  var(--cor-azul-fundo);
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-habilidades {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.html,
+.css,
+.javascript,
+.react,
+.typescript,
+.desingn,
+.vscode {
+    font-size: 1rem;
+    font-weight: 1000;
+}
+
+
+
+@keyframes moveDiv {
+    0% {
+        left: -150%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+
+
