@@ -3,6 +3,7 @@
 .projetos {
     text-align: center;
     margin: 200px 0 80px 0;
+    background-image: url();
 }
 
 
@@ -37,31 +38,45 @@
     transform: translate(-50%, -50%);
 }
 
+
 .evento{
     font-size: 70px;
-    color: white;
+    color: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+
 .evento:hover{
-    font-size: 80px;
+    font-size: 85px;
 }
 
 .caixaUm {
     animation: posicaoUm 1s forwards;
+    background-image:url(img/barbearia.png);
+    background-size: cover;
+    
 }
 .caixaDois{
     animation: posicaoDois 1.3s forwards;
+    background-image: url(img/calculadora.png);
+    background-size: cover;
 }
 .caixaTres{
     animation: posicaoTres 1.6s forwards;
+    background-image: url(img/jogo.png);
+    background-size: cover;
 }
 .caixaQuatro{
     animation: posicaoQuatro 1.9s forwards;
+    background-image: url(img/robotron.png);
+    background-size: cover ;
 }
 .caixaCinco{
     animation: posicaoCinco 2.2s forwards;
+    background-image: url(img/apeperia.png);
+    background-size: cover;
 }
 
 
