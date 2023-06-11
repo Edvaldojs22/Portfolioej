@@ -33,7 +33,7 @@
 .caixa-habilidade {
     width: 130px;
     height: 150px;
-    box-shadow: 0 0 20px 2px  var(--cor-azul-fundo);
+    box-shadow: 0 0 20px 2px  var(--cor-vermel-fundo);
     border-radius: 20px;
     text-align: center;
     display: flex;
