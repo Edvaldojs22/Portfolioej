@@ -1,7 +1,7 @@
 
 .painel-texto-skill {
     text-align: center;
-    margin: 100px 0 130px 0;
+    margin: 350px 0 200px 0;
 }
 
 
@@ -33,7 +33,7 @@
 .caixa-habilidade {
     width: 130px;
     height: 150px;
-    box-shadow: 0 0 20px 2px  var(--cor-vermel-fundo);
+    box-shadow: 0 0 20px 2px  var(--cor-azul);
     border-radius: 20px;
     text-align: center;
     display: flex;
@@ -56,6 +56,7 @@
 .vscode {
     font-size: 1rem;
     font-weight: 1000;
+    color: var(--cor-preto);
 }
 
 

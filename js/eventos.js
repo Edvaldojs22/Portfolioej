@@ -1,6 +1,37 @@
+//Menu
+const menu = document.querySelector('.logoMenu');
+const menuUm = document.querySelector('.menu');
+let ativado = true
+
+menu.addEventListener('click', () => {
+    if(ativado){
+        menuUm.classList.add('menuUm')
+        ativado = false
+    } else{
+        menuUm.classList.remove('menuUm')
+        ativado = true
+    }
+
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Efeito Digitação ----------------------------------------------------------
-let texto = "Desenvolvedor Fronte End"
+let texto = "Desenvolvedor Fronte End."
 const velocidade = 200
 
 const textoElemento = document.querySelector('.texto-desenvolvedor')
@@ -29,8 +60,6 @@ function exibeLetra(texto, index) {
 
 exibeLetra(texto, 0)
 //------------------------------------------------------------------------------
-
-
 
 
 // Efeito Caixa Projetos -------------------------------------------------------
@@ -67,6 +96,4 @@ caixaEvento.addEventListener('click', () => {
 
 
 })
-//------------------------------------------------------------------------------
-
 

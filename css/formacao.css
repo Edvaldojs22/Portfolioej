@@ -1,57 +1,87 @@
 .painel-formacao {
-    height: 70vh;
+    height: 90vh;
 }
 
 .painel-formacoes {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: calc(100% - 10%);
     margin-top: 100px;
 }
 
 .formacao {
     text-align: center;
+    margin: 350px 0 500px 0;
+}
+
+.imgCurso {
+    position: absolute;
+    top: -200px;
+    font-size: 80px;
+    color: var(--cor-preto);
+}
+
+.imgDesenvolve {
+    position: absolute;
+    top: -205px;
+    width: 70px;
+    margin: 10px 0;
 }
 
 .painelUm,
 .painelDois {
     position: relative;
     max-width: 400px;
-    height:  480px;
+    height:  580px;
     border-radius: 20px;
-    background-color: var(--cor-vermel-fundo);
+    background-image: var(--cor-gradiente);
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow:  0 0 10px black;
+    gap: 10px;
+    box-shadow:  0 0 10px var(--cor-azul);
+   
 }
 
-.imgCurso {
-    position: absolute;
-    top: -110px;
-    font-size: 65px;
-    color: var(--cor-preto);
-}
-
-.imgDesenvolve {
-    position: absolute;
-    top: -120px;
-    width: 60px;
-    margin: 10px 0;
-}
 
 .texto-curso {
-    background-color: var(--cor-vermelho-fraco);
-    color: var(--cor-preto);
+    background-color: var(--cor-azul);
+    color: var(--cor-branco);
     font-weight: 1000;
     font-size: 20px;
     width: calc(100% - 20%);
     height: 100px;
     border-radius: 10px;
-    margin-top: 40px;
+    margin: 30px 0;
     text-align: center;
     padding: 10px 0;
+}
+
+.texto-alguns{
+    font-size: 16px;
+    font-weight: 500;
+    width: calc(100% - 30%);
+    height: 30px;
+    border-radius: 7px;
+    color: var(--cor-branco);
+    font-weight: 800;
+    font-size: 17px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.texto-alguns::before{
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 3px;
+    background-color: var(--cor-azul);
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -10px;
+    filter: blur(1.2px);
+    
 }
 
 .lista {
@@ -68,15 +98,57 @@
 }
 
 .lista li {
-    color: var(--cor-preto);
-    font-size: 15px;
+    color: var(--cor-branco);
+    font-size: 13px;
     font-weight: 100;
     width: 100%;
     height: 35px;
-    background-color: var(--cor-vermelho-fraco);
+    background-color: var(--cor-azul);
     border: solid 2px var(--cor-preto);
     border-radius: 5px;
     display: flex;
     align-items: center;
-    padding-left: 10px;
+    padding-left: 20px;   
+    position: relative;
+}
+li::before{
+content: '';
+position: absolute;
+width: 5px;
+height: 5px;
+border-radius: 50%;
+background-color: var(--cor-branco);
+left: 10px;
+}
+
+.curriculo, .certificados{
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: var(--cor-azul);  
+    border: solid 3px black;
+    color: var(--cor-branco);
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 1px;
+    text-decoration: none;
+}
+.curriculo:hover{
+    scale: 1.1;
+    transition: .7s;
+}
+.certificados:hover{
+    scale: 1.1;
+    transition: 0.7s;
+}
+
+.imgIcons{
+    font-size: 20px;
+    margin-left: 10px;
+    color: var(--cor-branco);
+  
 }

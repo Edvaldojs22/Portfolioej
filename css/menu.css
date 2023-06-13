@@ -1,0 +1,79 @@
+
+.logoMenu {
+    font-size: 30px;
+    position: absolute;
+    color: var(--cor-branco);
+    left: 20px;
+    top: 20px;
+    cursor: pointer;
+    z-index: 2;
+    
+}
+
+.logoMenu:hover {
+    scale: 1.3;
+}
+
+.menu {
+    height: calc(100% - 50%);
+    position: absolute;
+    width: 0;
+    z-index: 1;
+    background-color: var(--cor-vermelho-fraco);
+    top: 0;
+    left: 0;
+}
+
+.menuUm{
+    width: 70px;
+    transition: 0.4s;
+    border-right: solid 5px var(--cor-azul);
+    border-bottom: solid 5px var(--cor-azul);
+    border-bottom-right-radius: 20px;
+   
+}
+
+.menuUm:hover{
+    width: 240px;
+    transition: 0.6s;
+}
+
+.menu-escondido {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 45px 0;
+    overflow: hidden;
+    
+}
+
+
+.caixa-icons {
+    height: 70px;
+    width: 240px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    padding-right: 70px;
+}
+
+.caixa-icons:hover {
+    background-color: var(--cor-azul);
+    transition: 0.4s;
+}
+
+
+.icons {
+    font-size: 30px;
+    color: var(--cor-grey);
+
+
+}
+
+span {
+    font-size: 19px;
+    font-weight: 800;
+    color: var(--cor-grey);
+}

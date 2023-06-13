@@ -1,3 +1,4 @@
+@import url(menu.css);
 @import url(habilidades.css);
 @import url(projetos.css);
 @import url(formacao.css);
@@ -11,11 +12,11 @@
 }
 
 :root {
-    --cor-vermel-fundo: #ff4040;
-    --cor-vermelho-fraco: #8d000063;
-    --cor-branco: #ffffff;
-    --cor-preto: #000000;
-    --cor-trasparente:  #ffffff;
+    --cor-gradiente: linear-gradient( #020163 , #170046,  #0d0126 );
+    --cor-grey: #d9d9d9;
+    --cor-branco: #fdfdfd;
+    --cor-azul:#020091;
+    --cor-preto:#000000;
 }
 
 html{
@@ -34,8 +35,7 @@ html{
 
 
 body {
-
-    background-color: #ffffff;
+    background-color:var(--cor-branco);
     font-family: 'IBM Plex Mono', monospace;
     padding-bottom: 100px;
   
@@ -43,8 +43,6 @@ body {
 
 .portifolio {
     background-color: var(--cor-branco);
-
-
 }
 
 .painel-perfil {
@@ -52,25 +50,10 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: 0 auto;
-    background-image: linear-gradient(var(  --cor-vermel-fundo) 50%,var(--cor-trasparente) 50%);
-    height: 98vh;
+    background-image: var(--cor-gradiente);
+    margin-bottom: 400px;
+    height: 100vh;
 }
-
-
-.menu {
-    color: var(--cor-branco);
-    font-size: 40px;
-    position: absolute;
-    top: 2%;
-    left: 2%;;
-    cursor: pointer;
-}
-
-.menu:hover{
-   scale: 1.1;
-}
-
 
 .botao {
     display: flex;
@@ -96,7 +79,7 @@ body {
 }
 
 .texto-efeito {
-    color: white;
+   color: var();
     position: absolute;
     font-weight: 600;
     font-size: 30px;
@@ -109,6 +92,7 @@ body {
 
 .texto-desenvolvedor{
     display: inline-block;
+    color: var(--cor-branco);
 }
 .pisca{
     display: inline-block;
@@ -129,7 +113,7 @@ body {
 .painel-texto p {
     font-size: 40px;
     font-weight: 600;
-    color: var(--cor-vermel-fundo);
+    color: var(--cor-azul);
     text-align: center;
     margin-bottom: calc(100% - 95%);
 
@@ -148,26 +132,27 @@ body {
 
 .linkedin,
 .github {
-    font-size: 4vw;
+    font-size: 50px;
 }
 
 .linkedin {
     color: rgb(3, 120, 209);
-    transition: transform 0.2s linear;
 }
 
 .github {
     color: rgb(93, 3, 145);
-    transition: transform 0.2s linear;
+  
 }
 
 
 .linkedin:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
+    transition: 0.1s;
 }
 
 .github:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
+    transition: 0.1s;
 }
 
 
@@ -180,6 +165,7 @@ body {
     display: flex;
     justify-content: end;
     margin-right: 10vw;
+    margin-top: 80px;
 }
 
 .apresentacao {
@@ -193,7 +179,7 @@ body {
     margin-top: 50px;
     width: calc(100% - 60%);
     border-radius: 50%;
-    background-color: var(--cor-vermel-fundo);
+    background-image: var(--cor-gradiente);
 
 }
 
@@ -201,13 +187,18 @@ body {
     text-align: start;
     width: 90%;
 }
+.texto{
+    color: var(--cor-azul);
+    font-size: 80px;
+}
+
 
 .sobre-mim {
     font-size: 30px;
+    color: var(--cor-preto);
 }
 
-.sobre {
-   
+.sobre { 
     position: relative;
 }
 
@@ -217,7 +208,7 @@ body {
     width: 100%;
     height: 3px;
     border-radius: 30px;
-    background-color: var(--cor-vermel-fundo);
+    background-color: var(--cor-azul);
     left: 0;
     bottom: -10px;
 }
@@ -225,7 +216,7 @@ body {
 
 .descricao {
     color: var(--cor-preto);
-    font-size: 1.5vw;
+    font-size: 24px;
     margin-top: 30px;
 }
 

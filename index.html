@@ -19,11 +19,41 @@
   <div class="portifolio">
 
     <header class="painel-perfil">
-      <i class="fa-solid fa-bars menu"></i>
+
+
+      <div>
+        <i class="fa-solid fa-bars logoMenu "></i>
+      </div>
+    
+      <div class="menu">
+
+        <div class="menu-escondido">
+      
+          <div class="caixa-icons">
+            <i class="fa-solid fa-gear icons"></i><span>Skills</span>
+          </div>
+          
+          <div class="caixa-icons">
+            <i class="fa-solid fa-diagram-project icons"></i><span>Projetos</span>           
+          </div>
+
+          <div class="caixa-icons">
+            <i class="fa-sharp fa-solid fa-graduation-cap icons"></i> <span>Formação</span>  
+          </div>
+          
+          <div class="caixa-icons">
+            <i class="fa-solid fa-address-book icons"></i> <span>Contatos</span>           
+          </div>
+
+        </div>
+      </div>
+
+
+
       <div class="perfil-img">
         <img src="css/img/avatar.png" alt="" class="imgUm">
         <div class="texto-efeito">
-          <p class="texto texto-desenvolvedor">Desenvolvedor fronte End</p>
+          <p class="texto-desenvolvedor"></p>
           <p class="pisca">|</p>
         </div>
 
@@ -41,13 +71,13 @@
 
     <div class="painel-apresentacao">
       <div
-        style="width: calc(100% - 150px); height: 10px; background-color: var(--cor-azul-fundo); border-radius: 20px;  display: inline-block; margin-right: 30px;">
+        style="width: calc(100% - 150px); height: 10px; background-color: var(--cor-azul); border-radius: 20px;  display: inline-block; margin-right: 30px;">
       </div>
       <div
-        style="width: 15px; height: 15px; background-color: var(--cor-azul-fundo); border-radius: 50%;  display: inline-block; margin: 0 auto; margin-right: 20px;">
+        style="width: 15px; height: 15px; background-color: var(--cor-azul); border-radius: 50%;  display: inline-block; margin: 0 auto; margin-right: 20px;">
       </div>
       <div
-        style="width: 15px; height: 15px; background-color: var(--cor-azul-fundo); border-radius: 50%;  display: inline-block; margin: 0 auto;">
+        style="width: 15px; height: 15px; background-color: var(--cor-azul); border-radius: 50%;  display: inline-block; margin: 0 auto;">
       </div>
 
       <div class="painel-perfil-imgDois">
@@ -72,13 +102,13 @@
       </div>
 
       <div
-        style="width: 15px; height: 15px; background-color: var(--cor-azul-fundo); border-radius: 50%;  display: inline-block;  margin-right: 20px;">
+        style="width: 15px; height: 15px; background-color: var(--cor-azul); border-radius: 50%;  display: inline-block;  margin-right: 20px;">
       </div>
       <div
-        style="width: 15px; height: 15px; background-color: var(--cor-azul-fundo); border-radius: 50%;  display: inline-block; margin-right: 20px; ">
+        style="width: 15px; height: 15px; background-color: var(--cor-azul); border-radius: 50%;  display: inline-block; margin-right: 20px; ">
       </div>
       <div
-        style="width: calc(100% - 150px); height: 10px; background-color: var(--cor-azul-fundo); border-radius: 20px;  display: inline-block; ">
+        style="width: calc(100% - 150px); height: 10px; background-color: var(--cor-azul); border-radius: 20px;  display: inline-block; ">
       </div>
 
 
@@ -139,15 +169,15 @@
 
       </section>
 
+      <p class="texto formacao titulo">Formação</p>
+
       <section class="painel-formacao">
-        <p class="texto formacao titulo">Formação</p>
-
-
         
         <div class="painel-formacoes">
           <div class="painelUm">
             <i class=" imgCurso fa-sharp fa-solid fa-graduation-cap"></i>
             <p class="texto-curso">Analise e Desenvolvimento de Sistemas</p>
+            <p class="texto-alguns">Algumas das Materias</p>
             <ul class="lista cursoUm">
               <li>Engenharia de Software.</li>
               <li>Fundamentos e Arquitetura de Computadores.</li>
@@ -156,10 +186,16 @@
               <li>Desing de Interação.</li>
               <li>Sistemas Operacionais.</li>
             </ul>
+
+            <a class="curriculo" href="css/img/jogo.png" download="">
+              <p>Curriculo</p><i class="fa-solid fa-download imgIcons"></i>
+            </a>
           </div>
+
           <div class="painelDois">
             <img class="imgDesenvolve" src="css/img/desenvolve.svg" alt="">
             <p class="texto-curso">Trilha Full Stack | Grupo Desenvolve Boticário</p>
+            <p class="texto-alguns">Alguns dos Cursos</p>
             <ul class="lista cursoDois">
               <li>HTMLS5 e CSS3.</li>
               <li>JavaScript.</li>
@@ -168,17 +204,20 @@
               <li>TypeScript.</li>
               <li>React.</li>
             </ul>
+            <a href="index-certificados.html" target="_blank" class="certificados">
+              <p>Certificados</p><i class="fa-solid fa-link imgIcons"></i>
+            </a>
           </div>
         </div>
 
       </section>
 
-
+      
 
     </div>
 
   </div>
-  <script src="js/evento.js"></script>
+  <script src="js/eventos.js"></script>
 </body>
 
 </html>
