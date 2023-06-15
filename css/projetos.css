@@ -2,8 +2,7 @@
 
 .projetos {
     text-align: center;
-    margin: 350px 0 200px 0;
-    background-image: url();
+   margin: 300px 0 100px 0;
 }
 
 
@@ -15,7 +14,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border:  solid 3px var(--cor-azul);
+    border:  solid 3px var(--cor-vermelho);
+    background-color: var(--cor-vermelho-fraco);
     
 }
 
@@ -50,7 +50,7 @@
     font-size: 60px;
 }
 .evento:hover{
-    color: var(--cor-azul); 
+    color: var(--cor-vermelho); 
 }
 
 
@@ -85,6 +85,10 @@
     .caixa-projetos{
         width: 80px;
         height: 100px;
+    }
+
+    .logoMenu{
+        font-size: 50px;
     }
     
 }

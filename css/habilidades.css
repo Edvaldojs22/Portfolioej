@@ -11,13 +11,14 @@
     margin: 0 auto;
     overflow: hidden;
     position: relative;
+    border-bottom: solid 1px var(--cor-vermelho);
 }
 
 .painel-habilidadesDois {
     position: relative;
     width: 100%;
     animation: moveDiv 30s linear infinite;
-
+   
 }
 
 .hablilidades {
@@ -33,7 +34,7 @@
 .caixa-habilidade {
     width: 130px;
     height: 150px;
-    box-shadow: 0 0 20px 2px  var(--cor-azul);
+    box-shadow: 0 0 20px 2px  var(--cor-vermelho);
     border-radius: 20px;
     text-align: center;
     display: flex;
