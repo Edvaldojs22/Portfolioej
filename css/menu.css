@@ -26,7 +26,7 @@
     width: 70px;
     transition: 0.4s;
     border-left: solid 10px var(--cor-vermelho);
-    background-color:var(--cor-cinza);
+    background-color: var(--cor-cinza);
     border-bottom-right-radius: 10px;
 }
 
@@ -61,10 +61,11 @@
     border-top-right-radius: 60px;
     border-bottom-right-radius: 60px;
     transition: 0.4s;
-    
+
 }
-.caixa-icons:hover{
-    width:240px ;
+
+.caixa-icons:hover {
+    width: 240px;
     transition: 0.6s;
 }
 
@@ -81,4 +82,41 @@ span {
     font-size: 19px;
     font-weight: 800;
     color: var(--cor-branco);
+}
+
+@media (max-width: 600px) {
+
+    .fa-bars {
+        font-size: 60px;
+    }
+
+    .menu {
+        padding: 50px 0 0 0;
+    }
+    .menu-escondido{
+        padding: 40px 0 10px 0;
+    }
+
+    .menuUm:hover {
+        width: 200px;
+    }
+
+    .icons {
+        font-size: 20px;
+    }
+
+    .caixa-icons {
+        height: 50px;
+    }
+    .caixa-icons:hover{
+        width: 170px;
+        transition: 0.6s;
+
+    }
+
+    .caixa-icons span {
+        font-size: 10px;
+    }
+
+
 }

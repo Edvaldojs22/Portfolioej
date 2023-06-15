@@ -61,7 +61,6 @@
 }
 
 
-
 @keyframes moveDiv {
     0% {
         left: -150%;
@@ -70,6 +69,37 @@
     100% {
         left: 100%;
     }
+}
+
+@keyframes moveDivMobile {
+    0%{
+        left: -800%;
+    }
+
+    100%{
+        left: 100%;
+    }
+    
+}
+
+@media (max-width:600px) {
+
+    .painel-texto-skill{
+        margin-top: 600px;
+    }
+
+    .painel-habilidadesDois{
+        position: relative;
+        width: 100%;
+        animation: moveDivMobile 30s linear infinite;
+       
+    }
+
+    .caixa-habilidade{
+        width: 130px;
+        height: 150px;
+    }
+    
 }
 
 

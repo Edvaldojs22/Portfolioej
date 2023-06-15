@@ -151,3 +151,30 @@ left: 10px;
     color: var(--cor-preto);
   
 }
+
+
+@media (max-width:650px) {
+
+
+    .painel-formacoes{
+        display: flex;
+        flex-direction: column;
+        gap: 150px;
+    }
+    .titulo{
+        margin-bottom: 250px;
+       
+    }
+    .painelUm{
+        margin-bottom: 100px;
+    }
+    .imgCurso{
+        top: -100px;
+    }
+    .imgDesenvolve{
+        top: -120px;
+    }
+
+    
+    
+}
