@@ -16,7 +16,7 @@
 
 <body id="painel">
 
-  <main class="portifolio">
+  <main class="portifolio" id="inicio">
 
     <header class="painel-perfil">
 
@@ -29,21 +29,27 @@
 
         <div class="menu-escondido">
 
-          <div class="caixa-icons">
-            <i class="fa-solid fa-gear icons"></i><span>Skills</span>
-          </div>
+          <a href="#skils" class="caixa-icons  smooth-scroll">
+            <i class="fa-solid fa-gear icons "></i><span>Skills</span>
+          </a>
 
-          <div class="caixa-icons">
+
+
+          <a href="#projeto" class="caixa-icons  smooth-scroll">
             <i class="fa-solid fa-diagram-project icons"></i><span>Projetos</span>
-          </div>
+          </a>
 
-          <div class="caixa-icons">
+
+          <a href="#formacao" class="caixa-icons  smooth-scroll">
             <i class="fa-sharp fa-solid fa-graduation-cap icons"></i> <span>Formação</span>
-          </div>
+          </a>
 
-          <div class="caixa-icons">
+
+          <a href="" class="caixa-icons  smooth-scroll">
             <i class="fa-solid fa-address-book icons"></i> <span>Contatos</span>
-          </div>
+          </a>
+
+
 
         </div>
       </div>
@@ -73,18 +79,18 @@
 
     <div class="conteudo">
 
-    
+
       <section class="painel-sobre-mim">
 
         <div
-        style="width: calc(100% - 150px); height: 10px; background-color: var(--cor-vermelho); border-radius: 20px;  display: inline-block; margin-right: 30px;">
-      </div>
-      <div
-        style="width: 15px; height: 15px; background-color: var(--cor-vermelho); border-radius: 50%;  display: inline-block; margin: 0 auto; margin-right: 20px;">
-      </div>
-      <div
-        style="width: 15px; height: 15px; background-color: var(--cor-vermelho); border-radius: 50%;  display: inline-block; margin: 0 auto;">
-      </div>
+          style="width: calc(100% - 150px); height: 10px; background-color: var(--cor-vermelho); border-radius: 20px;  display: inline-block; margin-right: 30px;">
+        </div>
+        <div
+          style="width: 15px; height: 15px; background-color: var(--cor-vermelho); border-radius: 50%;  display: inline-block; margin: 0 auto; margin-right: 20px;">
+        </div>
+        <div
+          style="width: 15px; height: 15px; background-color: var(--cor-vermelho); border-radius: 50%;  display: inline-block; margin: 0 auto;">
+        </div>
 
 
         <div class="painel-perfil-imgDois">
@@ -110,20 +116,20 @@
         </div>
 
         <div
-        style="width: 15px; height: 15px; background-color: var(--cor-vermelho); border-radius: 50%;  display: inline-block;  margin-right: 20px;">
-      </div>
-      <div
-        style="width: 15px; height: 15px; background-color: var(--cor-vermelho); border-radius: 50%;  display: inline-block; margin-right: 20px; ">
-      </div>
-      <div
-        style="width: calc(100% - 150px); height: 10px; background-color: var(--cor-vermelho); border-radius: 20px;  display: inline-block; ">
-      </div>
+          style="width: 15px; height: 15px; background-color: var(--cor-vermelho); border-radius: 50%;  display: inline-block;  margin-right: 20px;">
+        </div>
+        <div
+          style="width: 15px; height: 15px; background-color: var(--cor-vermelho); border-radius: 50%;  display: inline-block; margin-right: 20px; ">
+        </div>
+        <div
+          style="width: calc(100% - 150px); height: 10px; background-color: var(--cor-vermelho); border-radius: 20px;  display: inline-block; ">
+        </div>
       </section>
 
-     
+
 
       <div class="painel-texto-skill">
-        <p class="texto titulo">Skils</p>
+        <p class="texto titulo" id="skils">Skils</p>
       </div>
 
 
@@ -165,7 +171,7 @@
 
       </section>
 
-      <p class="texto projetos titulo">Projetos</p>
+      <p class="texto projetos titulo" id="projeto">Projetos</p>
 
       <section class="painel-projetosUm">
 
@@ -180,7 +186,7 @@
 
       </section>
 
-      <p class="texto formacao titulo">Formação</p>
+      <p class="texto formacao titulo " id="formacao">Formação</p>
 
       <section class="painel-formacao">
 
@@ -224,6 +230,10 @@
       </section>
     </div>
   </main>
+
+  <a href="#inicio" class="botaoUp smooth-scroll" >
+    <i class="fa-solid fa-arrow-up"></i>
+  </a>
   <script src="js/eventos.js"></script>
 </body>
 

@@ -54,6 +54,7 @@
     display: flex;
     align-items: center;
     overflow: hidden;
+    text-decoration: none;
 }
 
 .caixa-icons:hover {

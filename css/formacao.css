@@ -11,7 +11,7 @@
 
 .formacao {
     text-align: center;
-    margin: 350px 0 500px 0;
+    margin: 350px 0 300px 0;
 }
 
 .imgCurso {
@@ -162,7 +162,7 @@ left: 10px;
         gap: 150px;
     }
     .titulo{
-        margin-bottom: 250px;
+        margin-bottom: 150px;
        
     }
     .painelUm{

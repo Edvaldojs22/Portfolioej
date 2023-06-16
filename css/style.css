@@ -73,7 +73,7 @@ body {
     position: absolute;
     font-weight: 600;
     font-size: 30px;
-    width: 400px;
+    width: 500px;
     left: 62%;
     bottom: 50%;
     display: flex;
@@ -212,9 +212,37 @@ body {
     margin-top: 30px;
 }
 
+
+.botaoAtivado {
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    border-radius: 50%;
+    background-color: var(--cor-vermelho);
+    color: var(--cor-preto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.fa-arrow-up {
+    font-size: 30px;
+}
+
+
+.botaoUp:hover {
+    opacity: 0.8;
+    scale: 1.1;
+}
+
 @media (max-width:650px) {
 
-    .painel-perfil{
+    .painel-perfil {
         margin-bottom: 100px;
     }
 
@@ -245,7 +273,8 @@ body {
         justify-content: space-around;
         padding: 60px 0;
     }
-    .painel-perfil-imgDois{
+
+    .painel-perfil-imgDois {
         margin-right: 0;
     }
 
@@ -254,12 +283,22 @@ body {
         font-weight: 1000;
     }
 
-    .informacoes{
+    .informacoes {
         padding: 0;
     }
-    .descricao{
+
+    .descricao {
         font-size: 15px;
         font-weight: 500;
     }
 
+    .botaoAtivado {
+        width: 40px;
+        height: 40px;
+        right: 20px;
+        bottom: 30px;
+    }
+    .fa-arrow-up{
+        font-size: 20px;
+    }
 }

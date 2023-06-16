@@ -1,3 +1,39 @@
+
+
+
+
+// Efeito scroll da tela
+
+
+function scrollToAnchor(event) {
+    event.preventDefault();
+  
+    const targetId = event.currentTarget.getAttribute("href");
+    const targetElement = document.querySelector(targetId);
+  
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop,
+        behavior: "smooth"
+      });
+    }
+  }
+  
+  // Adiciona o evento de clique aos links de âncora com a classe "smooth-scroll"
+  const smoothScrollLinks = document.querySelectorAll(".smooth-scroll");
+  smoothScrollLinks.forEach(function(link) {
+    link.addEventListener("click", scrollToAnchor);
+  });
+
+
+
+
+
+
+
+
+
+
 //Menu
 const menu = document.querySelector('.logoMenu');
 const menuUm = document.querySelector('.menu');
@@ -16,22 +52,8 @@ menu.addEventListener('click', () => {
 })
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Efeito Digitação ----------------------------------------------------------
-let texto = "Desenvolvedor Fronte End."
+let texto = "Desenvolvedor Front End."
 const velocidade = 200
 
 const textoElemento = document.querySelector('.texto-desenvolvedor')
@@ -60,6 +82,7 @@ function exibeLetra(texto, index) {
 
 exibeLetra(texto, 0)
 //------------------------------------------------------------------------------
+
 
 
 // Efeito Caixa Projetos -------------------------------------------------------
@@ -97,3 +120,17 @@ caixaEvento.addEventListener('click', () => {
 
 })
 
+
+
+// Botao Up
+
+
+window.addEventListener('scroll', () => {
+    var botaoUp = document.querySelector('.botaoUp');
+
+    if(window.scrollY > 300) {
+        botaoUp.classList.add('botaoAtivado')
+    } else{
+        botaoUp.classList.remove('botaoAtivado')
+    }
+})
