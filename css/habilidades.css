@@ -1,17 +1,24 @@
-
 .painel-texto-skill {
     text-align: center;
     margin: 600px 0 200px 0;
 }
-
-
 
 .painel-habilidadesUm {
     width: calc(100% - 30px);
     margin: 0 auto;
     overflow: hidden;
     position: relative;
-    border-bottom: solid 1px var(--cor-vermelho);
+    position: relative;
+}
+.painel-habilidadesUm::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    background-color: var(--cor-vermelho);
+
+
 }
 
 .painel-habilidadesDois {

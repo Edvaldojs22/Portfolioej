@@ -40,12 +40,17 @@ html {
 body {
     background-color: var(--cor-branco);
     font-family: 'IBM Plex Mono', monospace;
-    padding-bottom: 100px;
+    margin-bottom: 100px;
 
 }
 
 .portifolio {
     background-color: var(--cor-branco);
+}
+.conteudo {
+    padding: 0 7vw;
+   
+    
 }
 
 .painel-perfil {
@@ -74,6 +79,7 @@ body {
     font-weight: 600;
     font-size: 30px;
     width: 500px;
+    margin-left: 20px;
     left: 62%;
     bottom: 50%;
     display: flex;
@@ -143,9 +149,6 @@ body {
     transition: 0.1s;
 }
 
-.conteudo {
-    padding: 0 7vw;
-}
 
 .painel-sobre-mim {
     height: 70vh;

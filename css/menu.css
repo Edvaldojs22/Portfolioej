@@ -27,7 +27,7 @@
     transition: 0.4s;
     border-left: solid 10px var(--cor-vermelho);
     background-color: var(--cor-cinza);
-    border-bottom-right-radius: 10px;
+   
 }
 
 .menuUm:hover {
@@ -87,31 +87,45 @@ span {
 
 @media (max-width: 600px) {
 
-    .fa-bars {
-        font-size: 60px;
+    .logoMenu {
+       font-size: 20px;
     }
 
     .menu {
         padding: 50px 0 0 0;
+        border: none;
     }
     .menu-escondido{
         padding: 40px 0 10px 0;
     }
 
+    .menuUm{
+        padding-left: 15px;
+        width: 130px;
+    }
+
     .menuUm:hover {
-        width: 200px;
+        width: 150px;
     }
 
     .icons {
         font-size: 20px;
+        margin-right: 10px;
+        color: var(--cor-grey);
+
     }
 
     .caixa-icons {
-        height: 50px;
+        width: 100px;
+        height: 40px;
+        background-color: var(--cor-vermelho);
+        border-radius: 20px;
     }
+
     .caixa-icons:hover{
-        width: 170px;
-        transition: 0.6s;
+        width: 100px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
 
     }
 

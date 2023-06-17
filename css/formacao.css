@@ -1,5 +1,6 @@
 .painel-formacao {
     height: 90vh;
+    
 }
 
 .painel-formacoes {
@@ -161,8 +162,11 @@ left: 10px;
         flex-direction: column;
         gap: 150px;
     }
+    .painelDois{
+        margin-bottom: 100px;
+    }
     .titulo{
-        margin-bottom: 150px;
+        margin: 200px 0 150px 0;
        
     }
     .painelUm{

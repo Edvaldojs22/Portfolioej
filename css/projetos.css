@@ -1,8 +1,6 @@
-
-
 .projetos {
     text-align: center;
-   margin: 300px 0 100px 0;
+    margin: 300px 0 100px 0;
 }
 
 
@@ -14,9 +12,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border:  solid 3px var(--cor-vermelho);
+    border: solid 3px var(--cor-vermelho);
     background-color: var(--cor-vermelho-fraco);
-    
+
 }
 
 .painel-projetosDois {
@@ -36,9 +34,10 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    display: none;
 }
 
-.evento{
+.evento {
     font-size: 70px;
     color: rgb(0, 0, 0);
     display: flex;
@@ -46,51 +45,50 @@
     align-items: center;
 }
 
-.evento:active{
+.evento:active {
     font-size: 60px;
 }
-.evento:hover{
-    color: var(--cor-vermelho); 
-}
 
+.evento:hover {
+    color: var(--cor-vermelho);
+}
 
 .caixaUm {
     animation: posicaoUm 1s forwards;
-    background-image:url(img/barbearia.png);
-    background-size: cover;
-    
+    display: block;
+
 }
-.caixaDois{
+
+.caixaDois {
     animation: posicaoDois 1.3s forwards;
-    background-image: url(img/calculadora.png);
-    background-size: cover;
+    display: block;
 }
-.caixaTres{
+
+.caixaTres {
     animation: posicaoTres 1.6s forwards;
-    background-image: url(img/jogo.png);
-    background-size: cover;
+   display: block;
 }
-.caixaQuatro{
+
+.caixaQuatro {
     animation: posicaoQuatro 1.9s forwards;
-    background-image: url(img/robotron.png);
-    background-size: cover ;
+    display: block;
 }
-.caixaCinco{
+
+.caixaCinco {
     animation: posicaoCinco 2.2s forwards;
-    background-image: url(img/apeperia.png);
-    background-size: cover;
+   display: block;
 }
 
 @media (max-width: 600px) {
-    .caixa-projetos{
+    .caixa-projetos {
         width: 80px;
         height: 100px;
     }
 
-    .logoMenu{
+    .logoMenu {
         font-size: 50px;
     }
-    
+
 }
 
 
@@ -102,8 +100,8 @@
     }
 
     to {
-       left: 20%;
-       top: 20%;
+        left: 20%;
+        top: 20%;
     }
 
 }
@@ -117,8 +115,8 @@
     }
 
     to {
-       left: 50%;
-       top: 20%;
+        left: 50%;
+        top: 20%;
     }
 
 }
@@ -132,8 +130,8 @@
     }
 
     to {
-       left: 80%;
-       top: 20%;
+        left: 80%;
+        top: 20%;
     }
 
 }
@@ -147,8 +145,8 @@
     }
 
     to {
-       left: 30%;
-       top: 80%;
+        left: 30%;
+        top: 80%;
     }
 
 }
