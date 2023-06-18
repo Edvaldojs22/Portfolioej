@@ -79,19 +79,6 @@
    display: block;
 }
 
-@media (max-width: 600px) {
-    .caixa-projetos {
-        width: 80px;
-        height: 100px;
-    }
-
-    .logoMenu {
-        font-size: 50px;
-    }
-
-}
-
-
 @keyframes posicaoUm {
     from {
         left: 50%;
@@ -164,4 +151,15 @@
         top: 80%;
     }
 
+}
+@media (max-width: 600px) {
+    .caixa-projetos {
+        width: 80px;
+        height: 100px;
+    }
+
+    .logoMenu {
+        font-size: 50px;
+    }
+   
 }

@@ -2,6 +2,7 @@
 @import url(habilidades.css);
 @import url(projetos.css);
 @import url(formacao.css);
+@import url(contato.css);
 
 
 * {
@@ -46,11 +47,11 @@ body {
 
 .portifolio {
     background-color: var(--cor-branco);
+    height: 100%;
 }
 .conteudo {
     padding: 0 7vw;
    
-    
 }
 
 .painel-perfil {
@@ -303,5 +304,8 @@ body {
     }
     .fa-arrow-up{
         font-size: 20px;
+    }
+    .portifolio{
+        padding-bottom: 100px;
     }
 }
