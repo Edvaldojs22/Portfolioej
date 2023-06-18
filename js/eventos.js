@@ -1,8 +1,4 @@
-
-
-
-
-// Efeito scroll da tela
+// Efeito scroll da tela --------------------------------------------------
 
 
 function scrollToAnchor(event) {
@@ -19,22 +15,28 @@ function scrollToAnchor(event) {
     }
   }
   
-  // Adiciona o evento de clique aos links de âncora com a classe "smooth-scroll"
+  
   const smoothScrollLinks = document.querySelectorAll(".smooth-scroll");
   smoothScrollLinks.forEach(function(link) {
     link.addEventListener("click", scrollToAnchor);
   });
 
+//-------------------------------------------------------------------------
+
+
+
+
+// Modo Dark / legth ------------------------------------------------------
+
+
+//------------------------------------------------------------------------
 
 
 
 
 
 
-
-
-
-//Menu
+//Menu --------------------------------------------------------------------
 const menu = document.querySelector('.logoMenu');
 const menuUm = document.querySelector('.menu');
 let ativado = true
@@ -47,9 +49,9 @@ menu.addEventListener('click', () => {
         menuUm.classList.remove('menuUm')
         ativado = true
     }
-
-
 })
+
+//---------------------------------------------------------------------------
 
 
 // Efeito Digitação ----------------------------------------------------------
@@ -81,7 +83,36 @@ function exibeLetra(texto, index) {
 }
 
 exibeLetra(texto, 0)
+
 //------------------------------------------------------------------------------
+
+
+
+
+// Modo Dark / ligth
+
+
+const botao = document.querySelector('.botao');
+const portifolio = document.querySelector('html')
+let modo = document.querySelector('.modo')
+const imgSuporte = document.querySelector(".imgContatos")
+
+botao.addEventListener('click', () => {
+
+    if(botao.checked) {
+        portifolio.classList.add('dark')
+        modo.textContent = "Dark"
+        imgSuporte.src = "css/img/suporteEscuro.png";
+     
+    } else{
+        portifolio.classList.remove('dark')
+        modo.textContent = "Ligth"
+        imgSuporte.src = "css/img/suporteClaro.png";
+    }
+})
+
+
+
 
 
 
@@ -134,3 +165,7 @@ window.addEventListener('scroll', () => {
         botaoUp.classList.remove('botaoAtivado')
     }
 })
+
+
+
+

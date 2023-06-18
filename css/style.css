@@ -3,6 +3,7 @@
 @import url(projetos.css);
 @import url(formacao.css);
 @import url(contato.css);
+@import url(checkbox.css);
 
 
 * {
@@ -20,6 +21,16 @@
     --cor-vermelho: #ca2929;
     --cor-vermelho-fraco: rgb(191, 87, 87);
 }
+
+.dark:root{
+    --cor-branco: #000000;
+    --cor-preto: #ffffff;
+    --cor-grey: #000000;
+   
+
+}
+
+
 
 html {
     animation: opasity 1s;
@@ -68,10 +79,13 @@ body {
 .perfil-img {
     text-align: center;
     position: relative;
+    margin-top: 120px;
 }
 
 .imgUm {
-    width: 500px;
+    width: 370px;
+    border-radius: 50%;
+    border: solid 20px var(--cor-branco);
 }
 
 .texto-efeito {
@@ -80,9 +94,9 @@ body {
     font-weight: 600;
     font-size: 30px;
     width: 500px;
-    margin-left: 20px;
-    left: 62%;
-    bottom: 50%;
+    margin-left: 50px;
+    left: 60%;
+    bottom: 70%;
     display: flex;
 
 }
@@ -236,6 +250,7 @@ body {
 
 .fa-arrow-up {
     font-size: 30px;
+    color: var(--cor-branco);
 }
 
 
@@ -251,8 +266,8 @@ body {
     }
 
     .imgUm {
-        width: 270px;
-        margin-top: 50px;
+        width: 200px;
+        border: solid 10px var(--cor-branco);
 
     }
 
@@ -261,12 +276,14 @@ body {
     }
 
     .texto-efeito {
-        margin: 0 auto;
+        margin-left: 30px;
         font-size: 17px;
         width: 290px;
-        top: 40px;
-        left: 80%;
-        transform: translate(-80%);
+        left: 50%;
+        transform: translate(-50%);
+        bottom:10px;
+        
+        
     }
 
     .painel-texto p {
@@ -307,5 +324,14 @@ body {
     }
     .portifolio{
         padding-bottom: 100px;
+    }
+}
+
+@media (max-width:1250px) {
+
+     .texto-efeito {
+        top: -70px;
+        left: 50%;
+        transform: translate(-50%);
     }
 }
