@@ -22,11 +22,11 @@
     --cor-vermelho-fraco: rgb(191, 87, 87);
 }
 
-.dark:root{
+.dark:root {
     --cor-branco: #000000;
     --cor-preto: #ffffff;
     --cor-grey: #000000;
-   
+
 
 }
 
@@ -52,7 +52,7 @@ html {
 body {
     background-color: var(--cor-branco);
     font-family: 'IBM Plex Mono', monospace;
-    margin-bottom: 100px;
+
 
 }
 
@@ -60,9 +60,10 @@ body {
     background-color: var(--cor-branco);
     height: 100%;
 }
+
 .conteudo {
     padding: 0 7vw;
-   
+
 }
 
 .painel-perfil {
@@ -107,6 +108,8 @@ body {
     animation: pisca 0.5s infinite linear;
     color: var(--cor-branco);
 }
+
+
 
 @keyframes pisca {
     from {
@@ -235,7 +238,7 @@ body {
     width: 70px;
     height: 70px;
     position: fixed;
-    bottom: 50px;
+    bottom: 120px;
     right: 50px;
     border-radius: 50%;
     background-color: var(--cor-vermelho);
@@ -257,6 +260,18 @@ body {
 .botaoUp:hover {
     opacity: 0.8;
     scale: 1.1;
+}
+
+.copy {
+ 
+    width: 100%;
+    height: 100px;
+    background-color: var(--cor-vermelho);
+    color: var(--cor-branco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 @media (max-width:650px) {
@@ -281,9 +296,9 @@ body {
         width: 290px;
         left: 50%;
         transform: translate(-50%);
-        bottom:10px;
-        
-        
+        bottom: 10px;
+
+
     }
 
     .painel-texto p {
@@ -319,17 +334,25 @@ body {
         right: 20px;
         bottom: 30px;
     }
-    .fa-arrow-up{
+
+    .fa-arrow-up {
         font-size: 20px;
     }
-    .portifolio{
+
+    .portifolio {
         padding-bottom: 100px;
     }
+
+    .copy {
+ 
+      font-size: 13px;
+    }
+    
 }
 
 @media (max-width:1250px) {
 
-     .texto-efeito {
+    .texto-efeito {
         top: -70px;
         left: 50%;
         transform: translate(-50%);

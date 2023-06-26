@@ -26,12 +26,6 @@ function scrollToAnchor(event) {
 
 
 
-// Modo Dark / legth ------------------------------------------------------
-
-
-//------------------------------------------------------------------------
-
-
 
 
 
@@ -55,6 +49,7 @@ menu.addEventListener('click', () => {
 
 
 // Efeito Digitação ----------------------------------------------------------
+
 let texto = "Desenvolvedor Front End."
 const velocidade = 200
 

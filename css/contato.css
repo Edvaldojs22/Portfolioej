@@ -6,7 +6,7 @@
 
 .painel-contatos {
     width: 20vw;
-    height: 40vh;
+    height: 50vh;
     position: relative;
     width: calc(100% - 20%);
     margin: 0 auto;
@@ -19,6 +19,7 @@
     flex-direction: column;
     justify-content: space-between;
     padding-top: 70px;
+    margin-bottom: 50px;
 }
 
 .nome {
@@ -113,6 +114,7 @@
  .titulo-contato{
    
     margin-top: 1000px;
+    margin-bottom: 100px;
  }
 
  .contatos{

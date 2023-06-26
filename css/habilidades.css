@@ -41,7 +41,6 @@
 .caixa-habilidade {
     width: 130px;
     height: 150px;
-    box-shadow: 0 0 20px 2px  var(--cor-vermelho);
     border-radius: 20px;
     text-align: center;
     display: flex;
@@ -66,6 +65,10 @@
     font-weight: 1000;
     color: var(--cor-preto);
 }
+.imgTypeScript{
+    border-radius: 20px;
+}
+
 
 
 @keyframes moveDiv {
