@@ -15,15 +15,15 @@
 
 :root {
     --cor-grey: #d9d9d9;
-    --cor-branco: #fdfdfd;
+    --cor-branco: #000000;
     --cor-preto: #000000;
     --cor-cinza: #737373;
     --cor-vermelho: #ca2929;
     --cor-vermelho-fraco: rgb(191, 87, 87);
 }
 
-.dark:root {
-    --cor-branco: #000000;
+.ligth:root {
+    --cor-branco: #ffffff;
     --cor-preto: #ffffff;
     --cor-grey: #000000;
 
@@ -52,7 +52,7 @@ html {
 body {
     background-color: var(--cor-branco);
     font-family: 'IBM Plex Mono', monospace;
-
+  
 
 }
 
@@ -228,7 +228,7 @@ body {
 
 
 .descricao {
-    color: var(--cor-preto);
+    color: var(--cor-vermelho);
     font-size: 24px;
     margin-top: 30px;
 }
@@ -262,7 +262,7 @@ body {
     scale: 1.1;
 }
 
-.caixaCopy{
+.caixaCopy {
     width: 100%;
     height: 100px;
     background-color: var(--cor-vermelho);

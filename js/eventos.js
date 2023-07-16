@@ -3,25 +3,28 @@
 
 function scrollToAnchor(event) {
     event.preventDefault();
-  
+
     const targetId = event.currentTarget.getAttribute("href");
     const targetElement = document.querySelector(targetId);
-  
+
     if (targetElement) {
-      window.scrollTo({
-        top: targetElement.offsetTop,
-        behavior: "smooth"
-      });
+        window.scrollTo({
+            top: targetElement.offsetTop,
+            behavior: "smooth"
+        });
     }
-  }
-  
-  
-  const smoothScrollLinks = document.querySelectorAll(".smooth-scroll");
-  smoothScrollLinks.forEach(function(link) {
+}
+
+
+const smoothScrollLinks = document.querySelectorAll(".smooth-scroll");
+smoothScrollLinks.forEach(function (link) {
     link.addEventListener("click", scrollToAnchor);
-  });
+});
 
 //-------------------------------------------------------------------------
+
+
+
 
 
 
@@ -33,24 +36,27 @@ function scrollToAnchor(event) {
 //Menu --------------------------------------------------------------------
 const menu = document.querySelector('.logoMenu');
 const menuUm = document.querySelector('.menu');
+const main = document.querySelector('.portifolio');
 let ativado = true
 
 menu.addEventListener('click', () => {
-    if(ativado){
+    if (ativado) {
         menuUm.classList.add('menuUm')
         ativado = false
-    } else{
+    } else {
         menuUm.classList.remove('menuUm')
         ativado = true
     }
 })
+
+
 
 //---------------------------------------------------------------------------
 
 
 // Efeito Digitação ----------------------------------------------------------
 
-let texto = "Desenvolvedor Front End."
+let texto = "Desenvolvedor Full Stack."
 const velocidade = 200
 
 const textoElemento = document.querySelector('.texto-desenvolvedor')
@@ -69,7 +75,7 @@ function exibeLetra(texto, index) {
         }, 4000)
 
         setTimeout(() => {
-            texto = textoElemento.textContent = "Desenvolvedor Front End"
+            texto = textoElemento.textContent = "Desenvolvedor Full Stack."
             exibeLetra(texto, 0)
         }, 4000)
 
@@ -94,18 +100,17 @@ const imgSuporte = document.querySelector(".imgContatos")
 
 botao.addEventListener('click', () => {
 
-    if(botao.checked) {
-        portifolio.classList.add('dark')
-        modo.textContent = "Dark"
-        imgSuporte.src = "css/img/suporteEscuro.png";
-     
-    } else{
-        portifolio.classList.remove('dark')
+    if (botao.checked) {
+        portifolio.classList.add('ligth')
         modo.textContent = "Ligth"
         imgSuporte.src = "css/img/suporteClaro.png";
+
+    } else {
+        portifolio.classList.remove('ligth')
+        modo.textContent = "Dark"
+        imgSuporte.src = "css/img/suporteEscuro.png";
     }
 })
-
 
 
 
@@ -131,7 +136,7 @@ caixaEvento.addEventListener('click', () => {
         caixaQuatro.classList.add('caixaQuatro');
         caixaCinco.classList.add('caixaCinco');
         teste = false
-    } else{
+    } else {
         caixaEvento.style.width = "100px"
         caixaEvento.style.height = "100px"
         caixaUm.classList.remove('caixaUm');
@@ -154,12 +159,13 @@ caixaEvento.addEventListener('click', () => {
 window.addEventListener('scroll', () => {
     var botaoUp = document.querySelector('.botaoUp');
 
-    if(window.scrollY > 300) {
+    if (window.scrollY > 300) {
         botaoUp.classList.add('botaoAtivado')
-    } else{
+    } else {
         botaoUp.classList.remove('botaoAtivado')
     }
 })
+
 
 
 

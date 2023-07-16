@@ -36,7 +36,6 @@
     height: 250px;
     width: calc(100% - 100px);
     
-
 }
 
 .caixa-habilidade {
@@ -49,8 +48,9 @@
     flex-direction: column;
     align-items: center;
     box-shadow: 0 0 10px var(--cor-vermelho);
-    
 }
+
+
 
 .img-habilidades {
     width: 80px;
@@ -66,7 +66,7 @@
 .vscode {
     font-size: 1rem;
     font-weight: 1000;
-    color: var(--cor-preto);
+    color: var(--cor-vermelho);
 }
 .imgTypeScript{
     border-radius: 20px;

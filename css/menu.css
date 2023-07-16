@@ -20,19 +20,22 @@
     z-index: 1;
     top: 0;
     left: 0;
+    
 }
 
+
+
 .menuUm {
-    width: 70px;
-    transition: 0.4s;
-    border-left: solid 10px var(--cor-vermelho);
-    background-color: var(--cor-cinza);
-   
+    width: 80px;
+    background-color: rgb(151, 151, 151);
 }
+
+
 
 .menuUm:hover {
     width: 260px;
-    transition: 0.6s;
+    transition: 1s;
+    
 }
 
 .menu-escondido {
@@ -40,40 +43,44 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 45px 0;
+    padding: 70px 0;
     overflow: hidden;
+    margin-top: 20px;
 
 }
 
 
 .caixa-icons {
     height: 70px;
-    width: 50px;
+    width: 70px;
     cursor: pointer;
-    padding-left: 10px;
+    padding-left: 18px;
     display: flex;
     align-items: center;
     overflow: hidden;
     text-decoration: none;
+    background-color: var(--cor-vermelho);
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+  
+
 }
 
 .caixa-icons:hover {
     background-color: var(--cor-vermelho);
-    border-top-right-radius: 60px;
-    border-bottom-right-radius: 60px;
+   width: 220px;
     transition: 0.4s;
 
 }
 
 .caixa-icons:hover {
-    width: 240px;
     transition: 0.6s;
 }
 
 
 .icons {
     font-size: 30px;
-    color: var(--cor-grey);
+    color: var(--cor-preto);
     margin-right: 40px;
 
 
