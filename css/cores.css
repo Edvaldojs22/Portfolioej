@@ -1,0 +1,25 @@
+.painel-cores {
+    position: relative;
+    left: -30px;
+    top: -40px;
+    width: 0;
+}
+
+#seta{
+    color: white;
+    rotate: 90deg;
+    font-size: 20px;
+    font-weight: 1000;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#seta:hover{
+    background-color: rgba(159, 159, 159, 0.46);
+ 
+}

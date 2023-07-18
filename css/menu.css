@@ -67,7 +67,7 @@
 }
 
 .caixa-icons:hover {
-    background-image: linear-gradient(to right, var(--cor-azul-escuro)10%, var(--cor-branco));
+    background-image: linear-gradient(to right, var(--cor-azul-escuro)10%, white);
    width: 220px;
     transition: 0.9s;
 
@@ -80,7 +80,7 @@
 
 .icons {
     font-size: 30px;
-    color: var(--cor-branco);
+    color: white;
     margin-right: 40px;
 
 

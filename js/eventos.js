@@ -1,3 +1,8 @@
+
+
+alert("Olá, Meu portfólio esta em progresso, em breve, estará completo, com todo o seu brilho. Sinta-se à vontade para dar uma olhada.🤗 ")
+
+
 // Efeito scroll da tela --------------------------------------------------
 
 
@@ -98,17 +103,21 @@ const portifolio = document.querySelector('html')
 let modo = document.querySelector('.modo')
 const imgSuporte = document.querySelector(".imgContatos")
 
+
 botao.addEventListener('click', () => {
 
     if (botao.checked) {
         portifolio.classList.add('ligth')
         modo.textContent = "Ligth"
-        imgSuporte.src = "css/img/suporteClaro.png";
+        imgSuporte.src = "css/img/suporteEscuro.png";
+       
 
     } else {
         portifolio.classList.remove('ligth')
-        modo.textContent = "Dark"
+        modo.textContent = "Dark";
         imgSuporte.src = "css/img/suporteEscuro.png";
+        
+        
     }
 })
 
