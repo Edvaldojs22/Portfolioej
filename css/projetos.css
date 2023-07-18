@@ -12,8 +12,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid 3px var(--cor-vermelho);
-    background-color: var(--cor-vermelho-fraco);
+    border: solid 3px var(--cor-azul-texto);
+    background-color: var(--cor-azul-escuro);
 
 }
 
@@ -51,7 +51,7 @@
 }
 
 .evento:hover {
-    color: var(--cor-vermelho);
+    color: var(--cor-azul-texto);
 }
 
 .caixaUm {

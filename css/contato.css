@@ -27,10 +27,10 @@
     padding: 15px 0;
     text-align: center;
     width: 250px;
-    color: black;
-    background-color: var(--cor-vermelho);
+    color: white;
+    background-color: var(--cor-azul-escuro);
     border-radius: 30px;
-    border: solid 5px rgb(0, 0, 0);
+    border: solid 5px var(--cor-azul-texto);
 }
 
 .telefone,
@@ -41,8 +41,8 @@
 }
 
 .iconeUsuario,.iconeEmail,.iconeContato {
-    background-color: var(--cor-vermelho);
-    color: black;
+    background-color: var(--cor-azul-escuro);
+    color: white;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -51,7 +51,7 @@
     align-items: center;
     font-size: 30px;
     margin-right: 10px;
-    border: solid 5px black;
+    border: solid 5px var(--cor-azul-texto);
 }
 
 .numero {
@@ -59,10 +59,10 @@
     text-align: center;
     width: 300px;
     padding: 15px 0;
-    background-color: var(--cor-vermelho);
-    color: black;
+    background-color: var(--cor-azul-escuro);
+    color: white;
     border-radius: 30px;
-    border: solid 5px black;
+    border: solid 5px var(--cor-azul-texto);
 }
 
 .email {
@@ -70,10 +70,10 @@
     text-align: center;
     width: 500px;
     padding: 15px 0;
-    background-color: var(--cor-vermelho);
-    color: black;
+    background-color: var(--cor-azul-escuro);
+    color:white;
     border-radius: 30px;
-    border: solid 5px black;
+    border: solid 5px var(--cor-azul-texto);
 }
 
 .linkEmail {
@@ -97,7 +97,7 @@
 
 .linkedinDois,.githubDois{
     font-size: 60px;
-    color: var(--cor-vermelho);
+    color: var(--cor-azul-texto);
 }
 
 .linkedinDois:hover{
@@ -136,14 +136,14 @@
     align-items: center;
     font-size: 20px;
     margin-right: 10px;
-    border: solid 2px black;
+    border: solid 2px var(--cor-azul-texto)
 }
  .nome{
     font-size: 17px;
     padding: 5px 0;
     text-align: center;
     width: 150px;
-    border: solid 2px black;
+    border: solid 2px var(--cor-azul-texto)
  }
  .numero {
     font-size: 17px;
@@ -151,7 +151,7 @@
     width: 150px;
     padding: 7px 0;
     border-radius: 30px;
-    border: solid 2px black;
+    border: solid 2px var(--cor-azul-texto)
 }
 
 .iconeEmail{
@@ -163,7 +163,7 @@
     align-items: center;
     font-size: 20px;
     margin-right: 10px;
-    border: solid 2px black;
+    border: solid 2px var(--cor-azul-texto)
 
 }
 
@@ -172,9 +172,8 @@
     text-align: center;
     width: 330px;
     padding: 7px 0;
-    background-color: var(--cor-vermelho);
     border-radius: 30px;
-    border: solid 2px black;
+    border: solid 2px var(--cor-azul-texto)
 }
 
 

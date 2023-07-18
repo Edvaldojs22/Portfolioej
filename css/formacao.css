@@ -35,18 +35,18 @@
     max-width: 400px;
     height:  580px;
     border-radius: 20px;
-    background-color: var(--cor-vermelho);
+    background-color: var(--cor-azul-escuro);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    box-shadow: 0 0 10px var(--cor-vermelho);
+    box-shadow: 0 0 10px var(--cor-azul-escuro);
    
 }
 
 
 .texto-curso {
-    background-color: var(--cor-vermelho-fraco);
+    background-color: var(--cor-azul-texto);
     color: black;
     font-weight: 1000;
     font-size: 20px;
@@ -70,6 +70,7 @@
     text-align: center;
     position: relative;
     margin-bottom: 20px;
+    color: var(--cor-azul-texto);
 }
 
 .texto-alguns::before{
@@ -77,7 +78,7 @@
     position: absolute;
     width: 200px;
     height: 3px;
-    background-color: var(--cor-vermelho-fraco);
+    background-color: var(--cor-azul-texto);
     left: 50%;
     transform: translate(-50%);
     bottom: -10px;
@@ -100,10 +101,10 @@
 .lista li {
     color: black;
     font-size: 13px;
-    font-weight: 100;
+    font-weight: 600;
     width: 100%;
     height: 35px;
-    background-color: var(--cor-vermelho-fraco);
+    background-color: var(--cor-azul-texto);
     border: solid 2px black;
     border-radius: 5px;
     display: flex;
@@ -111,6 +112,7 @@
     padding-left: 20px;   
     position: relative;
 }
+
 li::before{
 content: '';
 position: absolute;
@@ -126,7 +128,7 @@ left: 10px;
     width: 200px;
     height: 100px;
     border-radius: 10px;
-    background-color: var(--cor-vermelho-fraco);  
+    background-color: var(--cor-azul-texto);  
     border: solid 3px black;
     color: black;
     font-size: 17px;
