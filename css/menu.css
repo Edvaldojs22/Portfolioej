@@ -3,7 +3,7 @@
     position: absolute;
     color: white;
     left: 30px;
-    top: 20px;
+    top: 40px;
     cursor: pointer;
     z-index: 2;
 
@@ -45,8 +45,6 @@
     justify-content: space-around;
     padding: 70px 0;
     overflow: hidden;
-    
-
 }
 
 
@@ -97,6 +95,7 @@ span {
     .logoMenu {
        font-size: 20px;
     }
+    
 
     .menu {
         padding: 50px 0 0 0;
@@ -104,11 +103,12 @@ span {
     }
     .menu-escondido{
         padding: 40px 0 10px 0;
+       
     }
 
     .menuUm{
         padding-left: 15px;
-        width: 130px;
+        width: 160px;
         background-color: rgb(168, 168, 168);
         border-radius: 20px;
     }
@@ -120,7 +120,7 @@ span {
     .icons {
         font-size: 20px;
         margin-right: 10px;
-        color: var(--cor-branco);
+       
 
     }
 

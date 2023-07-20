@@ -1,8 +1,8 @@
 .painel-cores {
     position: relative;
-    left: -30px;
     top: -40px;
-    width: 0;
+    left: -40px;
+   
 }
 
 #seta{
@@ -13,13 +13,21 @@
     border-radius: 50%;
     width: 30px;
     height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #seta:hover{
     background-color: rgba(159, 159, 159, 0.46);
  
+}
+
+@media (max-width:600px) {
+    .painel-cores{
+        top: -40px;
+        left: -30px;
+    }
 }
