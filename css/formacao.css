@@ -46,8 +46,8 @@
 
 
 .texto-curso {
-    background-color: var(--cor-azul-texto);
-    color: black;
+    background-color: black;
+    color: var(--cor-azul-texto);
     font-weight: 1000;
     font-size: 20px;
     width: calc(100% - 20%);
@@ -99,12 +99,12 @@
 }
 
 .lista li {
-    color: black;
+    color: var(--cor-azul-texto);
     font-size: 13px;
     font-weight: 600;
     width: 100%;
     height: 35px;
-    background-color: var(--cor-azul-texto);
+    background-color: black;
     border: solid 2px black;
     border-radius: 5px;
     display: flex;
@@ -119,7 +119,7 @@ position: absolute;
 width: 5px;
 height: 5px;
 border-radius: 50%;
-background-color: black;
+background-color: var(--cor-azul-texto);
 left: 10px;
 
 }
@@ -128,9 +128,9 @@ left: 10px;
     width: 200px;
     height: 100px;
     border-radius: 10px;
-    background-color: var(--cor-azul-texto);  
-    border: solid 3px black;
-    color: black;
+    background-color: black;  
+    border: solid 2px var(--cor-azul-texto);
+    color: var(--cor-azul-texto);
     font-size: 17px;
     font-weight: 600;
     margin-bottom: 20px; 
@@ -139,22 +139,27 @@ left: 10px;
     align-items: center;
     box-shadow: inset 0 0 1px;
     text-decoration: none;
+    transition: .3s;
+   
 }
 .curriculo:hover{
-    scale: 1.1;
-    transition: .7s;
+    background-color: var(--cor-azul-texto);
+    color: var(--cor-azul-escuro);
+    border: 2px solid var(--cor-azul-escuro);
 }
 .certificados:hover{
-    scale: 1.1;
-    transition: 0.7s;
+    background-color: var(--cor-azul-texto);
+    color: var(--cor-azul-escuro);
+    border: 2px solid var(--cor-azul-escuro);
 }
 
 .imgIcons{
     font-size: 20px;
     margin-left: 10px;
-    color: black;
+    color: var(--cor-azul-escuro)
   
 }
+
 
 
 @media (max-width:650px) {
