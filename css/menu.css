@@ -20,15 +20,15 @@
     z-index: 1;
     top: 15px;
     left: 12px;
-    
+
 }
 
 
 
 .menuUm {
     width: 75px;
-   
- 
+
+
 }
 
 
@@ -60,14 +60,16 @@
     background-color: var(--cor-vermelho);
     border-top-right-radius: 60px;
     border-bottom-right-radius: 60px;
-  
+
 
 }
 
 .caixa-icons:hover {
-    background-image: linear-gradient(to right, var(--cor-azul-escuro)10%, white);
-   width: 220px;
+    background-image: linear-gradient(to right, var(--cor-azul-escuro)10%, rgb(61, 11, 83));
+    width: 220px;
     transition: 0.9s;
+  
+
 
 }
 
@@ -93,20 +95,21 @@ span {
 @media (max-width: 600px) {
 
     .logoMenu {
-       font-size: 20px;
+        font-size: 20px;
     }
-    
+
 
     .menu {
         padding: 50px 0 0 0;
         border: none;
     }
-    .menu-escondido{
+
+    .menu-escondido {
         padding: 40px 0 10px 0;
-       
+
     }
 
-    .menuUm{
+    .menuUm {
         padding-left: 15px;
         width: 160px;
         background-color: rgb(168, 168, 168);
@@ -120,21 +123,22 @@ span {
     .icons {
         font-size: 20px;
         margin-right: 10px;
-       
+
 
     }
 
     .caixa-icons {
         width: 100px;
         height: 40px;
-       background-color: var(--cor-azul-escuro);
+        background-color: var(--cor-azul-escuro);
         border-radius: 20px;
     }
-    span{
+
+    span {
         color: white;
     }
 
-    .caixa-icons:hover{
+    .caixa-icons:hover {
         width: 100px;
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
