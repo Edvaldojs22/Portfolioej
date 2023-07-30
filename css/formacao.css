@@ -1,192 +1,183 @@
-.painel-formacao {
-    height: 90vh;
-    
+.texto {
+    text-align: center;
+    margin-bottom: 100px;
 }
 
-.painel-formacoes {
+.painel-formacao {
+    height: 80vh;
+    margin-bottom: 800px;
+}
+
+.formacao-faculdade {
+    max-width: 600px;
+    height: 570px;
+    background-color: var(--cor-azul-escuro);
+    border-radius: 10px;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.texto-formacao {
+    background-color: var(--cor-azul-escuro);
+    border-radius: 10px;
+    font-size: 1.3em;
+    padding: 20px;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    margin-top: 100px;
-}
-
-.formacao {
-    text-align: center;
-    margin: 350px 0 300px 0;
-}
-
-.imgCurso {
-    position: absolute;
-    top: -200px;
-    font-size: 80px;
-    color: rgb(8, 8, 113);
-}
-
-.imgDesenvolve {
-    position: absolute;
-    top: -205px;
-    width: 70px;
-    margin: 10px 0;
-}
-
-.painelUm,
-.painelDois {
-    position: relative;
-    max-width: 400px;
-    height:  580px;
-    border-radius: 20px;
-    background-color: var(--cor-azul-escuro);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    box-shadow: 0 0 10px var(--cor-azul-escuro);
-   
-}
-
-
-.texto-curso {
-    background-color: black;
-    color: var(--cor-azul-texto);
-    font-weight: 1000;
-    font-size: 20px;
-    width: calc(100% - 20%);
-    height: 100px;
     border-radius: 10px;
-    margin: 30px 0;
-    text-align: center;
-    padding: 10px 0;
-}
-
-.texto-alguns{
-    font-size: 16px;
-    font-weight: 500;
-    width: calc(100% - 30%);
-    height: 30px;
-    border-radius: 7px;
-    color: black;
-    font-weight: 800;
-    font-size: 17px;
-    text-align: center;
-    position: relative;
-    margin-bottom: 20px;
     color: var(--cor-azul-texto);
 }
 
-.texto-alguns::before{
-    content: '';
-    position: absolute;
-    width: 200px;
-    height: 3px;
-    background-color: var(--cor-azul-texto);
-    left: 50%;
-    transform: translate(-50%);
-    bottom: -10px;
-    filter: blur(1.2px);
-    
+.fa-arrow-down {
+    position: relative;
+    animation: pulo 1s infinite linear;
 }
 
-.lista {
-    width: calc(100% - 10%);
-    height: calc(100% - 10px);
-    border-radius: 20px;
+.fa-arrow-down:hover {
+    cursor: pointer;
+    animation: none;
+}
+
+@keyframes pulo {
+
+    0% {
+        top: 8px;
+    }
+
+    50% {
+        top: 0;
+    }
+
+    100% {
+        top: 8px
+    }
+
+}
+
+
+.texto-materias {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--cor-azul-texto);
+
+}
+
+.lista-formacao {
+    height: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: center ;
+    justify-content: space-around;
     align-items: center;
-    gap:10px;
+    color: var(--cor-azul-texto);
+    padding: 0 10px;
+
 
 }
 
-.lista li {
-    color: var(--cor-azul-texto);
-    font-size: 13px;
-    font-weight: 600;
+.lista-formacao li {
     width: 100%;
     height: 35px;
-    background-color: black;
-    border: solid 2px black;
-    border-radius: 5px;
     display: flex;
     align-items: center;
-    padding-left: 20px;   
-    position: relative;
+    padding-left: 20px;
+    padding: 10px;
+    background-color: black;
+    border-radius: 5px;
 }
 
-li::before{
-content: '';
-position: absolute;
-width: 5px;
-height: 5px;
-border-radius: 50%;
-background-color: var(--cor-azul-texto);
-left: 10px;
-
-}
-
-.curriculo, .certificados{
-    width: 200px;
-    height: 100px;
+.botao-curriculo,.certificados{
+    width: 180px;
+    height: 70px;
     border-radius: 10px;
-    background-color: black;  
+    background-color: black;
     border: solid 2px var(--cor-azul-texto);
     color: var(--cor-azul-texto);
     font-size: 17px;
     font-weight: 600;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: inset 0 0 1px;
     text-decoration: none;
     transition: .3s;
-   
+    margin: 20px auto;
 }
-.curriculo:hover{
+
+.fa-download {
+    margin-left: 10px;
+}
+
+.botao-curriculo:hover {
     background-color: var(--cor-azul-texto);
     color: var(--cor-azul-escuro);
     border: 2px solid var(--cor-azul-escuro);
 }
+
 .certificados:hover{
     background-color: var(--cor-azul-texto);
     color: var(--cor-azul-escuro);
     border: 2px solid var(--cor-azul-escuro);
 }
 
-.imgIcons{
-    font-size: 20px;
-    margin-left: 10px;
-    color: var(--cor-azul-escuro)
-  
+
+.formacao-curso {
+    max-width: 800px;
+    height: 570px;
+    background-color: var(--cor-azul-escuro);
+    border-radius: 10px;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.container {
+display: flex;
+justify-content: end;
+}
+
+.texto-formacao-curso {
+    background-color: var(--cor-azul-escuro);
+    border-radius: 10px;
+    font-size: 1.3em;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    color: var(--cor-azul-texto);
+    margin-bottom: 30px;
+    
+}
+.seta-curso{
+    margin-left: 20px;
 }
 
 
+.texto-materias-curso{
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--cor-azul-texto);
 
-@media (max-width:650px) {
+}
+
+.lista-formacao-curso{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--cor-azul-texto);
+    padding: 0 10px;
 
 
-    .painel-formacoes{
-        display: flex;
-        flex-direction: column;
-        gap: 150px;
-    }
-    .painelDois{
-        margin-bottom: 30px;
-    }
-    .titulo{
-        margin: 200px 0 150px 0;
-       
-    }
+}
 
-        
-    }
-    .imgCurso{
-        top: -100px;
-    }
-    .imgDesenvolve{
-        top: -120px;
-    }
-
-    
-    
+.lista-formacao-curso li{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding: 10px;
+    background-color: black;
+    border-radius: 5px;
 }
