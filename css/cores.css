@@ -1,32 +1,33 @@
 .painel-cores {
     position: relative;
     top: -40px;
-    left: -40px;
-   
+    left: -55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
-#seta{
-    color: white;
-    rotate: 90deg;
-    font-size: 20px;
-    font-weight: 1000;
+#seta {
+    width: 20px;
+    height: 20px;
+    background-color: var(--cor-roxo-escuro);
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
     text-align: center;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 1px;
+    border: solid 1px var(--cor-branco);
+
 }
 
-#seta:hover{
-    background-color: rgba(159, 159, 159, 0.46);
- 
+.cor {
+    color: var(--cor-roxo-escuro);
+    text-align: start;
+    font-size: 13px;
 }
 
 @media (max-width:600px) {
-    .painel-cores{
+    .painel-cores {
         top: -40px;
         left: -30px;
     }

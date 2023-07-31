@@ -1,32 +1,33 @@
-.painel-botao{
- position: absolute;
- right: 30px;
- top: 40px;
- text-align: center;
- z-index: 1;
- width: 50px;
- height: 30px;
- 
+.painel-botao {
+    position: absolute;
+    right: 30px;
+    top: 40px;
+    text-align: center;
+    z-index: 1;
+    width: 50px;
+    height: 30px;
+
 }
 
-#check{
-    background-color: var(--cor-preto);
+#check {
+    background-color: var(--cor-branco);
     width: 20px;
     height: 20px;
     border-radius: 5px;
-   appearance: none;
-   cursor: pointer;
+    appearance: none;
+    cursor: pointer;
 }
 
-.modo{
+
+.modo {
     font-size: 10px;
-    color: white;
+    color: var(--cor-branco);
 }
 
 @media (max-width: 600px) {
-    .painel-botao{
+    .painel-botao {
         right: 8px;
         top: 45px;
     }
-    
+
 }

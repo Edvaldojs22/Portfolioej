@@ -1,7 +1,7 @@
 .logoMenu {
     font-size: 30px;
     position: absolute;
-    color: white;
+    color: var(--cor-branco);
     left: 30px;
     top: 40px;
     cursor: pointer;
@@ -20,22 +20,14 @@
     z-index: 1;
     top: 15px;
     left: 12px;
-
 }
-
-
 
 .menuUm {
     width: 75px;
-
-
 }
-
-
 
 .menuUm:hover {
     width: 260px;
-
 }
 
 .menu-escondido {
@@ -65,12 +57,10 @@
 }
 
 .caixa-icons:hover {
-    background-image: linear-gradient(to right, black 10%, var(--cor-roxo-escuro));
+    background-image: linear-gradient(to right, var(--cor-preto), var(--cor-roxo-escuro));
     width: 220px;
     transition: 0.9s;
   
-
-
 }
 
 .caixa-icons:hover {
@@ -80,16 +70,15 @@
 
 .icons {
     font-size: 30px;
-    color:white;
+    color:var(--cor-branco);
     margin-right: 40px;
-
 
 }
 
 span {
     font-size: 19px;
     font-weight: 800;
-    color: white;
+    color: var(--cor-branco);
 }
 
 @media (max-width: 600px) {
