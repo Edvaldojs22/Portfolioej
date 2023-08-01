@@ -52,7 +52,7 @@ html {
 
 body {
     font-family: 'Noto sans Adlam Unjoined', cursive;
-    ;
+    background-color: var(--cor-preto);
 }
 
 /* .portifolio {
@@ -70,9 +70,8 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 200px;
-    height: 130vh;
-    background-image: linear-gradient(to bottom, var(--cor-preto) 40%,  var(--cor-preto) 80%, white);
+    height: 100vh;
+    background-color:var(--cor-preto)
 }
 
 
@@ -250,68 +249,53 @@ body {
 
 
 .painel-sobre-mim {
-    height: 70vh;
+    height: 100vh;
 }
 
 .painel-perfil-imgDois {
-    display: flex;
-    justify-content: end;
-    margin-right: 10vw;
-    margin-top: 10px;
+  text-align: end;
+  margin-right: 100px;
 }
-
-.apresentacao {
-    text-align: end;
-    margin: 40px 0 90px 0;
-
-}
-
 
 .imgDois {
     margin-top: 50px;
     width: 400px;
-    border-radius: 50%;
-    background-color: var(--cor-azul-escuro);
-
+    background-color: var(--cor-preto);
+    background-color: transparent;
+    
 }
+
+.apresentacao {
+    text-align: start;
+    width: 100%;
+  
+}
+
 
 .informacoes {
     text-align: start;
-    padding: 0 150px;
-    width: 90%;
 }
 
 .texto {
-    color: var(--cor-azul-texto);
+    color: var(--cor-roxo-escuro);
     font-size: 80px;
 }
 
 .sobre-mim {
-    font-size: 24px;
-    color: var(--cor-preto);
+    text-align: start;
+    margin-bottom:30px;
 }
 
-.sobre {
-    position: relative;
-    margin-right: 10px;
+.sobre-mim span{
+    color: var(--cor-branco);
 }
-
-.sobre::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    border-radius: 30px;
-    background-color: var(--cor-azul);
-    left: 0;
-    bottom: -10px;
-}
-
 
 .descricao {
     color: var(--cor-branco);
     font-size: 24px;
-    margin-top: 30px;
+    text-align: start;
+    margin: 0;
+    
 }
 
 
