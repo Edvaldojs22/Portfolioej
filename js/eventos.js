@@ -29,14 +29,6 @@ smoothScrollLinks.forEach(function (link) {
 
 
 
-
-
-
-
-
-
-
-
 //Menu --------------------------------------------------------------------
 const menu = document.querySelector('.logoMenu');
 const menuUm = document.querySelector('.menu');
@@ -52,16 +44,14 @@ menu.addEventListener('click', () => {
         ativado = true
     }
 })
-
-
-
 //---------------------------------------------------------------------------
+
 
 
 // Efeito Digitação ----------------------------------------------------------
 
 let texto = "Desenvolvedor Full Stack."
-const velocidade = 200
+const velocidade = 100
 
 const textoElemento = document.querySelector('.texto-desenvolvedor')
 
@@ -94,7 +84,7 @@ exibeLetra(texto, 0)
 
 
 
-// Modo Dark / ligth
+// Modo Dark / ligth / cores
 
 
 const botao = document.querySelector('.botao');
@@ -109,16 +99,38 @@ botao.addEventListener('click', () => {
         portifolio.classList.add('ligth')
         modo.textContent = "Ligth"
         imgSuporte.src = "css/img/suporteEscuro.png";
-       
+
 
     } else {
         portifolio.classList.remove('ligth')
         modo.textContent = "Dark";
         imgSuporte.src = "css/img/suporteEscuro.png";
-        
-        
+
+
     }
 })
+
+
+const cor = document.querySelector('#seta');
+const painelCores = document.querySelector('.painel-opcao');
+let t = true
+cor.addEventListener('click', () => {
+   
+
+    if (t) {
+        painelCores.style.display = 'flex';
+        t = false;
+    } else {
+        painelCores.style.display = 'none';
+        t = true
+    }
+
+})
+
+
+
+
+
 
 
 

@@ -11,7 +11,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 :root {
@@ -20,8 +19,6 @@
     --cor-branco: #e9e9e9;
     --cor-azul-texto: #598ae4;
     --cor-roxo-escuro: #8c52ff;
-
-
 }
 
 .ligth:root {
@@ -30,8 +27,6 @@
     --cor-roxo-escuro: #8c52ff;
 
 }
-
-
 
 html {
     animation: opasity 1s;
@@ -45,10 +40,7 @@ html {
     to {
         opacity: 1;
     }
-
 }
-
-
 
 body {
     font-family: 'Noto sans Adlam Unjoined', cursive;
@@ -61,9 +53,7 @@ body {
 } */
 
 .conteudo {
-    padding: 0 7vw;
-
-
+    padding: 0 5em;
 }
 
 .painel-perfil {
@@ -71,9 +61,8 @@ body {
     justify-content: center;
     flex-direction: column;
     height: 100vh;
-    background-color:var(--cor-preto)
+    background-color: var(--cor-preto)
 }
-
 
 .perfil-img {
     text-align: center;
@@ -82,8 +71,6 @@ body {
     bottom: 50%;
     transform: translate(-50%, 50%);
     margin-top: 160px;
-
-
 }
 
 .imgUm {
@@ -101,9 +88,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-
 }
-
 
 .texto-nome {
     text-align: start;
@@ -142,9 +127,6 @@ body {
     color: var(--cor-roxo-escuro);
 }
 
-
-
-
 .painel-texto-efeito {
     width: 280px;
     height: 40px;
@@ -154,12 +136,10 @@ body {
     text-align: start;
 }
 
-
 .painel-texto-efeito p {
     color: var(--cor-branco);
     font-weight: 600;
     font-size: 18px;
-
 }
 
 .texto-desenvolvedor {
@@ -192,15 +172,12 @@ body {
     border: solid 1px white;
 }
 
-
 .pisca {
     font-weight: 1000;
     animation: pisca 0.5s infinite linear;
     color: black;
     display: inline-block;
 }
-
-
 
 @keyframes pisca {
     from {
@@ -212,12 +189,10 @@ body {
     }
 }
 
-
-
 .links {
     display: flex;
     width: 220px;
-    margin: 100px auto 0;
+    margin: 450px auto 0;
     justify-content: space-around;
 }
 
@@ -253,8 +228,8 @@ body {
 }
 
 .painel-perfil-imgDois {
-  text-align: end;
-  margin-right: 100px;
+    text-align: end;
+    margin-right: 100px;
 }
 
 .imgDois {
@@ -262,13 +237,13 @@ body {
     width: 400px;
     background-color: var(--cor-preto);
     background-color: transparent;
-    
+
 }
 
 .apresentacao {
     text-align: start;
     width: 100%;
-  
+
 }
 
 
@@ -283,10 +258,10 @@ body {
 
 .sobre-mim {
     text-align: start;
-    margin-bottom:30px;
+    margin-bottom: 30px;
 }
 
-.sobre-mim span{
+.sobre-mim span {
     color: var(--cor-branco);
 }
 
@@ -295,7 +270,7 @@ body {
     font-size: 24px;
     text-align: start;
     margin: 0;
-    
+
 }
 
 
@@ -306,7 +281,7 @@ body {
     bottom: 120px;
     right: 50px;
     border-radius: 50%;
-    background-color: var(--cor-azul-texto);
+    background-color: var(--cor-roxo-escuro);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -317,7 +292,7 @@ body {
 
 .fa-arrow-up {
     font-size: 30px;
-    color: var(--cor-azul-escuro);
+    color: var(--cor-preto);
 }
 
 
@@ -329,8 +304,8 @@ body {
 .caixaCopy {
     width: 100%;
     height: 100px;
-    background-color: var(--cor-azul-escuro);
-    color: white;
+    background-color: var(--cor-roxo-escuro);
+    color: var(--cor-preto);
     display: flex;
     align-items: center;
     justify-content: center;

@@ -26,6 +26,17 @@
     font-size: 13px;
 }
 
+.painel-opcao{
+    width:80px;
+    height: 250px;
+    background-color: rgb(160, 160, 160);
+    border-radius: 20px;
+    display: none;
+}
+
+
+
+
 @media (max-width:600px) {
     .painel-cores {
         top: -40px;

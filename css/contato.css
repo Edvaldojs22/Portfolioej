@@ -28,7 +28,7 @@
     text-align: center;
     width: 250px;
     color: white;
-    background-color: var(--cor-azul-escuro);
+    background-color: var(--cor-roxo-escuro);
     border-radius: 30px;
     border: solid 5px var(--cor-azul-texto);
 }
@@ -101,7 +101,7 @@
 .linkedinDois,
 .githubDois {
     font-size: 60px;
-    color: var(--cor-azul-texto);
+    color: var(--cor-roxo-escuro);
 }
 
 .linkedinDois:hover {
