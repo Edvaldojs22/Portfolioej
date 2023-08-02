@@ -341,6 +341,11 @@ body {
 
 @media (max-width:650px) {
 
+    .perfil-img{
+        left: 140px;
+        top: -100px;
+    }
+
     .conteudo {
         padding: 20px;
     }
