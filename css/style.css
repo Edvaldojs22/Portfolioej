@@ -21,12 +21,37 @@
     --cor-roxo-escuro: #8c52ff;
 }
 
+.corRed:root {
+    --cor-roxo-escuro: #ff5252;
+}
+
+.corBlue:root {
+    --cor-roxo-escuro: #5360ed;
+}
+
+.corYellow:root {
+    --cor-roxo-escuro: #eaed53;
+}
+
+.corGreen:root {
+    --cor-roxo-escuro: #53ed53;
+}
+
+.corPink:root {
+    --cor-roxo-escuro: #ed53ed;
+}
+
+.corPurple:root {
+    --cor-roxo-escuro: #8c52ff;
+}
+
+
 .ligth:root {
     --cor-preto: #ffffff;
     --cor-branco: #000000;
-    --cor-roxo-escuro: #8c52ff;
-
 }
+
+
 
 html {
     animation: opasity 1s;

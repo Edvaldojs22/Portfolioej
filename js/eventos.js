@@ -1,5 +1,5 @@
 
-// alert("Olá, Meu portfólio esta em progresso, em breve, estará completo, com todo o seu brilho. Sinta-se à vontade para dar uma olhada.🤗 ")
+alert("Olá, Meu portfólio esta em progresso, em breve, estará completo, com todo o seu brilho. Sinta-se à vontade para dar uma olhada.🤗 ")
 
 
 // Efeito scroll da tela --------------------------------------------------
@@ -104,10 +104,73 @@ botao.addEventListener('click', () => {
     }
 })
 
-const cor = document.querySelector('#seta');
+
+const red = document.querySelector('#red');
+const blue = document.querySelector('#blue');
+const yellow = document.querySelector('#yellow');
+const grenn = document.querySelector('#green');
+const pink = document.querySelector('#pink');
+const purple = document.querySelector('#purple')
+const listaCores = [red, blue, yellow, grenn, pink, purple]
+
+listaCores.forEach((cor) => {
+    cor.addEventListener('click', () => {
+        if (cor.id == 'red') {
+            portifolio.classList.remove('corPink');
+            portifolio.classList.remove('corGreen');
+            portifolio.classList.remove('corYellow');
+            portifolio.classList.remove('corBlue');
+            portifolio.classList.add('corRed');
+
+        } else if (cor.id == 'blue') {
+            portifolio.classList.remove('corPink');
+            portifolio.classList.remove('corGreen');
+            portifolio.classList.remove('corYellow');
+            portifolio.classList.remove('corRed');
+            portifolio.classList.add('corBlue');
+
+        } else if (cor.id == 'yellow') {
+            portifolio.classList.remove('corPink');
+            portifolio.classList.remove('corGreen');
+            portifolio.classList.remove('corBlue');
+            portifolio.classList.add('corRed');
+            portifolio.classList.add('corYellow');
+
+        } else if (cor.id == 'green') {
+            portifolio.classList.remove('corPink');
+            portifolio.classList.remove('corBlue');
+            portifolio.classList.remove('corRed');
+            portifolio.classList.remove('corYellow');
+            portifolio.classList.add('corGreen');
+
+        } else if (cor.id == 'pink') {
+            portifolio.classList.remove('corGreen');
+            portifolio.classList.remove('corBlue');
+            portifolio.classList.remove('corRed');
+            portifolio.classList.remove('corYellow');
+            portifolio.classList.remove('corGreen');
+            portifolio.classList.add('corPink')
+
+        } else if (cor.id == 'purple') {
+            portifolio.classList.remove('corGreen');
+            portifolio.classList.remove('corBlue');
+            portifolio.classList.remove('corRed');
+            portifolio.classList.remove('corYellow');
+            portifolio.classList.remove('corGreen');
+            portifolio.classList.remove('corPink');
+            portifolio.classList.remove('corPink')
+        }
+    })
+})
+
+
+
+
+
+const corSeta = document.querySelector('#seta');
 const painelCores = document.querySelector('.painel-opcao');
 let t = true
-cor.addEventListener('click', () => {
+corSeta.addEventListener('click', () => {
 
     if (t) {
         painelCores.style.display = 'flex';
@@ -174,13 +237,13 @@ window.addEventListener('scroll', () => {
 const sr = ScrollReveal();
 
 
-sr.reveal('.painel-sobre-mim, .painel-habilidadesUm, .painel-projetosUm, .painel-formacao, .painel-contatos',{
-  origin: 'bottom',
-  distance: '20px', 
-  duration: 1300, 
-  delay: 200, 
-  easing: 'ease-out', 
-  reset: true, 
+sr.reveal('.painel-sobre-mim, .painel-habilidadesUm, .painel-projetosUm, .painel-formacao, .painel-contatos', {
+    origin: 'bottom',
+    distance: '20px',
+    duration: 1300,
+    delay: 200,
+    easing: 'ease-out',
+    reset: true,
 });
 
 
