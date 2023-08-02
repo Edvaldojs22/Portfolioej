@@ -316,15 +316,85 @@ body {
 
 @media (max-width:650px) {
 
-    .painel-perfil {
-        margin-bottom: 100px;
+    .conteudo {
+        padding: 20px;
     }
 
     .imgUm {
         width: 200px;
-        border: solid 6px white;
-
+        border: solid 3px var(--cor-roxo-escuro);
     }
+
+    .painel-texto-nome {
+        width: 100px;
+        left: -80px;
+        bottom: 0;
+    }
+
+    .texto-nome {
+        text-align: start;
+        font-size: 13px;
+        font-weight: 600;
+        position: relative;
+        color: var(--cor-branco);
+    }
+
+    .texto-nome::after {
+        content: '';
+        position: absolute;
+        width: 100px;
+        height: 3px;
+        background-color: var(--cor-roxo-escuro);
+        bottom: 0px;
+        left: -7px;
+    }
+
+    .texto-nome::before {
+        left: -25px;
+        top: 10px;
+    }
+
+    .texto-idade {
+        font-size: 10px;
+        padding: 0 10px 40px;
+    }
+
+    .painel-texto-efeito {
+        top: -40px;
+        right: -140px;
+    }
+
+    .painel-texto-efeito::before {
+        right: 80px;
+        top: 33px;
+        width: 6px;
+        height: 6px;
+    }
+
+    .texto-desenvolvedor::after {
+        content: '';
+        width: 180px;
+        height: 3px;
+        background-color: var(--cor-roxo-escuro);
+        position: absolute;
+        bottom: -8px;
+        left: 0px;
+        border-radius: 2px;
+    }
+
+
+    .painel-texto-efeito .texto-desenvolvedor {
+        font-size: 13px;
+    }
+
+
+
+
+
+
+
+
+
 
     .imgDois {
         width: 200px;

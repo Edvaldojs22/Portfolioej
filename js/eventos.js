@@ -1,10 +1,8 @@
 
-alert("Olá, Meu portfólio esta em progresso, em breve, estará completo, com todo o seu brilho. Sinta-se à vontade para dar uma olhada.🤗 ")
+// alert("Olá, Meu portfólio esta em progresso, em breve, estará completo, com todo o seu brilho. Sinta-se à vontade para dar uma olhada.🤗 ")
 
 
 // Efeito scroll da tela --------------------------------------------------
-
-
 function scrollToAnchor(event) {
     event.preventDefault();
 
@@ -49,7 +47,6 @@ menu.addEventListener('click', () => {
 
 
 // Efeito Digitação ----------------------------------------------------------
-
 let texto = "Desenvolvedor Full Stack."
 const velocidade = 100
 
@@ -78,15 +75,12 @@ function exibeLetra(texto, index) {
 }
 
 exibeLetra(texto, 0)
-
 //------------------------------------------------------------------------------
 
 
 
 
 // Modo Dark / ligth / cores
-
-
 const botao = document.querySelector('.botao');
 const portifolio = document.querySelector('html')
 let modo = document.querySelector('.modo')
@@ -110,12 +104,10 @@ botao.addEventListener('click', () => {
     }
 })
 
-
 const cor = document.querySelector('#seta');
 const painelCores = document.querySelector('.painel-opcao');
 let t = true
 cor.addEventListener('click', () => {
-   
 
     if (t) {
         painelCores.style.display = 'flex';
@@ -126,14 +118,7 @@ cor.addEventListener('click', () => {
     }
 
 })
-
-
-
-
-
-
-
-
+// ---------------------------------------------------------------------------------
 
 
 // Efeito Caixa Projetos -------------------------------------------------------
@@ -170,11 +155,9 @@ caixaEvento.addEventListener('click', () => {
 
 
 })
-
-
+// ---------------------------------------------------------------------------------
 
 // Botao Up
-
 
 window.addEventListener('scroll', () => {
     var botaoUp = document.querySelector('.botaoUp');
@@ -185,6 +168,20 @@ window.addEventListener('scroll', () => {
         botaoUp.classList.remove('botaoAtivado')
     }
 })
+
+
+
+const sr = ScrollReveal();
+
+
+sr.reveal('.painel-sobre-mim, .painel-habilidadesUm, .painel-projetosUm, .painel-formacao, .painel-contatos',{
+  origin: 'bottom',
+  distance: '20px', 
+  duration: 1300, 
+  delay: 200, 
+  easing: 'ease-out', 
+  reset: true, 
+});
 
 
 

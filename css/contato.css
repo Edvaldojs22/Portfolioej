@@ -22,65 +22,6 @@
     margin-bottom: 50px;
 }
 
-.nome {
-    font-size: 25px;
-    padding: 15px 0;
-    text-align: center;
-    width: 250px;
-    color: white;
-    background-color: var(--cor-roxo-escuro);
-    border-radius: 30px;
-    border: solid 5px var(--cor-azul-texto);
-}
-
-.telefone,
-.linkEmail,
-.usuario {
-    display: flex;
-    align-items: center;
-}
-
-.iconeUsuario,
-.iconeEmail,
-.iconeContato {
-    background-color: var(--cor-azul-escuro);
-    color: white;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    margin-right: 10px;
-    border: solid 5px var(--cor-azul-texto);
-}
-
-.numero {
-    font-size: 30px;
-    text-align: center;
-    width: 300px;
-    padding: 15px 0;
-    background-color: var(--cor-azul-escuro);
-    color: white;
-    border-radius: 30px;
-    border: solid 5px var(--cor-azul-texto);
-}
-
-.email {
-    font-size: 25px;
-    text-align: center;
-    width: 500px;
-    padding: 15px 0;
-    background-color: var(--cor-azul-escuro);
-    color: white;
-    border-radius: 30px;
-    border: solid 5px var(--cor-azul-texto);
-}
-
-.linkEmail {
-    text-decoration: none;
-}
 
 .imgContatos {
     width: 22vw;
@@ -91,12 +32,6 @@
 
 }
 
-.linksDois {
-    width: 300px;
-    display: flex;
-    justify-content: space-around;
-    margin: 0 auto;
-}
 
 .linkedinDois,
 .githubDois {
