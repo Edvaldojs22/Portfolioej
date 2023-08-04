@@ -60,7 +60,7 @@
     background-image: linear-gradient(to right, var(--cor-preto), var(--cor-roxo-escuro));
     width: 220px;
     transition: 0.9s;
-  
+
 }
 
 .caixa-icons:hover {
@@ -70,7 +70,7 @@
 
 .icons {
     font-size: 30px;
-    color:var(--cor-branco);
+    color: var(--cor-branco);
     margin-right: 40px;
 
 }
@@ -85,12 +85,17 @@ span {
 
     .logoMenu {
         font-size: 20px;
+        top: 20px;
     }
 
 
     .menu {
         padding: 50px 0 0 0;
         border: none;
+        left: 0;
+        top: 0;
+        border-radius: 0;
+        height: 400px;
     }
 
     .menu-escondido {
@@ -102,25 +107,24 @@ span {
         padding-left: 15px;
         width: 160px;
         background-color: rgb(168, 168, 168);
-        border-radius: 20px;
+       
+    }
+    .menu:hover{
+        width: 160px;
     }
 
-    .menuUm:hover {
-        width: 150px;
-    }
 
     .icons {
         font-size: 20px;
         margin-right: 10px;
-
-
+        color: black;
     }
 
     .caixa-icons {
-        width: 100px;
+        width: 120px;
         height: 40px;
-        background-color: var(--cor-azul-escuro);
         border-radius: 20px;
+        border: solid 2px var(--cor-roxo-escuro);
     }
 
     span {
@@ -128,14 +132,14 @@ span {
     }
 
     .caixa-icons:hover {
-        width: 100px;
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px;
+        width: 120px;
+        background: none;
 
     }
 
     .caixa-icons span {
         font-size: 10px;
+        color: black;
     }
 
 

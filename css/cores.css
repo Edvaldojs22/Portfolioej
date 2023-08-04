@@ -10,13 +10,11 @@
 #seta {
     width: 20px;
     height: 20px;
+    border-radius: 5px;
     background-color: var(--cor-roxo-escuro);
-    border-radius: 50%;
     text-align: center;
     cursor: pointer;
     margin: 1px;
-    border: solid 1px var(--cor-branco);
-
 }
 
 .texto-cor {
@@ -27,54 +25,69 @@
 }
 
 .painel-opcao {
-    width: 270px;
-    height: 35px;
+    width: 300px;
+    height: 40px;
     background-color: var(--cor-branco);
-    border-bottom-left-radius:20px;
-    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 17px;
+    border-bottom-right-radius: 17px;
     display: none;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
     overflow: hidden;
-    margin: 0 auto ;
+    margin: 0 auto;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    padding-left: 20px;
+    z-index: 1;
+}
+
+.fa-eye-slash{
+    padding: 8px;
+    color: var(--cor-preto);
+    cursor: pointer;
+}
+
+.fa-eye-slash:hover{
+    scale: 1.2;
+
 }
 
 .cor {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    border-radius: 5px;
     cursor: pointer;
-    box-shadow: 0 0 5px ;
+    box-shadow: 0 0 2px;
 }
 
-.cor:hover{
+.cor:hover {
     scale: 1.1;
 
 }
 
 .cor_red {
-    background-color:  #ff5252;
-    box-shadow: 0 0 5px ;
+    background-color: #a42929;
 }
 
 .cor_blue {
-    background-color:  #5360ed;
+    background-color: #5360ed;
 }
 
-.cor_yellow{
-    background-color:  #e7e42e;
+.cor_yellow {
+    background-color: #c0bd22;
 }
 
-.cor_green{
-    background-color:  #4ce35b;
+.cor_green {
+    background-color: #36c344;
 }
 
 .cor_pink {
-    background-color:  #e248e2;
+    background-color: #e248e2;
 }
 
-.cor_purple{
+.cor_purple {
     background-color: #8c52ff;
 }
 
@@ -86,30 +99,26 @@
 
 @media (max-width:600px) {
 
-    .painel-opcao{
-        width: 50px;
-        height: 240px;
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        right: 0;
-        top: 230px;
-        border-top-left-radius:20px;
+    .painel-opcao {
+        width: 320px;
+        height: 50px;
+        border-top-left-radius: 17px;
+        border-top-right-radius: 17px;
+        border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
-        z-index: 1;
-        gap: 15px;
-    }
-    .cor{
-        width: 25px;
-        height: 25px;
+        position: fixed;
+        bottom: 0;
+        padding-block-start: 0;
     }
 
+    .cor {
+        width: 30px;
+        height: 30px;
+    }
     
-    .painel-cores {
-        top: -40px;
-        left: -50px;
-        
+    .fa-eye-slash{
+        padding: 7px;
+        margin-right: 8px;
+        font-size: 22px;
     }
 }

@@ -52,9 +52,13 @@
 
 @media (max-width:600px) {
     .titulo-contato {
+       margin-bottom: 0;
+    }
 
-        margin-top: 1000px;
-        margin-bottom: 100px;
+    
+    .painel-contatos {
+        width: 100%;
+        margin: 50px auto;
     }
 
     .contatos {
@@ -63,11 +67,6 @@
 
     }
 
-    .painel-contatos {
-        width: 100%;
-
-
-    }
 
     .iconeUsuario,
     .iconeContato {

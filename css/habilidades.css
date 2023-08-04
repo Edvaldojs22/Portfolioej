@@ -94,6 +94,10 @@
 
 @media (max-width:600px) {
 
+    .painel-habilidadesUm{
+        margin-top: 100px;
+    }
+
     .painel-texto-skill {
         margin-top: 600px;
     }

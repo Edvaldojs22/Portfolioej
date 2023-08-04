@@ -1,5 +1,5 @@
 
-alert("Olá, Meu portfólio esta em progresso, em breve, estará completo, com todo o seu brilho. Sinta-se à vontade para dar uma olhada.🤗 ")
+alert("Olá, Meu portfólio esta em progresso, em breve estará completo,  Sinta-se à vontade para dar uma olhada.🤗 ")
 
 
 // Efeito scroll da tela --------------------------------------------------
@@ -30,7 +30,7 @@ smoothScrollLinks.forEach(function (link) {
 //Menu --------------------------------------------------------------------
 const menu = document.querySelector('.logoMenu');
 const menuUm = document.querySelector('.menu');
-const main = document.querySelector('.portifolio');
+const header =document.querySelector('.painel-perfil')
 let ativado = true
 
 menu.addEventListener('click', () => {
@@ -86,24 +86,18 @@ const portifolio = document.querySelector('html')
 let modo = document.querySelector('.modo')
 const imgSuporte = document.querySelector(".imgContatos")
 
-
 botao.addEventListener('click', () => {
 
     if (botao.checked) {
         portifolio.classList.add('ligth')
         modo.textContent = "Ligth"
         imgSuporte.src = "css/img/suporteEscuro.png";
-
-
     } else {
         portifolio.classList.remove('ligth')
         modo.textContent = "Dark";
         imgSuporte.src = "css/img/suporteEscuro.png";
-
-
     }
 })
-
 
 const red = document.querySelector('#red');
 const blue = document.querySelector('#blue');
@@ -164,23 +158,20 @@ listaCores.forEach((cor) => {
 })
 
 
-
-
-
 const corSeta = document.querySelector('#seta');
 const painelCores = document.querySelector('.painel-opcao');
 let t = true
 corSeta.addEventListener('click', () => {
-
-    if (t) {
-        painelCores.style.display = 'flex';
-        t = false;
-    } else {
-        painelCores.style.display = 'none';
-        t = true
-    }
+    painelCores.style.display = 'flex'
 
 })
+
+
+document.querySelector('#esconder').addEventListener('click', () => {
+    painelCores.style.display = 'none';
+})
+
+
 // ---------------------------------------------------------------------------------
 
 

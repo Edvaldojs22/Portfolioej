@@ -23,12 +23,19 @@
     overflow: hidden;
     transition: 1s;
 }
+.formacao-faculdade span{
+    display: none;
+}
+.formacao-curso span{
+    display: none;
+}
 
 
-.painel-formacao:hover .formacao-faculdade{
+.painel-formacao:hover .formacao-faculdade {
     height: 47%;
 }
-.painel-formacao:hover .formacao-curso{
+
+.painel-formacao:hover .formacao-curso {
     height: 47%;
 }
 
@@ -93,9 +100,6 @@
 }
 
 
-
-
-
 .lista-formacao li,
 .lista-formacao-curso li {
     width: 100%;
@@ -144,7 +148,61 @@
     border: 2px solid var(--cor-roxo-escuro);
 }
 
-.seta{
+.seta {
     margin-left: 10px;
 }
 
+@media (max-width:650px) {
+
+    .painel-formacao {
+        height: 160vh;
+        overflow: hidden;
+        display: block;
+    }
+
+    .formacao-faculdade,
+    .formacao-curso {
+        width: 330px;
+        height: 7%;
+        margin-bottom: 80px;
+    }
+
+    .texto-formacao {
+        font-size: 15px;
+    }
+
+    .formacao-curso {
+        margin: 0;
+    }
+
+    .lista-formacao,
+    .lista-formacao-curso {
+        gap: 5px;
+    }
+
+    .lista-formacao li {
+        font-size: 13px;
+    }
+
+    .lista-formacao-curso li {
+        font-size: 13px;
+    }
+
+    .formacao-curso:hover {
+        height: 50%;
+    }
+
+    .formacao-faculdade span{
+        display: block;
+    }
+    .formacao-curso span{
+        display: block;
+    }
+    
+
+    
+
+
+
+
+}
