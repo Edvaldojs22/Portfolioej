@@ -1,5 +1,5 @@
 
-alert("Olá, Meu portfólio esta em progresso, em breve estará completo,  Sinta-se à vontade para dar uma olhada.🤗 ")
+// alert("Olá, Meu portfólio esta em progresso, em breve estará completo,  Sinta-se à vontade para dar uma olhada.🤗 ")
 
 
 // Efeito scroll da tela --------------------------------------------------
@@ -91,7 +91,7 @@ botao.addEventListener('click', () => {
     if (botao.checked) {
         portifolio.classList.add('ligth')
         modo.textContent = "Ligth"
-        imgSuporte.src = "css/img/suporteEscuro.png";
+        imgSuporte.src = "css/img/suporteClaro.png";
     } else {
         portifolio.classList.remove('ligth')
         modo.textContent = "Dark";
