@@ -4,7 +4,7 @@
 
 
 .painel-projetosUm {
-    width: 100%;
+    width: 95%;
     height: 70vh;
     margin-bottom: 150px;
     border-radius: 20px;
@@ -12,16 +12,8 @@
     justify-content: center;
     align-items: center;
     border: solid 2px var(--cor-roxo-escuro);
-    box-shadow: 0 0 15px var(--cor-roxo-escuro);
-    
 }
 
-.painel-projetosDois {
-    width: calc(100% - 10px);
-    height: calc(100% - 10px);
-    border-radius: 15px;
-    position: relative;
-}
 
 
 .caixa-projetos {
@@ -34,15 +26,56 @@
     top: 50%;
     transform: translate(-50%, -50%);
     display: none;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: rgb(182, 182, 182);
+    text-decoration: none;
+    overflow: hidden;
 }
+
+.caixa-projetos:hover {
+    border: solid 4px var(--cor-roxo-escuro);
+}
+
+.caixa-projetos img {
+    width: 100px;
+    margin-top: 40px;
+}
+
+.caixa-projetos p {
+    margin-bottom: 30px;
+    color: var(--cor-roxo-escuro);
+}
+
+.lista-recursos {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    font-size: 14px;
+    gap: 4px;
+    position: absolute;
+    bottom: -15px;
+    color: var(--cor-roxo-escuro);
+}
+
+.caixa-projetos:hover .lista-recursos {
+    bottom: 10px;
+    transition: .6s;
+}
+
+
 
 
 .evento {
     font-size: 70px;
     color: var(--cor-roxo-escuro);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: transparent;
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .evento:active {
@@ -66,7 +99,7 @@
 
 .caixaTres {
     animation: posicaoTres 1.6s forwards;
-   display: block;
+    display: block;
 }
 
 .caixaQuatro {
@@ -76,7 +109,7 @@
 
 .caixaCinco {
     animation: posicaoCinco 2.2s forwards;
-   display: block;
+    display: block;
 }
 
 @keyframes posicaoUm {
@@ -152,6 +185,7 @@
     }
 
 }
+
 @media (max-width: 600px) {
     .caixa-projetos {
         width: 80px;
@@ -161,5 +195,5 @@
     .logoMenu {
         font-size: 50px;
     }
-   
+
 }

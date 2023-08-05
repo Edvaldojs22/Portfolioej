@@ -30,7 +30,7 @@ smoothScrollLinks.forEach(function (link) {
 //Menu --------------------------------------------------------------------
 const menu = document.querySelector('.logoMenu');
 const menuUm = document.querySelector('.menu');
-const header =document.querySelector('.painel-perfil')
+const header = document.querySelector('.painel-perfil')
 let ativado = true
 
 menu.addEventListener('click', () => {
@@ -182,13 +182,17 @@ const caixaTres = document.querySelector('.tres');
 const caixaQuatro = document.querySelector('.quatro');
 const caixaCinco = document.querySelector('.cinco');
 const caixaEvento = document.querySelector('.evento');
+const caixaProjetos = document.querySelectorAll('.caixa-projetos')
 let teste = true
 
 
 caixaEvento.addEventListener('click', () => {
     if (teste) {
-        caixaEvento.style.width = "0"
-        caixaEvento.style.height = "0"
+
+        caixaProjetos.forEach((a) => {
+            a.style.display = 'flex'
+        })
+       
         caixaUm.classList.add('caixaUm');
         caixaDois.classList.add('caixaDois');
         caixaTres.classList.add('caixaTres');
@@ -196,8 +200,11 @@ caixaEvento.addEventListener('click', () => {
         caixaCinco.classList.add('caixaCinco');
         teste = false
     } else {
-        caixaEvento.style.width = "100px"
-        caixaEvento.style.height = "100px"
+
+        caixaProjetos.forEach((a) => {
+            a.style.display = 'none'
+        })
+
         caixaUm.classList.remove('caixaUm');
         caixaDois.classList.remove('caixaDois');
         caixaTres.classList.remove('caixaTres');
