@@ -55,12 +55,16 @@
     font-size: 14px;
     gap: 4px;
     position: absolute;
-    bottom: -15px;
+    bottom: -30px;
     color: var(--cor-roxo-escuro);
 }
 
+.lista-recursos img{
+    width: 20px;
+}
+
 .caixa-projetos:hover .lista-recursos {
-    bottom: 10px;
+    bottom: 6px;
     transition: .6s;
 }
 
@@ -188,12 +192,28 @@
 
 @media (max-width: 600px) {
     .caixa-projetos {
-        width: 80px;
-        height: 100px;
+        width: 90px;
+        height: 120px;
     }
 
-    .logoMenu {
-        font-size: 50px;
+    .caixa-projetos img{
+        width: 60px;
     }
+
+    .caixa-projetos p{ 
+        font-size: 10px;
+        margin-bottom: 50px ;
+    }
+
+    .lista-recursos{
+        bottom: 0;
+    }
+
+    .lista-recursos img{
+        width: 15px;
+    }
+
+
+
 
 }

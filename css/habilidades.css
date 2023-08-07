@@ -53,17 +53,23 @@
     margin-bottom: 10px;
 }
 
-.html,
-.css,
-.javascript,
-.react,
-.typescript,
-.desingn,
-.vscode {
-    font-size: 1rem;
-    font-weight: 1000;
-    color: var(--cor-azul-texto);
+
+   
+.html, .desingn{
+    color: rgb(255, 90, 13);
 }
+.css,  .vscode, .typescript{
+    color: rgb(101, 101, 255);
+}
+.react{
+    color: rgb(65, 178, 244);
+}
+
+.javascript{
+    color: rgb(235, 235, 6);
+}
+
+
 
 .imgTypeScript {
     border-radius: 20px;

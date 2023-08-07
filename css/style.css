@@ -341,6 +341,10 @@ body {
 
 @media (max-width:650px) {
 
+    .logoMenu{
+        font-size: 40px;
+    }
+
     .perfil-img {
         top: -90px;
 
