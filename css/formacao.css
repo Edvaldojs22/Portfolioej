@@ -11,9 +11,11 @@
 
 }
 
+
+
 .formacao-faculdade,
 .formacao-curso {
-    width: 550px;
+    width: 600px;
     height: 10%;
     border-radius: 10px;
     margin-bottom: 50px;
@@ -23,10 +25,12 @@
     overflow: hidden;
     transition: 1s;
 }
-.formacao-faculdade span{
+
+.formacao-faculdade span {
     display: none;
 }
-.formacao-curso span{
+
+.formacao-curso span {
     display: none;
 }
 
@@ -192,15 +196,16 @@
         height: 50%;
     }
 
-    .formacao-faculdade span{
+    .formacao-faculdade span {
         display: block;
     }
-    .formacao-curso span{
-        display: block;
-    }
-    
 
-    
+    .formacao-curso span {
+        display: block;
+    }
+
+
+
 
 
 
