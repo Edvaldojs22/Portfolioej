@@ -47,7 +47,7 @@ menu.addEventListener('click', () => {
 
 
 // Efeito Digitação ----------------------------------------------------------
-let texto = "Desenvolvedor Full Stack."
+let texto = "Software developer."
 const velocidade = 100
 
 const textoElemento = document.querySelector('.texto-desenvolvedor')
@@ -66,7 +66,7 @@ function exibeLetra(texto, index) {
         }, 4000)
 
         setTimeout(() => {
-            texto = textoElemento.textContent = "Desenvolvedor Full Stack."
+            texto = textoElemento.textContent = "Software developer."
             exibeLetra(texto, 0)
         }, 4000)
 

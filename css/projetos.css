@@ -6,12 +6,11 @@
 .painel-projetosUm {
     width: 95%;
     height: 70vh;
-    margin-bottom: 150px;
+    margin: 0 auto 150px;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid 2px var(--cor-roxo-escuro);
 }
 
 
@@ -35,7 +34,7 @@
 }
 
 .caixa-projetos:hover {
-    border: solid 4px var(--cor-roxo-escuro);
+    box-shadow:  0 0 10px 5px  var(--cor-roxo-escuro);
 }
 
 .caixa-projetos img {
