@@ -1,5 +1,5 @@
 
-alert("Olá, Meu portfólio esta em progresso, em breve estará completo,  Sinta-se à vontade para dar uma olhada.🤗 ")
+// alert("Olá, Meu portfólio esta em progresso, em breve estará completo,  Sinta-se à vontade para dar uma olhada.🤗 ")
 
 
 // Efeito scroll da tela --------------------------------------------------

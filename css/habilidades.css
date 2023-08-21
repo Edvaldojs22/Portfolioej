@@ -1,26 +1,29 @@
 .painel-habilidadesUm {
     height: 80vh;
-    margin: 0 auto;
-    overflow: hidden;
+    margin: 100px  auto;
     position: relative;
-    position: relative;
+}
+#skils{
+    margin-bottom: 150px;
 }
 
 .painel-habilidadesDois {
     position: relative;
+    overflow: hidden;
     width: 100%;
-    animation: moveDiv 30s linear infinite;
+
 }
+
 
 
 .hablilidades {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    column-gap: 200px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    animation: moveDiv 20s linear infinite;
+    column-gap: 80px;
     align-items: center;
     height: 250px;
-    width: calc(100% - 100px);
-
+    width: 1800px;
 }
 
 .caixa-habilidade {
@@ -54,20 +57,31 @@
 }
 
 
-   
-.html, .desingn{
+
+.html,
+.desingn {
     color: rgb(255, 90, 13);
 }
-.css,  .vscode, .typescript{
+
+.css,
+.vscode,
+.typescript {
     color: rgb(101, 101, 255);
 }
-.react{
+
+.react {
     color: rgb(65, 178, 244);
 }
 
-.javascript{
+.javascript {
     color: rgb(235, 235, 6);
 }
+
+.nodeJs {
+    color: green;
+}
+
+
 
 
 
@@ -79,28 +93,17 @@
 
 @keyframes moveDiv {
     0% {
-        left: -150%;
+        transform: translateX(-100%);
     }
 
     100% {
-        left: 100%;
+        transform: translateX(100%);
     }
-}
-
-@keyframes moveDivMobile {
-    0% {
-        left: -800%;
-    }
-
-    100% {
-        left: 100%;
-    }
-
 }
 
 @media (max-width:600px) {
 
-    .painel-habilidadesUm{
+    .painel-habilidadesUm {
         margin-top: 100px;
     }
 
