@@ -14,12 +14,10 @@
 
 }
 
-
-
 .hablilidades {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    animation: moveDiv 20s linear infinite;
+    animation: moveDiv 30s linear infinite;
     column-gap: 80px;
     align-items: center;
     height: 250px;
@@ -37,6 +35,10 @@
     align-items: center;
     border: solid 2px var(--cor-roxo-escuro);
     position: relative;
+}
+
+.caixa-habilidade p{
+    font-weight: 1000;
 }
 
 .caixa-habilidade::before {
@@ -97,7 +99,7 @@
     }
 
     100% {
-        transform: translateX(100%);
+        transform: translateX(80%);
     }
 }
 
@@ -111,16 +113,14 @@
         margin-top: 600px;
     }
 
-    .painel-habilidadesDois {
-        position: relative;
-        width: 100%;
-        animation: moveDivMobile 30s linear infinite;
-
-    }
-
     .caixa-habilidade {
         width: 130px;
         height: 150px;
     }
 
+    .hablilidades{
+        animation: moveDiv 20s linear infinite;
+    }
+
+   
 }

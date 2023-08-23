@@ -4,13 +4,14 @@
 
 
 .painel-projetosUm {
-    width: 95%;
-    height: 70vh;
-    margin: 0 auto 150px;
-    border-radius: 20px;
+  
+    height: 90vh;
+    margin:0 auto 150px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var( --cor-roxo-painel);
+
 }
 
 
@@ -34,7 +35,7 @@
 }
 
 .caixa-projetos:hover {
-    box-shadow:  0 0 10px 5px  var(--cor-roxo-escuro);
+    box-shadow: 0 0 10px 5px var(--cor-roxo-escuro);
 }
 
 .caixa-projetos img {
@@ -45,28 +46,37 @@
 .caixa-projetos p {
     margin-bottom: 30px;
     text-align: center;
-    color: var(--cor-roxo-escuro);
+    color: black
 }
 
-.lista-recursos {
+.caixa-informacao{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     list-style: none;
-    font-size: 14px;
-    gap: 4px;
     position: absolute;
-    bottom: -30px;
+    bottom: -100px;
     color: var(--cor-roxo-escuro);
+   transition: .6s;
 }
 
-.lista-recursos img{
+.lista-recursos{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.lista-recursos img {
     width: 20px;
 }
 
-.caixa-projetos:hover .lista-recursos {
-    bottom: 6px;
+
+.caixa-projetos:hover .caixa-informacao{
+    bottom: -70px;
     transition: .6s;
 }
+
+
 
 
 
@@ -196,21 +206,25 @@
         height: 120px;
     }
 
-    .caixa-projetos img{
+    .caixa-projetos img {
         width: 60px;
     }
 
-    .caixa-projetos p{ 
+    .caixa-projetos p {
         font-size: 10px;
-        margin-bottom: 50px ;
+        margin-bottom: 50px;
     }
 
-    .lista-recursos{
+    .lista-recursos {
         bottom: 0;
     }
 
-    .lista-recursos img{
+    .lista-recursos img {
         width: 15px;
+    }
+
+    .painel-projetosUm {
+        width: 100%;
     }
 
 

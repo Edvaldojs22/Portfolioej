@@ -19,30 +19,37 @@
     --cor-branco: #e9e9e9;
     --cor-azul-texto: #598ae4;
     --cor-roxo-escuro: #8c52ff;
+    --cor-roxo-painel: #1a112d;
 }
 
 .corRed:root {
     --cor-roxo-escuro: #ff5252;
+    --cor-roxo-painel: #2d1411;
 }
 
 .corBlue:root {
     --cor-roxo-escuro: #5360ed;
+    --cor-roxo-painel: #11232d;
 }
 
 .corYellow:root {
     --cor-roxo-escuro: #eaed53;
+    --cor-roxo-painel: #2c2d11;
 }
 
 .corGreen:root {
     --cor-roxo-escuro: #53ed53;
+    --cor-roxo-painel: #122d11;
 }
 
 .corPink:root {
     --cor-roxo-escuro: #e248e2;
+     --cor-roxo-painel: #2a112d;
 }
 
 .corPurple:root {
     --cor-roxo-escuro: #8c52ff;
+     --cor-roxo-painel: #1a112d;
 }
 
 
@@ -78,7 +85,7 @@ body {
 } */
 
 .conteudo {
-    padding: 0 5em;
+   
 }
 
 .painel-perfil {
@@ -251,6 +258,7 @@ body {
 
 .painel-sobre-mim {
     height: 100vh;
+    padding: 0 100px;
 }
 
 .painel-perfil-imgDois {
@@ -350,9 +358,6 @@ body {
 
     }
 
-    .conteudo {
-        padding: 20px;
-    }
 
     .imgUm {
         width: 200px;
@@ -432,14 +437,9 @@ body {
         font-size: 15px;
     }
 
-
-
-
-
-
-
-
-
+    .painel-sobre-mim{
+        padding: 0 20px;
+    }
 
     .imgDois {
         width: 200px;
