@@ -1,5 +1,15 @@
-.projetos {
-    text-align: center;
+.painel-informacao-projetos{
+  padding: 0 40px;
+  margin-bottom: 100px;
+}
+
+.painel-informacao-projetos .projetos{
+    margin-bottom: 30px;
+}
+
+.descricao span{
+    color: var(--cor-roxo-escuro);
+    font-weight: 1000;
 }
 
 
@@ -226,6 +236,11 @@
     .painel-projetosUm {
         width: 100%;
     }
+
+    .caixa-informacao{
+      bottom: -80px;
+    }
+ 
 
 
 
