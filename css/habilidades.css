@@ -17,12 +17,12 @@
 
 .hablilidades {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     animation: moveDiv 30s linear infinite;
     column-gap: 80px;
     align-items: center;
     height: 250px;
-    width: 1800px;
+    width: 1900px;
 }
 
 .caixa-habilidade {
@@ -62,14 +62,14 @@
 
 
 .html,
-.desingn {
+.desingn, .java {
     color: rgb(255, 90, 13);
 }
 
 .css,
 .vscode,
 .typescript {
-    color: rgb(101, 101, 255);
+    color: rgb(105, 159, 253);
 }
 
 .react {
@@ -79,6 +79,8 @@
 .javascript {
     color: rgb(235, 235, 6);
 }
+
+
 
 .nodeJs {
     color: green;
@@ -100,7 +102,7 @@
     }
 
     100% {
-        transform: translateX(80%);
+        transform: translateX(100%);
     }
 }
 
@@ -120,7 +122,7 @@
     }
 
     .hablilidades{
-        animation: moveDiv 20s linear infinite;
+        animation: moveDiv 25s linear infinite;
     }
 
    
