@@ -5,26 +5,31 @@
 }
 
 .painel-formacao {
-    height: 120vh;
-    display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 600px 600px;
+    gap: 100px;
+    margin: 50px;
+}
 
+.texto-descricao-formacao {
+    color: var(--cor-branco);
+    text-align: center;
+   
 }
 
 
-
-.formacao-faculdade,
-.formacao-curso {
-    width: 600px;
-    height: 10%;
+.texto-descricao-formacao img{
+    width: 100px;
     border-radius: 10px;
+    align-items: center;
     margin-bottom: 50px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    transition: 1s;
 }
+
+.texto-descricao-formacao p{
+    text-align: start;
+}
+
 
 .formacao-faculdade span {
     display: none;
@@ -43,13 +48,10 @@
     height: 47%;
 }
 
-.formacao-curso {
-    margin-top: 37em;
-}
+
 
 .texto-formacao,
 .texto-formacao-curso {
-    width: 100%;
     background-color: var(--cor-roxo-escuro);
     border-radius: 10px;
     font-size: 1.3em;

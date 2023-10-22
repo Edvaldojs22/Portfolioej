@@ -1,9 +1,10 @@
 .painel-habilidadesUm {
     height: 80vh;
-    margin: 100px  auto;
+    margin: 100px auto;
     position: relative;
 }
-#skils{
+
+#skils {
     margin-bottom: 150px;
     text-align: center;
 }
@@ -34,11 +35,11 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    border: solid 2px var(--cor-roxo-escuro);
+   border: solid 5px gray;
     position: relative;
 }
 
-.caixa-habilidade p{
+.caixa-habilidade p {
     font-weight: 1000;
 }
 
@@ -46,7 +47,7 @@
     content: '';
     position: absolute;
     width: 130px;
-    height: 15px;
+    height: 7px;
     bottom: -40px;
     background-color: var(--cor-roxo-escuro);
     filter: blur(10px);
@@ -62,7 +63,8 @@
 
 
 .html,
-.desingn, .java {
+.desingn,
+.java {
     color: rgb(255, 90, 13);
 }
 
@@ -121,9 +123,9 @@
         height: 150px;
     }
 
-    .hablilidades{
+    .hablilidades {
         animation: moveDiv 25s linear infinite;
     }
 
-   
+
 }
