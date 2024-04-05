@@ -1,0 +1,155 @@
+.home {
+    width: calc(100% - 100px);
+    max-width: 1200px;
+    height: 700px;
+    position: relative;
+    font-family: sans-serif;
+    /* border: solid 1px greenyellow; */
+}
+
+.painel_img_texto_sobre {
+    margin-top: 60px;
+    margin-left: 30px;
+    width: 500px;
+    position: relative;
+    display: inline-block;
+}
+
+.painel_img_texto_sobre::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 170px;
+    background-color: #666666;
+    top: -30px;
+    left: -30px;
+    border-bottom-right-radius: 10px;
+}
+
+.painel_img_texto_sobre::before {
+    content: '';
+    position: absolute;
+    width: 170px;
+    height: 6px;
+    background-color: #666666;
+    top: -30px;
+    left: -30px;
+    border-bottom-right-radius: 10px;
+}
+
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+
+.texto_sobre {
+    margin-left: 100px;
+    color: white;
+}
+
+.icon_links {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon_links a {
+    font-size: 40px;
+    color: #666666;
+}
+
+.painel_skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+    color: white;
+    position: absolute;
+    right: -500px;
+    bottom: 0;
+}
+
+.painel_skills li {
+    width: 70px;
+    height: 30px;
+    text-align: end;
+}
+
+.painel_projetos{
+    display: flex;
+    width: 500px;
+    position: absolute;
+    bottom: 10px;
+    left: 200px;
+    color: white;
+}
+
+.projetos{
+    display: flex;
+    width: 400px;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.projetos::after{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 32px;
+    background-color: #666666;
+    top: 0;
+    left: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.projetos::before{
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 4px;
+    background-color: #666666;
+    bottom: -6px;
+    left: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.painel_nome_data{
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    color: white;
+    font-size: 12px;
+}
+
+.painel_nome_data::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 170px;
+    background-color: #666666;
+    bottom: -10px;
+    right: -20px;
+    border-top-left-radius: 10px;
+}
+
+.painel_nome_data::before{
+    content: '';
+    position: absolute;
+    width: 170px;
+    height: 6px;
+    background-color: #666666;
+    bottom: -10px;
+    right: -20px;
+    border-top-left-radius: 10px;
+}
+
+
+
