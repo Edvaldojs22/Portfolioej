@@ -2,6 +2,7 @@ import './Home.css'
 import { FaGithub } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
+import User from "../../assets/img/user.png"
 export default function Home() {
     return (
 
@@ -19,16 +20,20 @@ export default function Home() {
                 </a>
             </nav>
 
+            <p className='text_desenvolvedor'>Desenvolvedo de Software</p>
+
+
 
             <div className='painel_img_texto_sobre'>
                 <div className='img_texto_sobre'>
-                    <img src="" alt="" />
+                    <img src={User} alt="" />
                 </div>
 
+               
                 <div className='texto_sobre'>
-                    <h1>Qwwerertert</h1>
+                    <h1>Edvaldo Jonas</h1>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio neque minus et tempora sapiente animi ipsum est accusamus error nesciunt fugiat, sed unde explicabo cum? Voluptates neque deleniti nulla rem!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod libero eius eveniet doloremque, at velit vero nisi quas quae laboriosam! Debitis facere culpa, unde quaerat nulla placeat necessitatibus nesciunt eligendi!</p>
+                        Olá, sou Edvaldo, atuando nesta área há quase 2 anos. Adquiri conhecimento e habilidades essenciais para o crescimento profissional, como em Java, JavaScript, React, CSS, HTML e Banco de dados. Apresento este meu portfólio para que veja um pouco das minhas habilidades, mesmo tendo pouco tempo para criar projetos, e alguns são antigos e não quis fazer melhorias para você conhecer toda a minha jornada.</p>
                 </div>
 
 
