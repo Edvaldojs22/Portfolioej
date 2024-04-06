@@ -7,13 +7,7 @@
     /* border: solid 1px greenyellow; */
 }
 
-.painel_img_texto_sobre {
-    margin-top: 60px;
-    margin-left: 60px;
-    width: 500px;
-    position: relative;
-    display: inline-block;
-}
+
 
 .text_desenvolvedor{
     color: white;
@@ -56,17 +50,15 @@
 
 
 img {
-    width: 130px;
-    height: 130px;
+    width: 170px;
+    height: 170px;
     background-color: white;
     border-radius: 50%;
+    background-size: contain;
+   
 }
 
 
-.texto_sobre {
-    margin-left: 100px;
-    color: white;
-}
 
 .icon_links {
     position: absolute;
@@ -82,21 +74,6 @@ img {
     color: #666666;
 }
 
-.painel_skills {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    list-style: none;
-    color: white;
-    position: absolute;
-    right: -500px;
-    bottom: 0;
-}
-
-.painel_skills li {
-    width: 70px;
-    height: 30px;
-    text-align: end;
-}
 
 .painel_projetos {
     display: flex;
@@ -113,16 +90,17 @@ img {
     justify-content: space-around;
     align-items: center;
     position: relative;
+    margin-left: 10px;
 }
 
 .projetos::after {
     content: '';
     position: absolute;
-    width: 4px;
+    width: 3px;
     height: 32px;
     background-color: #666666;
     top: 0;
-    left: 10px;
+    left: 2px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 }
@@ -131,10 +109,10 @@ img {
     content: '';
     position: absolute;
     width: 400px;
-    height: 4px;
+    height: 3px;
     background-color: #666666;
     bottom: -6px;
-    left: 10px;
+    left: 2px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }

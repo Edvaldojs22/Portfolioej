@@ -1,0 +1,10 @@
+.painel_links_projetos {
+    display: flex;
+    color: white;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.painel_links_projetos p:nth-child(1) {
+    margin-right: 40px;
+}

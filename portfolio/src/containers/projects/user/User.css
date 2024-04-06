@@ -1,0 +1,30 @@
+.painel_img_texto_sobre {
+    margin-top: 60px;
+    margin-left: 60px;
+    width: 500px;
+    position: relative;
+    display: inline-block;
+}
+
+.texto_sobre {
+    margin-left: 100px;
+    color: white;
+}
+
+.painel_skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+    color: white;
+    position: absolute;
+    right: -500px;
+    bottom: 0;
+}
+
+.painel_skills li {
+    width: 70px;
+    height: 30px;
+    text-align: end;
+}
+
+
