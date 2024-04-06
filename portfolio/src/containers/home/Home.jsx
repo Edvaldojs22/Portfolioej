@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import './Home.css'
 import { FaGithub } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
@@ -9,18 +9,31 @@ import Barbearia from '../projects/barbearia/Barbearia';
 import Mecado from '../projects/mercado/Mercado';
 export default function Home() {
 
-useEffect(() => {
-    const linkProjectos = document.querySelectorAll('.projetos p');
-    console.log(linkProjectos)
-}, []);
+    useEffect(() => {
+        const linkProjectos = document.querySelectorAll('.projetos p');
+        console.log(linkProjectos)
+    }, []);
 
-const projetos = [
-    'User',
-    'AcerteAlvo',
-    'Barbearia',
-    'Mercaco'
-];
+    const projetos = [
+        'User',
+        'AcerteAlvo',
+        'Barbearia',
+        'Mercaco'
+    ];
 
+    const [vary, setVary] = useState('AcerteAlvo');
+    const [count, setCout] = useState(0)
+
+
+    const aumenta = (() =>{
+        setCout(3)
+    })
+
+   useEffect(() =>{
+    if(count == 3){
+        setVary('Barbearia')
+    }
+   },[count])
 
     return (
 
@@ -41,14 +54,17 @@ const projetos = [
             <p className='text_desenvolvedor'>Desenvolvedo de Software</p>
 
             <div className='painel_img_texto_sobre'>
-              <Mecado />
+                {vary === 'User' && <User />}
+                {vary === 'AcerteAlvo' && <AcerteAlvo />}
+                {vary === 'Barbearia' && <Barbearia />}
+                {vary === 'Mercado' && <Mecado />}
             </div>
 
             <div className='painel_projetos'>
                 <h2>Projetos</h2>
 
                 <div className='projetos'>
-                    <p>Home</p>
+                    <p onClick={aumenta} >Home</p>
                     <p>Acerte o Alvo</p>
                     <p>Barbearia</p>
                     <p>Carrinho API</p>

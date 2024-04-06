@@ -3,7 +3,7 @@ import IconAlvo from "../../../assets/img/target.png"
 
 export default function AcerteAlvo() {
     return (
-        <div>
+        <div className='opacity_projeto'>
             <div className='img_texto_sobre'>
                 <img src={IconAlvo} alt="" />
             </div>

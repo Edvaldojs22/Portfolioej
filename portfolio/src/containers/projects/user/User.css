@@ -4,7 +4,11 @@
     width: 500px;
     position: relative;
     display: inline-block;
+    transition: all 1s;
+
 }
+
+
 
 .texto_sobre {
     margin-left: 100px;

@@ -1,7 +1,8 @@
+import './Mercado.css'
 import IconCart from "../../../assets/img/trolley.png"
 export default function Mecado() {
     return (
-        <div>
+        <div  className='opacity_projeto'>
             <div className='img_texto_sobre'>
                 <img src={IconCart} alt="" />
             </div>

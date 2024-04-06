@@ -2,7 +2,7 @@ import './User.css';
 import IconUser from "../../../assets/img/user.png";
 export default function User() {
     return (
-        <div >
+        <div  className='opacity_projeto' >
             <div className='img_texto_sobre'>
                 <img src={IconUser} alt="" />
             </div>

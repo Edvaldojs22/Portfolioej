@@ -1,7 +1,7 @@
 import IconBarba from "../../../assets/img/hairstyle.png"
 export default function Barbearia() {
     return (
-        <div>
+        <div  className='opacity_projeto'>
             <div className='img_texto_sobre'>
                 <img src={IconBarba} alt="" />
             </div>
