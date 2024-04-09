@@ -1,8 +1,8 @@
 import './Mercado.css'
 import IconCart from "../../../assets/img/trolley.png"
-export default function Mecado() {
+export default function Mercado() {
     return (
-        <div  className='opacity_projeto'>
+        <div className='opacity_projeto'>
             <div className='img_texto_sobre'>
                 <img src={IconCart} alt="" />
             </div>
@@ -15,8 +15,8 @@ export default function Mecado() {
             </div>
 
             <nav className="painel_links_projetos">
-                <p>Site</p>
-                <p>Codigo GitHub</p>
+                <a href="https://edvaldojs22.github.io/Carrinho-react/" target="_blank">Site</a>
+                <a href="https://github.com/Edvaldojs22/Carrinho-react" target="_blank">Codigo GitHub</a>
             </nav>
 
 

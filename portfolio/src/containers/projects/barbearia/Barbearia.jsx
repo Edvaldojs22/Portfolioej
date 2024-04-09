@@ -1,7 +1,7 @@
 import IconBarba from "../../../assets/img/hairstyle.png"
 export default function Barbearia() {
     return (
-        <div  className='opacity_projeto'>
+        <div className='opacity_projeto'>
             <div className='img_texto_sobre'>
                 <img src={IconBarba} alt="" />
             </div>
@@ -14,8 +14,8 @@ export default function Barbearia() {
             </div>
 
             <nav className="painel_links_projetos">
-                <p>Site</p>
-                <p>Codigo GitHub</p>
+                <a href="https://edvaldojs22.github.io/Barbearia/" target="_blank">Site</a>
+                <a href="https://github.com/Edvaldojs22/Barbearia" target="_blank">Codigo GitHub</a>
             </nav>
 
 

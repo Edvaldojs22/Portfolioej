@@ -6,27 +6,28 @@ import { FaLinkedin } from "react-icons/fa";
 import User from '../projects/user/User';
 import AcerteAlvo from '../projects/acerteAlvo/AcerteAlvo';
 import Barbearia from '../projects/barbearia/Barbearia';
-import Mecado from '../projects/mercado/Mercado';
+import Mercado from '../projects/mercado/Mercado';
 export default function Home() {
 
     const [vary, setVary] = useState('User');
 
     const mostraComponente = (componente) => {
         setVary(componente);
-
-        console.log(componente)
-        if(componente == 'User'){
-            document.documentElement.style.setProperty('--cor-gray', '#666666')
-        }
-        else if(componente == 'AcerteAlvo') {
-            document.documentElement.style.setProperty('--cor-gray', '#25ba00')
-        }
-        else if(componente == 'Barbearia') {
-            document.documentElement.style.setProperty('--cor-gray', '#666666')
-        }
-        else if(componente == 'Mercado') {
-            document.documentElement.style.setProperty('--cor-gray', ' #c9bf00')
-        }
+        setTimeout(() => { 
+            console.log(componente)
+            if (componente === 'User') {
+                document.documentElement.style.setProperty('--cor-gray', '#666666');
+            }
+            else if (componente === 'AcerteAlvo') {
+                document.documentElement.style.setProperty('--cor-gray', '#f34b58');
+            }
+            else if (componente === 'Barbearia') {
+                document.documentElement.style.setProperty('--cor-gray', '#666666');
+            }
+            else if (componente === 'Mercado') {
+                document.documentElement.style.setProperty('--cor-gray', '#c9bf00');
+            }
+        }, 1200); 
 
 
     }
@@ -54,7 +55,7 @@ export default function Home() {
                 {vary === 'User' && <User />}
                 {vary === 'AcerteAlvo' && <AcerteAlvo />}
                 {vary === 'Barbearia' && <Barbearia />}
-                {vary === 'Mercado' && <Mecado />}
+                {vary === 'Mercado' && <Mercado />}
             </div>
 
             <div className='painel_projetos'>

@@ -15,8 +15,8 @@ export default function AcerteAlvo() {
             </div>
 
             <nav className="painel_links_projetos">
-                <a href="" target="_blank">Site</a>
-                <a href="" target="_blank">Codigo GitHub</a>
+                <a href="https://edvaldojs22.github.io/Acerte-o-alvo/" target="_blank">Site</a>
+                <a href="https://github.com/Edvaldojs22/Acerte-o-alvo" target="_blank">Codigo GitHub</a>
             </nav>
 
 
