@@ -5,6 +5,6 @@
     margin-left: 100px;
 }
 
-.painel_links_projetos p:nth-child(1) {
+.painel_links_projetos a:nth-child(1) {
     margin-right: 40px;
 }

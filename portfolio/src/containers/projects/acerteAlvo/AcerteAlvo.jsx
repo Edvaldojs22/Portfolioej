@@ -15,8 +15,8 @@ export default function AcerteAlvo() {
             </div>
 
             <nav className="painel_links_projetos">
-                <p>Site</p>
-                <p>Codigo GitHub</p>
+                <a href="" target="_blank">Site</a>
+                <a href="" target="_blank">Codigo GitHub</a>
             </nav>
 
 

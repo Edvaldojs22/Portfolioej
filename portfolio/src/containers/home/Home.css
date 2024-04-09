@@ -7,9 +7,14 @@
     /* border: solid 1px greenyellow; */
 }
 
+:root {
+    --cor-gray: #666666;
+   
+}
 
 
-.text_desenvolvedor{
+
+.text_desenvolvedor {
     color: white;
     font-size: 30px;
     position: absolute;
@@ -19,29 +24,29 @@
     z-index: 1;
 }
 
-.painel_img_texto_sobre h1{
+.painel_img_texto_sobre h1 {
     margin-bottom: 10px;
 }
 
 .painel_img_texto_sobre::after {
     content: '';
     position: absolute;
-    width: 6px;
+    width: 10px;
     height: 170px;
-    background-color: #666666;
+    background-color: var(--cor-gray);
     top: -50px;
     left: -50px;
     border-bottom-right-radius: 10px;
     border-top-left-radius: 10px;
-   
+
 }
 
 .painel_img_texto_sobre::before {
     content: '';
     position: absolute;
     width: 170px;
-    height: 6px;
-    background-color: #666666;
+    height: 10px;
+    background-color: var(--cor-gray);
     top: -50px;
     left: -50px;
     border-bottom-right-radius: 10px;
@@ -55,7 +60,7 @@ img {
     background-color: white;
     border-radius: 50%;
     background-size: contain;
-   
+
 }
 
 
@@ -93,12 +98,16 @@ img {
     margin-left: 10px;
 }
 
+.projetos p {
+    cursor: pointer;
+}
+
 .projetos::after {
     content: '';
     position: absolute;
     width: 3px;
     height: 32px;
-    background-color: #666666;
+    background-color: var(--cor-gray);
     top: 0;
     left: 2px;
     border-top-right-radius: 10px;
@@ -110,7 +119,7 @@ img {
     position: absolute;
     width: 400px;
     height: 3px;
-    background-color: #666666;
+    background-color: var(--cor-gray);
     bottom: -6px;
     left: 2px;
     border-top-right-radius: 10px;
@@ -128,9 +137,9 @@ img {
 .painel_nome_data::after {
     content: '';
     position: absolute;
-    width: 6px;
+    width: 10px;
     height: 170px;
-    background-color: #666666;
+    background-color: var(--cor-gray);
     bottom: -10px;
     right: -20px;
     border-top-left-radius: 10px;
@@ -141,8 +150,8 @@ img {
     content: '';
     position: absolute;
     width: 170px;
-    height: 6px;
-    background-color: #666666;
+    height: 10px;
+    background-color: var(--cor-gray);
     bottom: -10px;
     right: -20px;
     border-top-left-radius: 10px;
@@ -150,15 +159,16 @@ img {
 }
 
 
-.opacity_projeto{
-    animation: opacity linear 1.3s ;
+.opacity_projeto {
+    animation: opacity linear 1.3s;
 }
 
-@keyframes opacity{
-    0%{
+@keyframes opacity {
+    0% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
