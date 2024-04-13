@@ -1,5 +1,8 @@
 import './Mercado.css'
 import IconCart from "../../../assets/img/trolley.png"
+import { FaHtml5, FaReact } from 'react-icons/fa6'
+import { RiJavascriptFill } from 'react-icons/ri'
+import { IoLogoCss3 } from 'react-icons/io5'
 export default function Mercado() {
     return (
         <div className='opacity_projeto'>
@@ -21,10 +24,10 @@ export default function Mercado() {
 
 
             <ul className='painel_skills'>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
+                <li><FaHtml5 /></li>
+                <li><IoLogoCss3 /></li>
+                <li><RiJavascriptFill /></li>
+                <li><FaReact /></li>
             </ul>
 
         </div>

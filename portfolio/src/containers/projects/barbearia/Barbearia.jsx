@@ -1,4 +1,6 @@
+import { IoLogoCss3 } from "react-icons/io5"
 import IconBarba from "../../../assets/img/hairstyle.png"
+import { FaHtml5 } from "react-icons/fa6"
 export default function Barbearia() {
     return (
         <div className='opacity_projeto'>
@@ -20,8 +22,9 @@ export default function Barbearia() {
 
 
             <ul className='painel_skills'>
-                <li>HTML</li>
-                <li>CSS</li>
+                <li><FaHtml5 /></li>
+                <li><IoLogoCss3 /></li>
+
             </ul>
 
         </div>

@@ -13,7 +13,7 @@ export default function Home() {
 
     const mostraComponente = (componente) => {
         setVary(componente);
-        setTimeout(() => { 
+        
             console.log(componente)
             if (componente === 'User') {
                 document.documentElement.style.setProperty('--cor-gray', '#666666');
@@ -27,7 +27,7 @@ export default function Home() {
             else if (componente === 'Mercado') {
                 document.documentElement.style.setProperty('--cor-gray', '#c9bf00');
             }
-        }, 1200); 
+    
 
 
     }

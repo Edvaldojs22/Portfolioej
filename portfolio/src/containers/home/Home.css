@@ -1,15 +1,16 @@
 .home {
-    width: calc(100% - 100px);
-    max-width: 1200px;
-    height: 700px;
+    width: 100%;
+    max-width: 1500px;
+    height: 100%;
+    max-height: 900px;
     position: relative;
     font-family: sans-serif;
     /* border: solid 1px greenyellow; */
+  
 }
 
 :root {
     --cor-gray: #666666;
-   
 }
 
 
@@ -31,32 +32,30 @@
 .painel_img_texto_sobre::after {
     content: '';
     position: absolute;
-    width: 10px;
-    height: 170px;
+    width: 20px;
+    height: 250px;
     background-color: var(--cor-gray);
     top: -50px;
     left: -50px;
-    border-bottom-right-radius: 10px;
-    border-top-left-radius: 10px;
+    clip-path: polygon(0 0, 100% 0, 100% 89%, 0% 100%);
 
 }
 
 .painel_img_texto_sobre::before {
     content: '';
     position: absolute;
-    width: 170px;
-    height: 10px;
+    width: 250px;
+    height: 20px;
     background-color: var(--cor-gray);
     top: -50px;
     left: -50px;
-    border-bottom-right-radius: 10px;
-    border-top-left-radius: 10px;
+    clip-path: polygon(100% 0, 89% 100%, 0 100%, 0 0);
 }
 
 
 img {
-    width: 170px;
-    height: 170px;
+    width: 230px;
+    height: 230px;
     border-radius: 50%;
     background-size: contain;
 
@@ -68,17 +67,17 @@ img {
     position: absolute;
     right: 30px;
     top: 30px;
-    width: 130px;
+    width: 160px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .icon_links a {
-    font-size: 40px;
+    font-size: 30px;
     color: #666666;
 }
 
-.icon_links a:hover{
+.icon_links a:hover {
     transform: scale(1.1);
     color: var(--cor-gray);
 }
@@ -102,91 +101,103 @@ img {
     margin-left: 10px;
 }
 
-.projetos p:hover{
+.projetos p:hover {
     transform: scale(1.1);
+    color: var(--cor-gray);
 }
 
 .projetos p {
     cursor: pointer;
+    font-weight: bold;
 }
 
 .projetos::after {
     content: '';
     position: absolute;
-    width: 3px;
+    width: 4px;
     height: 32px;
     background-color: var(--cor-gray);
     top: 0;
     left: 2px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  
 }
 
 .projetos::before {
     content: '';
     position: absolute;
     width: 400px;
-    height: 3px;
+    height: 4px;
     background-color: var(--cor-gray);
     bottom: -6px;
     left: 2px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+ 
 }
 
 .painel_nome_data {
     position: absolute;
     bottom: 10px;
     right: 30px;
-    color: white;
-    font-size: 12px;
 }
+
 
 .painel_nome_data::after {
     content: '';
     position: absolute;
-    width: 10px;
-    height: 170px;
+    width: 20px;
+    height: 250px;
     background-color: var(--cor-gray);
     bottom: -10px;
     right: -20px;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 11%);
 }
 
 .painel_nome_data::before {
     content: '';
     position: absolute;
-    width: 170px;
-    height: 10px;
+    width: 250px;
+    height: 20px;
     background-color: var(--cor-gray);
     bottom: -10px;
     right: -20px;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    clip-path: polygon(100% 100%, 0 100%, 11% 0, 100% 0 );
+}
+
+.painel_nome_data p{
+    color: white;
+    font-size: 18px;
+    margin: 0 20px 10px 0;
 }
 
 
+
+
+
 .opacity_projeto {
-    animation: opacity linear 1.1s;
-    
-  
-   
+    animation: opacity linear 0.4s;
+    margin: 50px 0 0 50px;
+
+
+
 }
 
 @keyframes opacity {
     0% {
         opacity: 0;
         transform: scale(0.2);
-      
-       
+
+
     }
 
     100% {
         opacity: 1;
         transform: scale(1);
-       
-        
+
+
     }
 }
-

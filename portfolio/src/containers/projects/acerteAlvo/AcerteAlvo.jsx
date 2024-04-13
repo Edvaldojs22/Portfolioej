@@ -1,5 +1,8 @@
 import './AcerteAlvo.css'
 import IconAlvo from "../../../assets/img/target.png"
+import { FaHtml5 } from 'react-icons/fa6'
+import { IoLogoCss3 } from 'react-icons/io5'
+import { RiJavascriptFill } from 'react-icons/ri'
 
 export default function AcerteAlvo() {
     return (
@@ -21,9 +24,9 @@ export default function AcerteAlvo() {
 
 
             <ul className='painel_skills'>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
+                <li><FaHtml5 /></li>
+                <li><IoLogoCss3 /></li>
+                <li><RiJavascriptFill /></li>
             </ul>
 
         </div>
