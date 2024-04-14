@@ -146,6 +146,8 @@ img {
 }
 
 
+
+
 .painel_nome_data::after {
     content: '';
     position: absolute;
@@ -170,8 +172,8 @@ img {
 
 .painel_nome_data p {
     color: white;
-    font-size: 18px;
-    margin: 0 20px 10px 0;
+    font-size: 11px;
+    margin: 0 4px 13px 0;
 }
 
 

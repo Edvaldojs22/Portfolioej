@@ -6,7 +6,7 @@ import { FaReact } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa6";
 import { SiMysql } from "react-icons/si";
 import './User.css';
-import IconUser from "../../../assets/img/user.png";
+import IconUser from "../../../assets/img/office-man.png";
 export default function User() {
     return (
         <div className='opacity_projeto' >
