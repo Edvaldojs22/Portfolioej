@@ -1,10 +1,9 @@
 .painel_img_texto_sobre {
-    margin-top: 60px;
-    margin-left: 60px;
     width: 600px;
     position: relative;
     display: inline-block;
     transition: all 1s;
+    background-color: transparent;
 
 }
 
@@ -14,7 +13,7 @@
 }
 
 .texto_sobre {
-    margin-left: 100px;
+  
     color: white;
 }
 
@@ -22,7 +21,7 @@
 
 .texto_sobre p {
     position: relative;
-
+    font-size: 12px;
 }
 
 .texto_sobre p::after {
@@ -69,8 +68,9 @@
     color: var(--cor-gray);
     font-size: 40px;
     position: absolute;
-    right: -600px;
     bottom: 0;
+    right: -500px;
+    
 }
 
 .painel_skills li {
@@ -109,12 +109,55 @@
 
 
 
+
+
+@media (max-width:1227px) {
+    .painel_skills{
+        right: -300px;
+        gap: 7px;
+    }
+
+    .painel_skills li{
+        font-size: 20px;
+      
+    }
+    
+}
+
+
+@media (max-width:1103px) {
+   
+    .painel_skills {
+        left: 50%;
+        transform: translate(-50%);
+        bottom: -50px;
+        gap: 5px;
+        width: 300px;
+        background-color: transparent;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    }
+    .painel_skills li {
+        font-size: 30px;
+        background-color: transparent;
+        width: 0;
+        height: 0;
+        text-align: center;
+    }
+
+    
+}
+
+
+
+
 /* user mobile */
 
 
 @media (max-width: 767px) {
     .img_texto_sobre {
         width: 200px;
+        background-color: transparent;
     }
 
     .texto_sobre {
@@ -150,8 +193,8 @@
     }
 
     .painel_skills {
-        left: 35%;
-        transform: translate(-35%);
+        left: 50%;
+        transform: translate(-50%);
         bottom: -50px;
         gap: 5px;
         width: 200px;

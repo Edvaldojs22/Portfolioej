@@ -6,7 +6,6 @@
     position: relative;
     font-family: sans-serif;
     /* border: solid 1px greenyellow; */
-
 }
 
 :root {
@@ -27,6 +26,7 @@
 
 .painel_img_texto_sobre h1 {
     margin-bottom: 10px;
+    background-color: transparent;
 }
 
 .painel_img_texto_sobre::after {
@@ -35,8 +35,8 @@
     width: 20px;
     height: 250px;
     background-color: var(--cor-gray);
-    top: -50px;
-    left: -50px;
+    top: 0;
+    left: 0;
     clip-path: polygon(0 0, 100% 0, 100% 89%, 0% 100%);
 
 }
@@ -47,8 +47,8 @@
     width: 250px;
     height: 20px;
     background-color: var(--cor-gray);
-    top: -50px;
-    left: -50px;
+    top: 0px;
+    left: 0;
     clip-path: polygon(100% 0, 89% 100%, 0 100%, 0 0);
 }
 
@@ -182,10 +182,9 @@ img {
 
 .opacity_projeto {
     animation: opacity linear 0.4s;
-    margin: 50px 0 0 50px;
-
-
-
+    margin: 90px 0 0 90px;
+    background-color: transparent;
+   
 }
 
 @keyframes opacity {
@@ -204,123 +203,152 @@ img {
     }
 }
 
+
+@media (max-width:1104px) {
+    .text_desenvolvedor {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50px;
+    }
+
+    .painel_projetos {
+        bottom: 100px;
+        left: 30px;
+    }
+
+    .projetos {
+        justify-content: space-between;
+        
+    }
+
+    .projetos p {
+        font-size: 13px;
+    }
+
+    .projetos::after {
+        width: 4px;
+        height: 35px;
+        top: 0;
+        left: -7px;
+    }
+
+    .projetos::before {
+        height: 4px;
+        bottom: -9px;
+        left: -7px;
+    }
+
+
+}
+
 /* home mobile */
 
 
 @media (max-width: 767px) {
 
-    .icon_links{
+    .icon_links {
         top: 40px;
         width: 100px;
     }
 
-    .icon_links a{
+    .icon_links a {
         font-size: 20px;
     }
 
-    .text_desenvolvedor{
+    .text_desenvolvedor {
         width: 250px;
         font-size: 18px;
         top: -30px;
+        background-color: transparent;
     }
 
     .painel_img_texto_sobre::after {
-        width: 15px;
-        height: 220px;
+        width: 8px;
+        height: 150px;
     }
-    
+
     .painel_img_texto_sobre::before {
-        width: 220px;
-        height: 15px;
+        width: 150px;
+        height: 8px;
     }
-    
+
     .opacity_projeto {
-        margin: 0;
+        margin: 40px 0 0 40px;
+        background-color: transparent;
     }
 
     .home {
-       height: 100vh;
+        height: 100vh;
     }
 
-    img{
+    img {
         width: 100px;
         height: 100px;
     }
 
-    .painel_projetos{
+    .painel_projetos {
         width: 100%;
         left: 50%;
         transform: translate(-50%);
-        bottom: 70px;
+        bottom: 100px;
         flex-direction: column;
         align-items: center;
+        justify-content: space-around;
+        
     }
-    .painel_projetos h2{
+
+    .painel_projetos h2 {
         font-size: 20px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     .projetos {
         width: calc(100% - 45px);
         font-size: 14px;
-        margin-right: 45px;
-        
-    }
-
-    .projetos::before {  
-        width: 200px;
+        justify-content: space-around;
     }
 
     .projetos::after {
-        width: 4px;
-        height: 25px;
-        top: 0;
-        left: 0;
+        display: none;
     }
-    
+
     .projetos::before {
-        width: 100%;
-        height: 4px;
-        bottom: -9px;
-        left: 1;
+       width: calc(100% + 10px);
+       height: 2px;
+       left: 50%;
+       transform: translate(-50%);
+       border-radius: 5px;
+
     }
 
 
 
-    .painel_nome_data{
+    .painel_nome_data {
         bottom: -100px;
     }
 
-    .painel_nome_data p{
+    .painel_nome_data p {
         margin: 0 0 7px 0;
         font-size: 9px;
     }
 
 
     .painel_nome_data::after {
-        content: '';
-        position: absolute;
-        width: 15px;
-        height: 220px;
+        width: 8px;
+        height: 150px;
         bottom: -10px;
         right: -20px;
-        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 11%);
+
     }
-    
+
     .painel_nome_data::before {
-        content: '';
-        position: absolute;
-        width: 220px;
-        height: 15px;
+        width: 150px;
+        height: 8px;
         background-color: var(--cor-gray);
         bottom: -10px;
         right: -20px;
-        clip-path: polygon(100% 100%, 0 100%, 11% 0, 100% 0);
     }
 
-   
+
 }
-
-
-
-

@@ -30,6 +30,18 @@ export default function Home() {
     
     }
 
+    
+    useEffect(() => {
+        const interval = setInterval(() => {
+            const componentes = ['User', 'AcerteAlvo', 'Barbearia', 'Mercado'];
+            const proximoComponenteIndex = (componentes.indexOf(vary) + 1) % componentes.length;
+            const proximoComponente = componentes[proximoComponenteIndex];
+            mostraComponente(proximoComponente);
+        }, 10000); 
+
+        return () => clearInterval(interval);
+    }, [vary]); 
+
 
     return (
 
@@ -69,7 +81,7 @@ export default function Home() {
 
 
             <div className='painel_nome_data'>
-                <p>[EdvaldoJonas 2024.] All rights reserved</p>
+                <p>[EdvaldoJonas 2024.]</p>
             </div>
 
         </main>

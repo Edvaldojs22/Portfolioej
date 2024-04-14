@@ -22,11 +22,8 @@ export default function User() {
                         Olá, sou Edvaldo, atuando nesta área há quase 2 anos. Adquiri conhecimento e habilidades essenciais para o crescimento profissional, como em Java, JavaScript, React, CSS, HTML e Banco de dados.</p>
                     <p> Apresento este meu portfólio para que veja um pouco das minhas habilidades, mesmo tendo pouco tempo para criar projetos, e alguns são antigos e não quis fazer melhorias para você conhecer toda a minha jornada.</p>
                 </div>
-
-            </div>
-
-
-            <ul className='painel_skills'>
+                
+                <ul className='painel_skills'>
                 <li><FaHtml5 /></li>
                 <li><IoLogoCss3 /></li>
                 <li><RiJavascriptFill /></li>
@@ -35,6 +32,11 @@ export default function User() {
                 <li><SiMysql /></li>
                 <li><FaNodeJs /></li>
             </ul>
+
+            </div>
+
+
+          
         </div>
     )
 }
