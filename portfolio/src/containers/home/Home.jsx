@@ -14,7 +14,7 @@ export default function Home() {
     const mostraComponente = (componente) => {
         setVary(componente);
         
-            console.log(componente)
+          
             if (componente === 'User') {
                 document.documentElement.style.setProperty('--cor-gray', '#666666');
             }
@@ -28,8 +28,6 @@ export default function Home() {
                 document.documentElement.style.setProperty('--cor-gray', '#c9bf00');
             }
     
-
-
     }
 
 
@@ -71,7 +69,7 @@ export default function Home() {
 
 
             <div className='painel_nome_data'>
-                <p>wwww2024</p>
+                <p>[EdvaldoJonas 2024.] All rights reserved</p>
             </div>
 
         </main>

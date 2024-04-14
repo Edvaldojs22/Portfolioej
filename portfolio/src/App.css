@@ -11,4 +11,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  
+}
+
+
+@media (max-width: 767px) {
+    .painel_home{
+        margin-top: 50px;
+        margin-bottom: 150px;
+      
+    }
 }

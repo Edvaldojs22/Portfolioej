@@ -41,3 +41,21 @@
 .painel_links_projetos a:nth-child(1) {
     margin-right: 40px;
 }
+
+
+
+
+
+@media (max-width: 767px){
+    .painel_links_projetos{
+        margin: 20px 0 0 50px;
+        font-size: 13px;
+    }
+
+    .painel_links_projetos a::after {
+      background-color: var(--cor-gray);
+    }
+
+
+
+}

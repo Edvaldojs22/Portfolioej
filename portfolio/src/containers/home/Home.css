@@ -6,7 +6,7 @@
     position: relative;
     font-family: sans-serif;
     /* border: solid 1px greenyellow; */
-  
+
 }
 
 :root {
@@ -122,7 +122,7 @@ img {
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-  
+
 }
 
 .projetos::before {
@@ -136,7 +136,7 @@ img {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
- 
+
 }
 
 .painel_nome_data {
@@ -165,10 +165,10 @@ img {
     background-color: var(--cor-gray);
     bottom: -10px;
     right: -20px;
-    clip-path: polygon(100% 100%, 0 100%, 11% 0, 100% 0 );
+    clip-path: polygon(100% 100%, 0 100%, 11% 0, 100% 0);
 }
 
-.painel_nome_data p{
+.painel_nome_data p {
     color: white;
     font-size: 18px;
     margin: 0 20px 10px 0;
@@ -201,3 +201,124 @@ img {
 
     }
 }
+
+/* home mobile */
+
+
+@media (max-width: 767px) {
+
+    .icon_links{
+        top: 40px;
+        width: 100px;
+    }
+
+    .icon_links a{
+        font-size: 20px;
+    }
+
+    .text_desenvolvedor{
+        width: 250px;
+        font-size: 18px;
+        top: -30px;
+    }
+
+    .painel_img_texto_sobre::after {
+        width: 15px;
+        height: 220px;
+    }
+    
+    .painel_img_texto_sobre::before {
+        width: 220px;
+        height: 15px;
+    }
+    
+    .opacity_projeto {
+        margin: 0;
+    }
+
+    .home {
+       height: 100vh;
+    }
+
+    img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .painel_projetos{
+        width: 100%;
+        left: 50%;
+        transform: translate(-50%);
+        bottom: 70px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .painel_projetos h2{
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .projetos {
+        width: calc(100% - 45px);
+        font-size: 14px;
+        margin-right: 45px;
+        
+    }
+
+    .projetos::before {  
+        width: 200px;
+    }
+
+    .projetos::after {
+        width: 4px;
+        height: 25px;
+        top: 0;
+        left: 0;
+    }
+    
+    .projetos::before {
+        width: 100%;
+        height: 4px;
+        bottom: -9px;
+        left: 1;
+    }
+
+
+
+    .painel_nome_data{
+        bottom: -100px;
+    }
+
+    .painel_nome_data p{
+        margin: 0 0 7px 0;
+        font-size: 9px;
+    }
+
+
+    .painel_nome_data::after {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 220px;
+        bottom: -10px;
+        right: -20px;
+        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 11%);
+    }
+    
+    .painel_nome_data::before {
+        content: '';
+        position: absolute;
+        width: 220px;
+        height: 15px;
+        background-color: var(--cor-gray);
+        bottom: -10px;
+        right: -20px;
+        clip-path: polygon(100% 100%, 0 100%, 11% 0, 100% 0);
+    }
+
+   
+}
+
+
+
+
