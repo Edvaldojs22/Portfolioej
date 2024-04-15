@@ -7,10 +7,6 @@ export default function App() {
             <div className='painel_home'>
                 <Home />
             </div>
-            <div>
-                <Conteudo />
-            </div>
-
         </div>
     )
 }
