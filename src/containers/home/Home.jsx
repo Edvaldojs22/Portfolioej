@@ -22,25 +22,25 @@ export default function Home() {
                 document.documentElement.style.setProperty('--cor-gray', '#f34b58');
             }
             else if (componente === 'Barbearia') {
-                document.documentElement.style.setProperty('--cor-gray', '#666666');
+                document.documentElement.style.setProperty('--cor-gray', '#e2d600');
             }
             else if (componente === 'Mercado') {
-                document.documentElement.style.setProperty('--cor-gray', '#c9bf00');
+                document.documentElement.style.setProperty('--cor-gray', '#004c8e');
             }
     
     }
 
     
-    // useEffect(() => {
-    //     const interval = setInterval(() => {
-    //         const componentes = ['User', 'AcerteAlvo', 'Barbearia', 'Mercado'];
-    //         const proximoComponenteIndex = (componentes.indexOf(vary) + 1) % componentes.length;
-    //         const proximoComponente = componentes[proximoComponenteIndex];
-    //         mostraComponente(proximoComponente);
-    //     }, 10000); 
+    useEffect(() => {
+        const interval = setInterval(() => {
+            const componentes = ['User', 'AcerteAlvo', 'Barbearia', 'Mercado'];
+            const proximoComponenteIndex = (componentes.indexOf(vary) + 1) % componentes.length;
+            const proximoComponente = componentes[proximoComponenteIndex];
+            mostraComponente(proximoComponente);
+        }, 10000); 
 
-    //     return () => clearInterval(interval);
-    // }, [vary]); 
+        return () => clearInterval(interval);
+    }, [vary]); 
 
 
     return (
@@ -69,7 +69,7 @@ export default function Home() {
             </div>
 
             <div className='painel_projetos'>
-                <h2>Projetos</h2>
+                <h2>PROJETOS</h2>
 
                 <div className='projetos'>
                     <p onClick={() => mostraComponente('User')}>Home</p>

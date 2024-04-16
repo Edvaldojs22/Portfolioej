@@ -13,7 +13,7 @@ export default function AcerteAlvo() {
 
 
             <div className='texto_sobre'>
-                <h1>Acerte o Alvo</h1>
+                <h1>Acerte o alvo</h1>
                 <p>O projeto "Acerte o Alvo" é uma emocionante experiência interativa desenvolvida com HTML, CSS e JavaScript, que desafia os jogadores a testarem sua precisão e habilidade. Com uma interface intuitiva e visualmente cativante, onde você se auto desafia aumenta a velocidade do alvo.</p>
             </div>
 

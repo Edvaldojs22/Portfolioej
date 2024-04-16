@@ -2,7 +2,6 @@
     width: 100%;
     max-width: 1500px;
     height: 100%;
-    max-height: 900px;
     position: relative;
     font-family: "Montserrat", sans-serif;
     ;
@@ -11,7 +10,7 @@
 }
 
 :root {
-    --cor-gray: #ababab;
+    --cor-gray: #e2d600;
 }
 
 .text_desenvolvedor {
@@ -81,11 +80,17 @@ img {
 
 .painel_projetos {
     display: flex;
-    width: 500px;
     position: absolute;
     bottom: 10px;
-    left: 200px;
+    left: 30px;
     color: #666666;
+}
+
+.painel_projetos h2{
+    letter-spacing: 2px;
+    margin-right: 20px;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 .projetos {
@@ -94,7 +99,6 @@ img {
     justify-content: space-around;
     align-items: center;
     position: relative;
-    margin-left: 10px;
 }
 
 .projetos p:hover {
@@ -104,31 +108,18 @@ img {
 
 .projetos p {
     cursor: pointer;
-    font-weight: bold;
+    font-weight: 400;
 }
 
-.projetos::after {
-    content: '';
-    position: absolute;
-    width: 4px;
-    height: 32px;
-    background-color: var(--cor-gray);
-    top: 0;
-    left: 2px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-
-}
 
 .projetos::before {
     content: '';
     position: absolute;
     width: 400px;
-    height: 4px;
+    height: 2px;
     background-color: var(--cor-gray);
-    bottom: -6px;
-    left: 2px;
+    bottom: -4px;
+    left: 0px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -222,15 +213,15 @@ img {
     }
 
     .projetos::after {
-        width: 4px;
+        width: 2px;
         height: 35px;
         top: 0;
         left: -7px;
     }
 
     .projetos::before {
-        height: 4px;
-        bottom: -9px;
+        height: 2px;
+        bottom: -7px;
         left: -7px;
     }
 
@@ -273,13 +264,12 @@ img {
     }
 
     .opacity_projeto {
-        margin: 40px 0 0 40px;
+        margin: 80px 0 0 50px;
         background-color: transparent;
+       
     }
 
-    .home {
-        height: 100vh;
-    }
+    
 
     img {
         width: 100px;
@@ -287,10 +277,10 @@ img {
     }
 
     .painel_projetos {
-        width: 100%;
-        left: 50%;
-        transform: translate(-50%);
+        width: 400px;
         bottom: 100px;
+        position: static;
+        margin-top: 100px;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;

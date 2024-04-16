@@ -157,6 +157,7 @@
 
 
 @media (max-width: 767px) {
+  
     .img_texto_sobre {
         width: 200px;
         background-color: transparent;
@@ -178,13 +179,25 @@
         font-weight: 400;
     }
 
+    .texto_sobre p{
+        width: 300px;
+        font-size:13px;
+        font-weight: 300;
+    }
+
     .painel_img_texto_sobre {
         width: 280px;
+        
     }
 
     .painel_text_p p {
         font-size: 13px;
         font-weight: 300;
+        width: 300px;
+    }
+
+    .painel_text_p p:nth-child(1){
+        margin-bottom: 5px;
     }
 
     .painel_text_p:after {
