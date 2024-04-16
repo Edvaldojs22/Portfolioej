@@ -13,15 +13,17 @@
 }
 
 .texto_sobre {
-  
-    color: white;
+    color: #ababab;
 }
 
-
+.texto_sobre h1{
+    font-weight: 200;
+    letter-spacing: 3px;
+}
 
 .texto_sobre p {
     position: relative;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .texto_sobre p::after {
@@ -166,12 +168,14 @@
 
     .texto_sobre h1 {
         font-size: 30px;
-        margin: 0 0 40px 90px;
+        margin: 0 0 20px 90px;
+        width: 180px;
     }
 
 
     .texto_sobre h1 {
         font-size: 18px;
+        font-weight: 400;
     }
 
     .painel_img_texto_sobre {
@@ -180,6 +184,7 @@
 
     .painel_text_p p {
         font-size: 13px;
+        font-weight: 300;
     }
 
     .painel_text_p:after {
@@ -195,7 +200,7 @@
     .painel_skills {
         left: 50%;
         transform: translate(-50%);
-        bottom: -50px;
+        bottom: -20px;
         gap: 5px;
         width: 200px;
         background-color: transparent;

@@ -4,18 +4,18 @@
     height: 100%;
     max-height: 900px;
     position: relative;
-    font-family: sans-serif;
+    font-family: "Montserrat", sans-serif;
+    ;
     /* border: solid 1px greenyellow; */
+
 }
 
 :root {
-    --cor-gray: #666666;
+    --cor-gray: #ababab;
 }
 
-
-
 .text_desenvolvedor {
-    color: white;
+    color: #ababab;
     font-size: 30px;
     position: absolute;
     left: 50%;
@@ -24,10 +24,6 @@
     z-index: 1;
 }
 
-.painel_img_texto_sobre h1 {
-    margin-bottom: 10px;
-    background-color: transparent;
-}
 
 .painel_img_texto_sobre::after {
     content: '';
@@ -89,7 +85,7 @@ img {
     position: absolute;
     bottom: 10px;
     left: 200px;
-    color: white;
+    color: #666666;
 }
 
 .projetos {
@@ -171,7 +167,7 @@ img {
 }
 
 .painel_nome_data p {
-    color: white;
+    color: #ababab;
     font-size: 11px;
     margin: 0 4px 13px 0;
 }
@@ -184,7 +180,7 @@ img {
     animation: opacity linear 0.4s;
     margin: 90px 0 0 90px;
     background-color: transparent;
-   
+
 }
 
 @keyframes opacity {
@@ -206,7 +202,6 @@ img {
 
 @media (max-width:1104px) {
     .text_desenvolvedor {
-        color: white;
         font-size: 20px;
         position: absolute;
         top: 50px;
@@ -219,7 +214,7 @@ img {
 
     .projetos {
         justify-content: space-between;
-        
+
     }
 
     .projetos p {
@@ -242,6 +237,7 @@ img {
 
 }
 
+
 /* home mobile */
 
 
@@ -257,10 +253,13 @@ img {
     }
 
     .text_desenvolvedor {
-        width: 250px;
-        font-size: 18px;
-        top: -30px;
+        width: 150px;
+        font-size: 10px;
+        left: 90px;
+        top: 13px;
         background-color: transparent;
+        
+
     }
 
     .painel_img_texto_sobre::after {
@@ -295,7 +294,7 @@ img {
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        
+
     }
 
     .painel_projetos h2 {
@@ -314,11 +313,11 @@ img {
     }
 
     .projetos::before {
-       width: calc(100% + 10px);
-       height: 2px;
-       left: 50%;
-       transform: translate(-50%);
-       border-radius: 5px;
+        width: calc(100% + 10px);
+        height: 2px;
+        left: 50%;
+        transform: translate(-50%);
+        border-radius: 5px;
 
     }
 
