@@ -4,6 +4,7 @@
     height: 100%;
     position: relative;
     font-family: "Montserrat", sans-serif;
+
     ;
     /* border: solid 1px greenyellow; */
 
@@ -128,10 +129,10 @@ img {
 
 .painel_nome_data {
     position: absolute;
-    bottom: 10px;
-    right: 30px;
-}
+    bottom: 0;
+    right: 0;
 
+}
 
 
 
@@ -141,8 +142,8 @@ img {
     width: 20px;
     height: 250px;
     background-color: var(--cor-gray);
-    bottom: -10px;
-    right: -20px;
+    bottom: 0;
+    right: 0;
     clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 11%);
 }
 
@@ -152,15 +153,15 @@ img {
     width: 250px;
     height: 20px;
     background-color: var(--cor-gray);
-    bottom: -10px;
-    right: -20px;
+    bottom: 0;
+    right: 0;
     clip-path: polygon(100% 100%, 0 100%, 11% 0, 100% 0);
 }
 
 .painel_nome_data p {
     color: #ababab;
     font-size: 11px;
-    margin: 0 4px 13px 0;
+    margin: 0 25px 23px 0;
 }
 
 
@@ -232,6 +233,8 @@ img {
 /* home mobile */
 
 
+
+
 @media (max-width: 767px) {
 
     .icon_links {
@@ -280,7 +283,7 @@ img {
         width: 400px;
         bottom: 100px;
         position: static;
-        margin-top: 100px;
+        margin-top: 150px;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
@@ -314,7 +317,8 @@ img {
 
 
     .painel_nome_data {
-        bottom: -100px;
+        bottom: 0px;
+        right: 10px;
     }
 
     .painel_nome_data p {
@@ -326,8 +330,8 @@ img {
     .painel_nome_data::after {
         width: 8px;
         height: 150px;
-        bottom: -10px;
-        right: -20px;
+        bottom: 0;
+        right: -8px;
 
     }
 
@@ -335,8 +339,8 @@ img {
         width: 150px;
         height: 8px;
         background-color: var(--cor-gray);
-        bottom: -10px;
-        right: -20px;
+        bottom: 0;
+        right: -3px;
     }
 
 

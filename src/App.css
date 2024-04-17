@@ -14,12 +14,14 @@
     justify-content: center;
     align-items: center;
     padding: 30px;
-    
+
 }
 
 
 @media (max-width: 767px) {
-    .painel_home{
+    .painel_home {
         padding: 0;
+       min-height: 730px;
+       max-height: 700px;
     }
 }

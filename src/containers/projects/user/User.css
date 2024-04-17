@@ -14,9 +14,10 @@
 
 .texto_sobre {
     color: #ababab;
+    position: relative;
 }
 
-.texto_sobre h1{
+.texto_sobre h1 {
     font-weight: 200;
     letter-spacing: 3px;
 }
@@ -72,7 +73,7 @@
     position: absolute;
     bottom: 0;
     right: -500px;
-    
+
 }
 
 .painel_skills li {
@@ -114,21 +115,21 @@
 
 
 @media (max-width:1227px) {
-    .painel_skills{
+    .painel_skills {
         right: -300px;
         gap: 7px;
     }
 
-    .painel_skills li{
+    .painel_skills li {
         font-size: 35px;
-      
+
     }
-    
+
 }
 
 
 @media (max-width:1103px) {
-   
+
     .painel_skills {
         left: 50%;
         transform: translate(-50%);
@@ -139,6 +140,7 @@
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 
     }
+
     .painel_skills li {
         font-size: 30px;
         background-color: transparent;
@@ -147,7 +149,7 @@
         text-align: center;
     }
 
-    
+
 }
 
 
@@ -157,7 +159,7 @@
 
 
 @media (max-width: 767px) {
-  
+
     .img_texto_sobre {
         width: 200px;
         background-color: transparent;
@@ -179,15 +181,15 @@
         font-weight: 400;
     }
 
-    .texto_sobre p{
+    .texto_sobre p {
         width: 300px;
-        font-size:13px;
+        font-size: 13px;
         font-weight: 300;
     }
 
     .painel_img_texto_sobre {
         width: 280px;
-        
+
     }
 
     .painel_text_p p {
@@ -196,7 +198,7 @@
         width: 300px;
     }
 
-    .painel_text_p p:nth-child(1){
+    .painel_text_p p:nth-child(1) {
         margin-bottom: 5px;
     }
 
@@ -211,20 +213,18 @@
     }
 
     .painel_skills {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background-color: transparent;
         left: 50%;
         transform: translate(-50%);
-        bottom: -20px;
-        gap: 5px;
-        width: 200px;
-        background-color: transparent;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-
     }
 
     .painel_skills li {
-        font-size: 25px;
+        font-size: 30px;
         background-color: transparent;
-        width: 0;
+        width: 30px;
         height: 0;
         text-align: center;
     }
