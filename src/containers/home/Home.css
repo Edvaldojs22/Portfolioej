@@ -1,3 +1,68 @@
+/* animações */
+@keyframes crescer {
+    0%{
+        width: 0;
+    }
+    40%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+
+@keyframes mover {
+    0%{
+        left: 0;
+    }
+    40%{
+        box-shadow: 0 0 3px 3px var(--cor-gray);
+        left: 0;
+       
+    }
+    100%{
+        left: 99%;
+        box-shadow: 0 0 3px 2px var(--cor-gray);
+        
+    }
+}
+
+@keyframes opacity_home {
+    0% {
+        opacity: 0;
+        transform: scale(0.2);
+
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+
+
+    }
+}
+
+@keyframes opacity_efeito {
+    0% {
+        opacity: 0;
+        
+
+
+    }
+
+    100% {
+        opacity: 1;
+       
+
+
+    }
+}
+
+
+
+
 .home {
     width: 100%;
     max-width: 1500px;
@@ -11,7 +76,7 @@
 }
 
 :root {
-    --cor-gray: #e2d600;
+    --cor-gray: #666666;
 }
 
 .text_desenvolvedor {
@@ -23,6 +88,32 @@
     top: 90px;
     z-index: 1;
 }
+
+.text_desenvolvedor::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: var(--cor-gray);
+    left: 0;
+    bottom: -5px;
+    border-radius: 5px;
+    animation: crescer 3s linear forwards;
+}
+
+.text_desenvolvedor::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: var(--cor-gray);
+    left: 0;
+    bottom: -5px;
+    border-radius: 50%;
+    animation: mover 3s linear ;
+    margin-left: 2px;
+}
+
 
 
 .painel_img_texto_sobre::after {
@@ -110,22 +201,36 @@ img {
 .projetos p {
     cursor: pointer;
     font-weight: 400;
+  
+    position: relative;
 }
 
-
-.projetos::before {
+.projetos p::after{
     content: '';
     position: absolute;
-    width: 400px;
+    width: 100%;
     height: 2px;
     background-color: var(--cor-gray);
-    bottom: -4px;
-    left: 0px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-
+    left: 0;
+    bottom: -5px;
+    border-radius: 5px;
+    animation: crescer 3s linear forwards;
 }
+
+.projetos p::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: var(--cor-gray);
+    left: 0;
+    bottom: -5px;
+    border-radius: 50%;
+    animation: mover 3s linear ;
+    margin-left: 2px;
+}
+
+
 
 .painel_nome_data {
     position: absolute;
@@ -133,7 +238,6 @@ img {
     right: 0;
 
 }
-
 
 
 .painel_nome_data::after {
@@ -169,27 +273,12 @@ img {
 
 
 .opacity_projeto {
-    animation: opacity linear 0.4s;
+    animation: opacity_home linear 0.4s;
     margin: 90px 0 0 90px;
     background-color: transparent;
 
 }
 
-@keyframes opacity {
-    0% {
-        opacity: 0;
-        transform: scale(0.2);
-
-
-    }
-
-    100% {
-        opacity: 1;
-        transform: scale(1);
-
-
-    }
-}
 
 
 @media (max-width:1104px) {
@@ -230,6 +319,7 @@ img {
 }
 
 
+
 /* home mobile */
 
 
@@ -247,7 +337,7 @@ img {
     }
 
     .text_desenvolvedor {
-        width: 150px;
+        width: 140px;
         font-size: 10px;
         left: 90px;
         top: 13px;
