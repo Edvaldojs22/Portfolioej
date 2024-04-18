@@ -36,7 +36,7 @@
     background-color: var(--cor-gray);
     top: 0;
     left: -25px;
-    animation: crescer_p 3s linear forwards ;
+    animation: crescer_p 12s linear forwards ;
 }
 
 
@@ -49,7 +49,7 @@
     background-color: var(--cor-gray);
     top: 0;
     left: -25px;
-    animation: mover_p 3s linear ;
+    animation: mover_p 12s linear ;
 }
 
 

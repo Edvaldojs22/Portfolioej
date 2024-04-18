@@ -37,7 +37,7 @@ export default function Home() {
             const proximoComponenteIndex = (componentes.indexOf(vary) + 1) % componentes.length;
             const proximoComponente = componentes[proximoComponenteIndex];
             mostraComponente(proximoComponente);
-        }, 10000); 
+        }, 13000); 
 
         return () => clearInterval(interval);
     }, [vary]); 
