@@ -15,6 +15,10 @@ import { FaGithub } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
 
+import IconAlvo from "../../assets/img/target.png";
+import IconBarba from "../../assets/img/hairstyle.png";
+import IconCart from "../../assets/img/trolley.png";
+
 import IconUser from "../../assets/img/office-man.png";
 
 import Project from "../projects/Project";
@@ -49,6 +53,10 @@ export default function Portfolio() {
     FaAws,
   ];
 
+  const tecAlvo = [FaHtml5, IoLogoCss3, RiJavascriptFill];
+  const tecBarba = [FaHtml5, IoLogoCss3];
+  const tecCarrinho = [FaHtml5, IoLogoCss3, RiJavascriptFill, FaReact];
+
   return (
     <main className="home">
       <nav className="icon_links">
@@ -79,9 +87,36 @@ export default function Portfolio() {
             }
           />
         )}
-        {vary === "AcerteAlvo" && <Project />}
-        {vary === "Barbearia" && <Project />}
-        {vary === "Mercado" && <Project />}
+        {vary === "AcerteAlvo" && (
+          <Project
+            img={IconAlvo}
+            h1text={"Acerte o alvo"}
+            text={
+              "O projeto Acerte o Alvo é uma emocionante experiência interativa desenvolvida com HTML, CSS e JavaScript, que desafia os jogadores a testarem sua precisão e habilidade. Com uma interface intuitiva e visualmente cativante, onde você se auto desafia aumenta a velocidade do alvo."
+            }
+            technologies={tecAlvo}
+          />
+        )}
+        {vary === "Barbearia" && (
+          <Project
+            h1text={"Barbearia"}
+            img={IconBarba}
+            text={
+              "Esse projeto foi um dos meus primeiros projetos de desenvolvimento web, onde foi meus primeiros passos no mundo do HTML e CSS, com a valiosa assistência do curso da Alura. Apresento a vocês a Barbearia Jonas, uma experiência virtual que reflete o início da minha jornada no mundo da criação web."
+            }
+            technologies={tecBarba}
+          />
+        )}
+        {vary === "Mercado" && (
+          <Project
+            h1text={"Carrinho API"}
+            img={IconCart}
+            text={
+              "Nesse projeto, utilizei React e JavaScript e integrei a API do Mercado Livre para disponibilizar uma ampla variedade de produtos para os usuários explorarem e adicionarem ao carrinho de compras. O projeto ainda não foi finalizado, porém logo logo estará finalizado."
+            }
+            technologies={tecCarrinho}
+          />
+        )}
       </div>
 
       <div className="painel_projetos">

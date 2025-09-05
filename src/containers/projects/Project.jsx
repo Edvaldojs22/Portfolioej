@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import "./Project.css";
 export default function Project({ img, h1text, text, technologies }) {
   return (

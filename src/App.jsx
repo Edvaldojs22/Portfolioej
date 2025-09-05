@@ -1,9 +1,9 @@
 import "./App.css";
-import Home from "./containers/home/Home";
+import Portfolio from "./containers/portfolio/Portfolio";
 export default function App() {
   return (
     <div className="app">
-      <Home />
+      <Portfolio />
     </div>
   );
 }
