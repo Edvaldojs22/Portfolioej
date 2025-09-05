@@ -41,21 +41,35 @@ export default function Portfolio() {
     }
   };
   const tecnologies = [
-    FaHtml5,
-    IoLogoCss3,
-    RiJavascriptFill,
-    FaNodeJs,
-    FaReact,
-    FaAngular,
-    FaJava,
-    SiMongodb,
-    SiMysql,
-    FaAws,
+    { Icon: FaHtml5, color: "#e34c26" },
+    { Icon: IoLogoCss3, color: "#264de4" },
+    { Icon: RiJavascriptFill, color: "#f0db4f" },
+    { Icon: FaNodeJs, color: "#68a063" },
+    { Icon: FaReact, color: "#61dafb" },
+    { Icon: FaAngular, color: "#dd1b16" },
+    { Icon: FaJava, color: "#007396" },
+    { Icon: SiMongodb, color: "#47A248" },
+    { Icon: SiMysql, color: "#00758f" },
+    { Icon: FaAws, color: "#ff9900" },
   ];
 
-  const tecAlvo = [FaHtml5, IoLogoCss3, RiJavascriptFill];
-  const tecBarba = [FaHtml5, IoLogoCss3];
-  const tecCarrinho = [FaHtml5, IoLogoCss3, RiJavascriptFill, FaReact];
+  const tecAlvo = [
+    { Icon: FaHtml5, color: "#e34c26" },
+    { Icon: IoLogoCss3, color: "#264de4" },
+    { Icon: RiJavascriptFill, color: "#f0db4f" },
+  ];
+
+  const tecBarba = [
+    { Icon: FaHtml5, color: "#e34c26" },
+    { Icon: IoLogoCss3, color: "#264de4" },
+  ];
+
+  const tecCarrinho = [
+    { Icon: FaHtml5, color: "#e34c26" },
+    { Icon: IoLogoCss3, color: "#264de4" },
+    { Icon: RiJavascriptFill, color: "#f0db4f" },
+    { Icon: FaReact, color: "#61dafb" },
+  ];
 
   return (
     <main className="home">
@@ -74,7 +88,7 @@ export default function Portfolio() {
         </a>
       </nav>
 
-      <p className="text_desenvolvedor">Desenvolvedo de Software</p>
+      <p className="text_desenvolvedor">Desenvolvedor de Software</p>
 
       <div className="painel_img_texto_sobre">
         {vary === "User" && (
@@ -82,9 +96,12 @@ export default function Portfolio() {
             img={IconUser}
             h1text={"Edvaldo jonas"}
             technologies={tecnologies}
-            text={
-              "Olá, sou Edvaldo, atuando nesta área há quase 2 anos. Adquiri conhecimentos e habilidades essenciais para o crescimento profissional, como em Java, JavaScript, React, CSS, HTML e Banco de Dados.Apresento este meu portfólio para que veja um pouco das minhas habilidades, mesmo tendo pouco tempo para criar projetos, e alguns são antigos. Ainda não encontrei tempo para fazer melhorias, porém, fique à vontade para olhá-los."
-            }
+            text={`Sou Edvaldo Jonas, desenvolvedor full stack com experiência prática e versátil na criação de soluções digitais. Tenho facilidade em me adaptar a diferentes contextos e equipes, e aprendo novas tecnologias com rapidez — uma habilidade que me permite acompanhar a constante evolução do mercado. Minha paixão por programação vai além do código: gosto de entender problemas reais e transformá-los em aplicações funcionais, intuitivas e escaláveis.
+
+Ao longo da minha jornada, desenvolvi projetos que envolvem desde interfaces modernas com React até integrações robustas com APIs e bancos de dados. Tenho domínio em linguagens como JavaScript, Java e HTML/CSS, além de experiência com ferramentas como Node.js, MongoDB, MySQL e AWS.
+
+Mais do que entregar código, busco entregar valor. Estou sempre aberto a novos desafios e oportunidades que me permitam crescer, colaborar e contribuir com soluções que façam a diferença.`}
+            linkCodigo={"https://github.com/Edvaldojs22/Portfolioej"}
           />
         )}
         {vary === "AcerteAlvo" && (
@@ -95,6 +112,9 @@ export default function Portfolio() {
               "O projeto Acerte o Alvo é uma emocionante experiência interativa desenvolvida com HTML, CSS e JavaScript, que desafia os jogadores a testarem sua precisão e habilidade. Com uma interface intuitiva e visualmente cativante, onde você se auto desafia aumenta a velocidade do alvo."
             }
             technologies={tecAlvo}
+            site={"https://edvaldojs22.github.io/Acerte-o-alvo/"}
+            linkCodigo={"https://github.com/Edvaldojs22/Acerte-o-alvo"}
+            textSite={"Site"}
           />
         )}
         {vary === "Barbearia" && (
@@ -105,6 +125,9 @@ export default function Portfolio() {
               "Esse projeto foi um dos meus primeiros projetos de desenvolvimento web, onde foi meus primeiros passos no mundo do HTML e CSS, com a valiosa assistência do curso da Alura. Apresento a vocês a Barbearia Jonas, uma experiência virtual que reflete o início da minha jornada no mundo da criação web."
             }
             technologies={tecBarba}
+            site={"https://edvaldojs22.github.io/Barbearia/"}
+            linkCodigo={"https://github.com/Edvaldojs22/Barbearia"}
+            textSite={"Site"}
           />
         )}
         {vary === "Mercado" && (
@@ -115,6 +138,9 @@ export default function Portfolio() {
               "Nesse projeto, utilizei React e JavaScript e integrei a API do Mercado Livre para disponibilizar uma ampla variedade de produtos para os usuários explorarem e adicionarem ao carrinho de compras. O projeto ainda não foi finalizado, porém logo logo estará finalizado."
             }
             technologies={tecCarrinho}
+            site={"https://edvaldojs22.github.io/Carrinho-react/"}
+            linkCodigo={"https://github.com/Edvaldojs22/Carrinho-react"}
+            textSite={"Site"}
           />
         )}
       </div>

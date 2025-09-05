@@ -135,6 +135,7 @@ img {
   width: 160px;
   display: flex;
   justify-content: space-around;
+  z-index: 1;
 }
 
 .icon_links a {

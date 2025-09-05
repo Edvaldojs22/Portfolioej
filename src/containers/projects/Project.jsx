@@ -1,6 +1,14 @@
 /* eslint-disable react/prop-types */
 import "./Project.css";
-export default function Project({ img, h1text, text, technologies }) {
+export default function Project({
+  img,
+  h1text,
+  text,
+  technologies,
+  site,
+  linkCodigo,
+  textSite,
+}) {
   return (
     <div className="opacity_projeto">
       <div className="img_texto_sobre">
@@ -13,10 +21,19 @@ export default function Project({ img, h1text, text, technologies }) {
           <p>{text}</p>
         </div>
 
+        <nav className="painel_links_projetos">
+          <a href={site} target="_blank">
+            {textSite}
+          </a>
+          <a href={linkCodigo} target="_blank">
+            Código GitHub
+          </a>
+        </nav>
+
         <ul className="painel_skills">
-          {technologies.map((TecIcon, index) => (
+          {technologies.map(({ Icon, color }, index) => (
             <li key={index}>
-              <TecIcon />
+              <Icon color={color} />
             </li>
           ))}
         </ul>
