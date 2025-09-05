@@ -23,7 +23,7 @@
   display: flex;
   align-items: start;
   justify-content: space-between;
-  padding-right: 100px;
+  padding-right: 40px;
   position: relative;
   gap: 100px;
 }
@@ -158,14 +158,15 @@
   list-style: none;
   color: var(--cor-gray);
   font-size: 40px;
-
   gap: 20px;
+  position: relative;
 }
 
 .painel_skills li {
   width: 70px;
   height: 30px;
   text-align: end;
+  cursor: pointer;
 }
 
 @media (max-width: 1227px) {

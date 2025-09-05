@@ -1,15 +1,6 @@
 import "./Portfolio.css";
-
-import { FaHtml5 } from "react-icons/fa";
-import { SiMongodb } from "react-icons/si";
-import { FaAngular } from "react-icons/fa";
-import { IoLogoCss3 } from "react-icons/io5";
-import { FaAws } from "react-icons/fa";
-import { FaJava } from "react-icons/fa";
-import { RiJavascriptFill } from "react-icons/ri";
-import { FaReact } from "react-icons/fa";
-import { FaNodeJs } from "react-icons/fa6";
-import { SiMysql } from "react-icons/si";
+import { useState } from "react";
+import { tecnologies } from "../../data/tecnologies";
 
 import { FaGithub } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
@@ -18,11 +9,9 @@ import { FaLinkedin } from "react-icons/fa";
 import IconAlvo from "../../assets/img/target.png";
 import IconBarba from "../../assets/img/hairstyle.png";
 import IconCart from "../../assets/img/trolley.png";
-
 import IconUser from "../../assets/img/office-man.png";
 
 import Project from "../projects/Project";
-import { useState } from "react";
 
 export default function Portfolio() {
   const [vary, setVary] = useState("User");
@@ -40,36 +29,12 @@ export default function Portfolio() {
       document.documentElement.style.setProperty("--cor-gray", "#004c8e");
     }
   };
-  const tecnologies = [
-    { Icon: FaHtml5, color: "#e34c26" },
-    { Icon: IoLogoCss3, color: "#264de4" },
-    { Icon: RiJavascriptFill, color: "#f0db4f" },
-    { Icon: FaNodeJs, color: "#68a063" },
-    { Icon: FaReact, color: "#61dafb" },
-    { Icon: FaAngular, color: "#dd1b16" },
-    { Icon: FaJava, color: "#007396" },
-    { Icon: SiMongodb, color: "#47A248" },
-    { Icon: SiMysql, color: "#00758f" },
-    { Icon: FaAws, color: "#ff9900" },
-  ];
 
-  const tecAlvo = [
-    { Icon: FaHtml5, color: "#e34c26" },
-    { Icon: IoLogoCss3, color: "#264de4" },
-    { Icon: RiJavascriptFill, color: "#f0db4f" },
-  ];
-
-  const tecBarba = [
-    { Icon: FaHtml5, color: "#e34c26" },
-    { Icon: IoLogoCss3, color: "#264de4" },
-  ];
-
-  const tecCarrinho = [
-    { Icon: FaHtml5, color: "#e34c26" },
-    { Icon: IoLogoCss3, color: "#264de4" },
-    { Icon: RiJavascriptFill, color: "#f0db4f" },
-    { Icon: FaReact, color: "#61dafb" },
-  ];
+  const tecAlvo = tecnologies.filter((tec) => [1, 2, 3].includes(tec.id));
+  const tecBarba = tecnologies.filter((tec) => [1, 2].includes(tec.id));
+  const tecCarrinho = tecnologies.filter((tec) =>
+    [1, 2, 3, 5].includes(tec.id)
+  );
 
   return (
     <main className="home">

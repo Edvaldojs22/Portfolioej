@@ -1,5 +1,8 @@
 /* eslint-disable react/prop-types */
+import { useState } from "react";
+import Card from "../card/Card";
 import "./Project.css";
+
 export default function Project({
   img,
   h1text,
@@ -9,6 +12,8 @@ export default function Project({
   linkCodigo,
   textSite,
 }) {
+  const [active, setActive] = useState(null);
+
   return (
     <div className="opacity_projeto">
       <div className="img_texto_sobre">
@@ -31,8 +36,14 @@ export default function Project({
         </nav>
 
         <ul className="painel_skills">
-          {technologies.map(({ Icon, color }, index) => (
-            <li key={index}>
+          {technologies.map(({ Icon, color, description }, index) => (
+            <li key={index} onClick={() => setActive(index)}>
+              <Card
+                Icon={Icon}
+                visibleOn={active === index}
+                description={description}
+                color={color}
+              />
               <Icon color={color} />
             </li>
           ))}

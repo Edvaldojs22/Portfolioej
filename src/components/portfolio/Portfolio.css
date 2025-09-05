@@ -140,12 +140,12 @@ img {
 
 .icon_links a {
   font-size: 30px;
-  color: #666666;
+  color: var(--cor-gray);
 }
 
 .icon_links a:hover {
   transform: scale(1.1);
-  color: var(--cor-gray);
+  color: #666666;
 }
 
 .painel_projetos {
