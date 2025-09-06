@@ -93,11 +93,12 @@
   content: "";
   position: absolute;
   width: 100%;
-  height: 1px;
+  height: 2px;
   border-radius: 30px;
   bottom: -10px;
   left: 50%;
   transform: translate(-50%);
+  background-color: var(--cor-gray);
 }
 .painel_links_projetos a:hover {
   transform: translate(1.1);
@@ -179,11 +180,16 @@
     width: auto;
     height: auto;
   }
+  .opacity_projeto {
+    margin: 90px 0 90px 60px;
+  }
 }
 
 @media (max-width: 800px) {
   .opacity_projeto {
-    margin: 50px 0 90px 60px;
+    margin: 60px 0 0 0;
+
+    padding: 20px;
   }
   .texto_sobre {
     flex-direction: column;
@@ -197,6 +203,10 @@
   .painel_skills li {
     width: auto;
     font-size: 35px;
+  }
+
+  .img_texto_sobre {
+    text-align: center;
   }
 
   img {
@@ -216,15 +226,13 @@
     left: 50%;
     transform: translate(-50%);
   }
+
+  .painel_links_projetos a {
+    font-size: 16px;
+  }
   .cardOn {
     top: -360px;
     left: 50%;
     transform: translate(-50%);
-  }
-}
-
-@media (max-width: 400px) {
-  .opacity_projeto {
-    margin: 50px 0 90px 30px;
   }
 }
