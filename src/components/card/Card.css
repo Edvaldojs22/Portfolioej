@@ -1,15 +1,16 @@
 .cardOn {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   text-align: start;
   background-color: rgb(242, 242, 242);
-  max-width: 300px;
+  width: 300px;
+  max-height: 400px;
   border-radius: 10px;
   color: black;
   position: absolute;
-  top: -50px;
+  top: -100px;
   left: -300px;
   padding: 5px 20px 30px;
   box-shadow: 0 0 10px var(--cor-gray);
@@ -24,6 +25,7 @@
 .iconTec {
   font-size: 60px;
 }
+
 .cardOn p {
   font-size: 20px;
   font-weight: 600;

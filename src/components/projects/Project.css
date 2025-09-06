@@ -169,93 +169,62 @@
   cursor: pointer;
 }
 
-@media (max-width: 1227px) {
+@media (max-width: 1200px) {
+  .texto_sobre {
+    gap: 20px;
+    justify-content: space-between;
+  }
+
   .painel_skills {
-    right: -300px;
-    gap: 7px;
+    width: auto;
+    height: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .opacity_projeto {
+    margin: 50px 0 90px 60px;
+  }
+  .texto_sobre {
+    flex-direction: column;
+    padding-right: 10px;
+  }
+  .painel_skills {
+    align-self: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 
   .painel_skills li {
+    width: auto;
     font-size: 35px;
   }
-}
 
-@media (max-width: 1103px) {
-  .painel_skills {
-    left: 50%;
-    transform: translate(-50%);
-    bottom: -50px;
-    gap: 5px;
-    width: 300px;
-    background-color: transparent;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  img {
+    width: 150px;
+    height: 150px;
   }
 
-  .painel_skills li {
-    font-size: 30px;
-    background-color: transparent;
-    width: 0;
-    height: 0;
-    text-align: center;
-  }
-}
-
-/* user mobile */
-
-@media (max-width: 767px) {
-  .img_texto_sobre {
-    width: 200px;
-    background-color: transparent;
-  }
-
-  .texto_sobre {
-    margin: 0;
-  }
-
-  .texto_sobre p {
-    width: 300px;
-    font-size: 13px;
-    font-weight: 300;
-  }
-
-  .painel_img_texto_sobre {
-    width: 280px;
-  }
-
-  .painel_text_p p {
-    font-size: 13px;
-    font-weight: 300;
-    width: 300px;
-  }
-
-  .painel_text_p p:nth-child(1) {
-    margin-bottom: 5px;
-  }
-
-  .painel_text_p:after {
-    width: 2px;
-    left: -15px;
-  }
-
-  .texto_sobre p::after {
-    width: 2px;
-    left: -25px;
-  }
-
-  .painel_skills {
-    display: flex;
-    justify-content: center;
+  .painel_text_p {
     width: 100%;
-    background-color: transparent;
+  }
+  .painel_text_p p {
+    font-size: 1rem;
+  }
+
+  .painel_links_projetos {
+    bottom: -80px;
     left: 50%;
     transform: translate(-50%);
   }
+  .cardOn {
+    top: -360px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
 
-  .painel_skills li {
-    font-size: 30px;
-    background-color: transparent;
-    width: 30px;
-    height: 0;
-    text-align: center;
+@media (max-width: 400px) {
+  .opacity_projeto {
+    margin: 50px 0 90px 30px;
   }
 }
