@@ -41,14 +41,14 @@
   position: relative;
 }
 
-.texto_sobre p {
+.painel_text_p p {
   position: relative;
   font-size: 16px;
   line-height: 24px;
   white-space: pre-line;
 }
 
-.texto_sobre p::after {
+.painel_text_p p::after {
   content: "";
   position: absolute;
   width: 2px;
@@ -60,7 +60,7 @@
   animation: crescer_p 12s linear forwards;
 }
 
-.texto_sobre p::before {
+.painel_text_p p::before {
   content: "";
   position: absolute;
   width: 2px;

@@ -36,15 +36,20 @@ export default function Project({
         </nav>
 
         <ul className="painel_skills">
-          {technologies.map(({ Icon, color, description }, index) => (
-            <li key={index} onClick={() => setActive(index)}>
-              <Card
-                Icon={Icon}
-                visibleOn={active === index}
-                description={description}
-                color={color}
-              />
-              <Icon color={color} />
+          {technologies.map(({ Icon, color, description, name }, index) => (
+            <li key={index}>
+              {active === index ? (
+                <Card
+                  Icon={Icon}
+                  visibleOn={true}
+                  description={description}
+                  color={color}
+                  name={name}
+                  handleClose={() => setActive(null)}
+                />
+              ) : (
+                <Icon color={color} onClick={() => setActive(index)} />
+              )}
             </li>
           ))}
         </ul>

@@ -1,25 +1,47 @@
-.card_text {
-  display: none;
-}
-
 .cardOn {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  font-size: 10px;
-  border: solid 2px white;
-  background-color: white;
-  max-width: 200px;
-  max-height: 200px;
-  border-radius: 20px;
+  text-align: start;
+  background-color: rgb(242, 242, 242);
+  max-width: 300px;
+  border-radius: 10px;
   color: black;
   position: absolute;
   top: -50px;
-  left: -200px;
+  left: -300px;
+  padding: 5px 20px 30px;
+  box-shadow: 0 0 10px var(--cor-gray);
+  transition: all 1s linear;
+}
+
+.cardOn h2 {
+  font-size: 13px;
+  font-weight: 500;
 }
 
 .iconTec {
   font-size: 60px;
+}
+.cardOn p {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2cqb;
+}
+
+.iconClose {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  font-size: 20px;
+  color: rgb(187, 0, 0);
+  border-radius: 50%;
+  transition: 0.2s linear;
+}
+
+.iconClose:hover {
+  background-color: rgb(187, 0, 0);
+  color: white;
+  transform: scale(1.2);
 }
