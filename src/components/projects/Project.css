@@ -159,17 +159,50 @@
   list-style: none;
   color: var(--cor-gray);
   font-size: 40px;
-  gap: 20px;
+  gap: 25px;
   position: relative;
 }
 
 .painel_skills li {
-  width: 70px;
-  height: 30px;
+  width: auto;
   text-align: end;
   cursor: pointer;
 }
 
+.divClick {
+  position: absolute;
+  bottom: -70px;
+  left: 50%;
+  transform: translate(-50%);
+}
+.iconClick {
+  position: absolute;
+  bottom: -10px;
+  left: 15px;
+  color: white;
+  animation: click 3s linear infinite;
+}
+.iconHtml {
+  color: #e34c26;
+}
+
+@keyframes click {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.85);
+  }
+  50% {
+    transform: scale(0.7);
+  }
+  75% {
+    transform: scale(0.85);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 @media (max-width: 1200px) {
   .texto_sobre {
     gap: 20px;
@@ -222,7 +255,7 @@
   }
 
   .painel_links_projetos {
-    bottom: -80px;
+    bottom: -100px;
     left: 50%;
     transform: translate(-50%);
   }
@@ -234,5 +267,15 @@
     top: -360px;
     left: 50%;
     transform: translate(-50%);
+  }
+
+  .divClick {
+    bottom: -50px;
+    font-size: 30px;
+  }
+
+  .iconClick {
+    bottom: -5px;
+    left: 10px;
   }
 }

@@ -53,7 +53,7 @@ export default function Portfolio() {
         </a>
       </nav>
 
-      <p className="text_desenvolvedor">Desenvolvedor de Software</p>
+      <p className="text_desenvolvedor">Desenvolvedor Full Stack</p>
 
       <div className="painel_img_texto_sobre">
         {vary === "User" && (

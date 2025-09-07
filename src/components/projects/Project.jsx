@@ -2,6 +2,8 @@
 import { useState } from "react";
 import Card from "../card/Card";
 import "./Project.css";
+import { GiClick } from "react-icons/gi";
+import { FaHtml5 } from "react-icons/fa";
 
 export default function Project({
   img,
@@ -52,6 +54,10 @@ export default function Project({
               )}
             </li>
           ))}
+          <div className="divClick">
+            <GiClick className="iconClick" />
+            <FaHtml5 className="iconHtml" />
+          </div>
         </ul>
       </div>
     </div>
