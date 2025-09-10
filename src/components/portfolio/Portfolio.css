@@ -58,6 +58,12 @@
   font-family: "Montserrat", sans-serif;
 }
 
+#cardNotice {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
 :root {
   --cor-gray: #66fcf1;
 }

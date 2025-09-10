@@ -12,12 +12,21 @@ import IconCart from "../../assets/img/trolley.png";
 import IconUser from "../../assets/img/office-man.png";
 
 import Project from "../projects/Project";
+import CardNotice from "../card/CardNotice";
 
 export default function Portfolio() {
   const [vary, setVary] = useState("User");
+  const [active, setActive] = useState(false);
+  const [cardShown, setCardShown] = useState(0);
 
   const mostraComponente = (componente) => {
     setVary(componente);
+    if (cardShown == 0) {
+      setActive(true);
+      setCardShown((prev) => prev + 1);
+    } else {
+      setActive(false);
+    }
 
     if (componente === "User") {
       document.documentElement.style.setProperty("--cor-gray", "#00a8a8ff");
@@ -35,6 +44,10 @@ export default function Portfolio() {
   const tecCarrinho = tecnologies.filter((tec) =>
     [1, 2, 3, 5].includes(tec.id)
   );
+
+  const handleCloseCard = () => {
+    setActive(false);
+  };
 
   return (
     <main className="home">
@@ -124,6 +137,8 @@ Mais do que entregar código, busco entregar valor. Estou sempre aberto a novos 
       <div className="painel_nome_data">
         <p>[EdvaldoJonas 2024.]</p>
       </div>
+
+      <CardNotice visibleOn={active} handleClose={() => handleCloseCard()} />
     </main>
   );
 }
