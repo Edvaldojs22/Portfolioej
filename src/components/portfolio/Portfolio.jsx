@@ -7,7 +7,7 @@ import { MdEmail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
 
 import IconAlvo from "../../assets/img/target.png";
-import IconBarba from "../../assets/img/hairstyle.png";
+import IconGame from "../../assets/img/jogo-da-velha.png";
 import IconCart from "../../assets/img/trolley.png";
 import IconUser from "../../assets/img/office-man.png";
 
@@ -40,7 +40,7 @@ export default function Portfolio() {
   };
 
   const tecAlvo = tecnologies.filter((tec) => [1, 2, 3].includes(tec.id));
-  const tecBarba = tecnologies.filter((tec) => [1, 2].includes(tec.id));
+  const tecGame = tecnologies.filter((tec) => [1, 2, 3].includes(tec.id));
   const tecCarrinho = tecnologies.filter((tec) =>
     [1, 2, 3, 5].includes(tec.id)
   );
@@ -87,7 +87,7 @@ Mais do que entregar código, busco entregar valor. Estou sempre aberto a novos 
             img={IconAlvo}
             h1text={"Acerte o alvo"}
             text={
-              "O projeto Acerte o Alvo é uma emocionante experiência interativa desenvolvida com HTML, CSS e JavaScript, que desafia os jogadores a testarem sua precisão e habilidade. Com uma interface intuitiva e visualmente cativante, onde você se auto desafia aumenta a velocidade do alvo."
+              "Este jogo foi desenvolvido com HTML, CSS e JavaScript puro, focando em interatividade e controle de tempo. O objetivo é simples: clicar no alvo que aparece aleatoriamente na tela. A lógica por trás do jogo envolve detecção precisa de cliques, posicionamento dinâmico dos elementos e controle de dificuldade o usuário pode escolher a velocidade com que os alvos surgem, tornando o desafio mais intenso. É um ótimo exemplo de como aplicar lógica de programação para criar experiências divertidas e responsivas no navegador."
             }
             technologies={tecAlvo}
             site={"https://edvaldojs22.github.io/Acerte-o-alvo/"}
@@ -97,14 +97,14 @@ Mais do que entregar código, busco entregar valor. Estou sempre aberto a novos 
         )}
         {vary === "Barbearia" && (
           <Project
-            h1text={"Barbearia"}
-            img={IconBarba}
+            h1text={"Jogo da velha"}
+            img={IconGame}
             text={
-              "Esse projeto foi um dos meus primeiros projetos de desenvolvimento web, onde foi meus primeiros passos no mundo do HTML e CSS, com a valiosa assistência do curso da Alura. Apresento a vocês a Barbearia Jonas, uma experiência virtual que reflete o início da minha jornada no mundo da criação web."
+              "Este projeto foi desenvolvido utilizando apenas HTML, CSS e JavaScript puro, sem bibliotecas externas. A lógica do jogo foi construída do zero, com foco em manipulação de DOM, controle de estados e verificação de condições de vitória. É uma aplicação simples, mas poderosa, que demonstra minha habilidade em resolver problemas e estruturar código limpo e funcional desde o início da minha jornada como desenvolvedor."
             }
-            technologies={tecBarba}
-            site={"https://edvaldojs22.github.io/Barbearia/"}
-            linkCodigo={"https://github.com/Edvaldojs22/Barbearia"}
+            technologies={tecGame}
+            site={"https://edvaldojs22.github.io/JogoDaVelha/"}
+            linkCodigo={"https://github.com/Edvaldojs22/JogoDaVelha"}
             textSite={"Site"}
           />
         )}
@@ -129,7 +129,7 @@ Mais do que entregar código, busco entregar valor. Estou sempre aberto a novos 
         <div className="projetos">
           <p onClick={() => mostraComponente("User")}>Home</p>
           <p onClick={() => mostraComponente("AcerteAlvo")}>Acerte o Alvo</p>
-          <p onClick={() => mostraComponente("Barbearia")}>Barbearia</p>
+          <p onClick={() => mostraComponente("Barbearia")}>Jogo da velha</p>
           <p onClick={() => mostraComponente("Mercado")}>Carrinho API</p>
         </div>
       </div>
