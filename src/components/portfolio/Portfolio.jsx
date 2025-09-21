@@ -6,7 +6,7 @@ import { FaGithub } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
 
-import IconAlvo from "../../assets/img/target.png";
+import IconVirus from "../../assets/img/virus.png";
 import IconGame from "../../assets/img/jogo-da-velha.png";
 import IconCart from "../../assets/img/trolley.png";
 import IconUser from "../../assets/img/office-man.png";
@@ -31,7 +31,7 @@ export default function Portfolio() {
     if (componente === "User") {
       document.documentElement.style.setProperty("--cor-gray", "#00a8a8ff");
     } else if (componente === "AcerteAlvo") {
-      document.documentElement.style.setProperty("--cor-gray", "#f34b58");
+      document.documentElement.style.setProperty("--cor-gray", "#482696ff");
     } else if (componente === "Barbearia") {
       document.documentElement.style.setProperty("--cor-gray", "#e2d600");
     } else if (componente === "Mercado") {
@@ -84,10 +84,10 @@ Mais do que entregar código, busco entregar valor. Estou sempre aberto a novos 
         )}
         {vary === "AcerteAlvo" && (
           <Project
-            img={IconAlvo}
-            h1text={"Acerte o alvo"}
+            img={IconVirus}
+            h1text={"Kills virus"}
             text={
-              "Este jogo foi desenvolvido com HTML, CSS e JavaScript puro, focando em interatividade e controle de tempo. O objetivo é simples: clicar no alvo que aparece aleatoriamente na tela. A lógica por trás do jogo envolve detecção precisa de cliques, posicionamento dinâmico dos elementos e controle de dificuldade o usuário pode escolher a velocidade com que os alvos surgem, tornando o desafio mais intenso. É um ótimo exemplo de como aplicar lógica de programação para criar experiências divertidas e responsivas no navegador."
+              "Este foi um dos seus primeiros projetos, criado com o intuito de praticar lógica de programação usando HTML, CSS e JavaScript. A ideia central é simples e eficaz: o jogador precisa eliminar 5 vírus clicando neles para vencer o jogo. Essa mecânica permite explorar conceitos fundamentais como manipulação de DOM, eventos, timers e controle de fluxo."
             }
             technologies={tecAlvo}
             site={"https://edvaldojs22.github.io/Acerte-o-alvo/"}
@@ -128,7 +128,7 @@ Mais do que entregar código, busco entregar valor. Estou sempre aberto a novos 
 
         <div className="projetos">
           <p onClick={() => mostraComponente("User")}>Home</p>
-          <p onClick={() => mostraComponente("AcerteAlvo")}>Acerte o Alvo</p>
+          <p onClick={() => mostraComponente("AcerteAlvo")}>Kills virus</p>
           <p onClick={() => mostraComponente("Barbearia")}>Jogo da velha</p>
           <p onClick={() => mostraComponente("Mercado")}>Carrinho API</p>
         </div>
