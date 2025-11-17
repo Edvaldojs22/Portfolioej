@@ -8,7 +8,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 import IconVirus from "../../assets/img/virus.png";
 import IconGame from "../../assets/img/jogo-da-velha.png";
-import IconCart from "../../assets/img/trolley.png";
+import IconDog from "../../assets/img/sherdog.png";
 import IconUser from "../../assets/img/office-man.png";
 
 import Project from "../projects/Project";
@@ -34,17 +34,17 @@ export default function Portfolio() {
       document.documentElement.style.setProperty("--cor-gray", "#482696ff");
     } else if (componente === "Barbearia") {
       document.documentElement.style.setProperty("--cor-gray", "#e2d600");
-    } else if (componente === "Mercado") {
-      document.documentElement.style.setProperty("--cor-gray", "#004c8e");
+    } else if (componente === "Perdidos") {
+      document.documentElement.style.setProperty("--cor-gray", "#e47425");
     }
   };
 
   const tecAlvo = tecnologies.filter((tec) => [1, 2, 3].includes(tec.id));
   const tecGame = tecnologies.filter((tec) => [1, 2, 3].includes(tec.id));
   const tecCarrinho = tecnologies.filter((tec) =>
-    [1, 2, 3, 5].includes(tec.id)
+    [1, 2, 3, 5, 7, 8, 10].includes(tec.id)
   );
-
+  console.log(tecnologies);
   const handleCloseCard = () => {
     setActive(false);
   };
@@ -74,11 +74,12 @@ export default function Portfolio() {
             img={IconUser}
             h1text={"Edvaldo jonas"}
             technologies={tecnologies}
-            text={`Sou Edvaldo Jonas, desenvolvedor full stack com experiência prática e versátil na criação de soluções digitais. Tenho facilidade em me adaptar a diferentes contextos e equipes, e aprendo novas tecnologias com rapidez — uma habilidade que me permite acompanhar a constante evolução do mercado. Minha paixão por programação vai além do código: gosto de entender problemas reais e transformá-los em aplicações funcionais, intuitivas e escaláveis.
+            text={`Sou Edvaldo, desenvolvedor full stack formado em Análise e Desenvolvimento de Sistemas e atualmente cursando pós-graduação em Java. Tenho experiência prática e versátil na criação de soluções digitais, com facilidade em me adaptar a diferentes contextos e equipes. Aprendo novas tecnologias com rapidez, o que me permite acompanhar a constante evolução do mercado e aplicar boas práticas de desenvolvimento em projetos diversos.
 
-Ao longo da minha jornada, desenvolvi projetos que envolvem desde interfaces modernas com React até integrações robustas com APIs e bancos de dados. Tenho domínio em linguagens como JavaScript, Java e HTML/CSS, além de experiência com ferramentas como Node.js, MongoDB, MySQL e AWS.
+Minha paixão por programação vai além do código: gosto de entender problemas reais e transformá-los em aplicações funcionais, intuitivas e escaláveis. Ao longo da minha jornada, desenvolvi projetos que envolvem desde interfaces modernas com React até integrações robustas com APIs e bancos de dados. Tenho domínio em linguagens como JavaScript, Java e HTML/CSS, além de experiência com ferramentas como Node.js, MongoDB, MySQL e AWS.
 
-Mais do que entregar código, busco entregar valor. Estou sempre aberto a novos desafios e oportunidades que me permitam crescer, colaborar e contribuir com soluções que façam a diferença.`}
+Mais do que entregar código, busco entregar valor. Estou sempre aberto a novos desafios e oportunidades que me permitam crescer, colaborar e contribuir com soluções que façam a diferença.
+`}
             linkCodigo={"https://github.com/Edvaldojs22/Portfolioej"}
           />
         )}
@@ -108,16 +109,16 @@ Mais do que entregar código, busco entregar valor. Estou sempre aberto a novos 
             textSite={"Site"}
           />
         )}
-        {vary === "Mercado" && (
+        {vary === "Perdidos" && (
           <Project
-            h1text={"Carrinho API"}
-            img={IconCart}
+            h1text={"Perdidos e Achados"}
+            img={IconDog}
             text={
-              "Nesse projeto, utilizei React e JavaScript e integrei a API do Mercado Livre para disponibilizar uma ampla variedade de produtos para os usuários explorarem e adicionarem ao carrinho de compras. O projeto ainda não foi finalizado, porém logo logo estará finalizado."
+              "Este projeto foi desenvolvido para auxiliar pessoas que perderam ou encontraram itens em ambientes públicos, como shoppings, aeroportos e outros locais de grande circulação. A plataforma permite que o usuário navegue para verificar se seu objeto perdido já foi encontrado ou registre um novo item, facilitando a comunicação entre quem perdeu e quem achou. A aplicação foi construída com Java e Spring Boot, utilizando Spring Security para garantir a proteção de dados sensíveis, especialmente em casos de usuários não autenticados. No front-end, o projeto foi desenvolvido com React e Vite, proporcionando uma interface moderna, rápida e intuitiva. Com essa solução, é possível implementar o sistema em diferentes ambientes, oferecendo praticidade e segurança para o gerenciamento de itens perdidos e encontrados."
             }
             technologies={tecCarrinho}
-            site={"https://edvaldojs22.github.io/Carrinho-react/"}
-            linkCodigo={"https://github.com/Edvaldojs22/Carrinho-react"}
+            site={"https://perdidos-e-achados-nu.vercel.app/"}
+            linkCodigo={"https://github.com/Edvaldojs22/Perdidos-e-Achados"}
             textSite={"Site"}
           />
         )}
@@ -130,7 +131,7 @@ Mais do que entregar código, busco entregar valor. Estou sempre aberto a novos 
           <p onClick={() => mostraComponente("User")}>Home</p>
           <p onClick={() => mostraComponente("AcerteAlvo")}>Kills virus</p>
           <p onClick={() => mostraComponente("Barbearia")}>Jogo da velha</p>
-          <p onClick={() => mostraComponente("Mercado")}>Carrinho API</p>
+          <p onClick={() => mostraComponente("Perdidos")}>Perdidos</p>
         </div>
       </div>
 

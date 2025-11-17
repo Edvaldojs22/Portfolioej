@@ -7,6 +7,7 @@ import {
   FaJava,
   FaAws,
 } from "react-icons/fa";
+import { BiLogoSpringBoot } from "react-icons/bi";
 import { IoLogoCss3 } from "react-icons/io5";
 import { RiJavascriptFill } from "react-icons/ri";
 import { SiMongodb, SiMysql } from "react-icons/si";
@@ -69,10 +70,19 @@ export const tecnologies = [
       "Java foi uma das primeiras linguagens que aprendi na faculdade, e desde então desenvolvi uma boa base na sua sintaxe e nos conceitos fundamentais da programação orientada a objetos. Embora não utilize com frequência atualmente, já a usei em diversos exercícios e projetos acadêmicos, sempre com facilidade e bom entendimento. Gosto da robustez da linguagem e da clareza que ela exige na estruturação do código. Tenho segurança para trabalhar com Java em contextos de estudo e estou aberto a aprofundar ainda mais meu conhecimento conforme surgirem novas oportunidades.",
   },
   {
+    name: "Spring Boot",
+    Icon: BiLogoSpringBoot,
+    color: "#6DB33F",
+    id: 8,
+    description:
+      "Spring Boot é um dos principais frameworks que utilizo para desenvolvimento de aplicações Java modernas. Gosto da forma como ele simplifica a criação de projetos robustos, eliminando grande parte da configuração manual e acelerando o processo de desenvolvimento. Já trabalhei em exercícios e projetos acadêmicos com Spring Boot, explorando recursos como injeção de dependência, criação de APIs REST e integração com bancos de dados. Atualmente, estou aprofundando meu conhecimento na pós-graduação em Java, o que me permite explorar ainda mais o ecossistema Spring e suas boas práticas. Tenho segurança para desenvolver aplicações escaláveis com Spring Boot e estou motivado a expandir meu domínio em projetos profissionais.",
+  },
+
+  {
     name: "MongoDB",
     Icon: SiMongodb,
     color: "#47A248",
-    id: 8,
+    id: 9,
     description:
       "Tenho grande afinidade com MongoDB, especialmente pela sua facilidade de uso e flexibilidade como banco de dados NoSQL. Gosto de trabalhar com integrações entre MongoDB e Node.js, criando aplicações que lidam com dados de forma eficiente e escalável. Já utilizei MongoDB em projetos reais, inclusive em ambientes empresariais, e me sinto confortável ao modelar documentos, realizar operações CRUD e aplicar filtros avançados com consultas. A estrutura orientada a documentos me permite desenvolver com agilidade e adaptar facilmente os dados às necessidades da aplicação.",
   },
@@ -80,7 +90,7 @@ export const tecnologies = [
     name: "MySQL",
     Icon: SiMysql,
     color: "#00758f",
-    id: 9,
+    id: 10,
     description:
       "Tenho conhecimento prático em MySQL, adquirido durante a faculdade e aplicado em projetos nos quais realizei integrações com sistemas e APIs. Embora não seja o banco de dados que utilizo com maior frequência atualmente, consigo trabalhar com suas funcionalidades com segurança, especialmente na criação de tabelas, consultas SQL, relacionamentos entre dados e operações CRUD. Entendo bem sua estrutura relacional e sei como aplicar boas práticas de modelagem para garantir integridade e desempenho. Estou sempre aberto a retomar e aprofundar o uso do MySQL conforme a demanda dos projetos.",
   },
@@ -88,7 +98,7 @@ export const tecnologies = [
     name: "Amazon Web Services",
     Icon: FaAws,
     color: "#ff9900",
-    id: 10,
+    id: 11,
     description:
       "Recentemente obtive a certificação AWS Cloud Practitioner, o que reforçou minha base teórica e prática em serviços de computação em nuvem. Tive a oportunidade de realizar estágio na empresa Compass UOL, onde aprofundei meus conhecimentos sobre os principais conceitos da AWS, como infraestrutura elástica, máquinas virtuais (EC2), armazenamento, segurança e boas práticas de arquitetura em nuvem. Durante esse período, desenvolvi e publiquei um projeto completo utilizando uma instância EC2 gratuita, configurando o ambiente, realizando deploy e colocando a aplicação no ar. Essa experiência me proporcionou uma visão prática e estratégica sobre como utilizar a AWS para criar soluções escaláveis e eficientes.",
   },

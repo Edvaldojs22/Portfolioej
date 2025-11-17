@@ -130,6 +130,7 @@
 img {
   width: 230px;
   height: 230px;
+  object-fit: contain;
   border-radius: 50%;
   background-size: contain;
   border: solid 2px var(--cor-gray);
