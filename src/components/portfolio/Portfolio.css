@@ -50,12 +50,15 @@
 .home {
   width: 100%;
   max-width: 1500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 100px;
+  height: auto;
+  min-height: 100dvh;
   padding: 20px;
-  height: 1000px;
   border-radius: 20px;
-  max-height: 1000px;
   position: relative;
-  font-family: "Montserrat", sans-serif;
 }
 
 #cardNotice {
@@ -133,8 +136,6 @@ img {
   object-fit: contain;
   border-radius: 50%;
   background-size: contain;
-  border: solid 2px var(--cor-gray);
-  background-color: var(--cor-gray);
 }
 
 .icon_links {
@@ -159,10 +160,10 @@ img {
 
 .painel_projetos {
   display: flex;
-  position: absolute;
-  bottom: 30px;
-  left: 100px;
+  align-self: center;
   color: #666666;
+  gap: 20px;
+  margin-bottom: 60px;
 }
 
 .painel_projetos h2 {
@@ -174,6 +175,7 @@ img {
 
 .projetos {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   gap: 20px;
@@ -264,6 +266,7 @@ img {
     top: 60px;
   }
 }
+
 @media (max-width: 900px) {
   .text_desenvolvedor {
     font-size: 24px;
@@ -272,20 +275,16 @@ img {
   .painel_projetos h2 {
     font-size: 16px;
   }
-  .projetos {
-    gap: 4px;
-  }
+
   .projetos p {
     font-size: 14px;
-  }
-
-  .painel_projetos {
-    left: 70px;
-    bottom: 80px;
   }
 }
 
 @media (max-width: 800px) {
+  .opacity_projeto {
+    margin-left: 20px;
+  }
   .text_desenvolvedor {
     font-size: 16px;
     left: 60px;
@@ -311,7 +310,7 @@ img {
     text-align: center;
   }
   .opacity_projeto {
-    margin-left: 20px;
+    margin-left: 8px;
   }
   .painel_img_texto_sobre::before {
     width: 250px;
@@ -335,6 +334,10 @@ img {
     clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 10%);
   }
 
+  .painel_projetos h2 {
+    margin: 0;
+  }
+
   .painel_nome_data {
     right: 5px;
     bottom: 5px;
@@ -353,18 +356,14 @@ img {
   .projetos {
     gap: 15px;
   }
-
-  .painel_projetos {
-    flex-direction: column;
-    gap: 20px;
-    left: 20px;
-    bottom: 60px;
-  }
-
-  .painel_links_projetos a:nth-child(2) {
-    width: 125px;
-  }
 }
 
-@media (max-height: 800px) {
+@media (max-width: 500px) {
+  .painel_projetos {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .projetos {
+    flex-direction: column;
+  }
 }

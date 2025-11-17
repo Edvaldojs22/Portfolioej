@@ -31,7 +31,7 @@ export default function Portfolio() {
     if (componente === "User") {
       document.documentElement.style.setProperty("--cor-gray", "#00a8a8ff");
     } else if (componente === "AcerteAlvo") {
-      document.documentElement.style.setProperty("--cor-gray", "#482696ff");
+      document.documentElement.style.setProperty("--cor-gray", "#70f2a3");
     } else if (componente === "Barbearia") {
       document.documentElement.style.setProperty("--cor-gray", "#e2d600");
     } else if (componente === "Perdidos") {
@@ -76,10 +76,10 @@ export default function Portfolio() {
             technologies={tecnologies}
             text={`Sou Edvaldo, desenvolvedor full stack formado em Análise e Desenvolvimento de Sistemas e atualmente cursando pós-graduação em Java. Tenho experiência prática e versátil na criação de soluções digitais, com facilidade em me adaptar a diferentes contextos e equipes. Aprendo novas tecnologias com rapidez, o que me permite acompanhar a constante evolução do mercado e aplicar boas práticas de desenvolvimento em projetos diversos.
 
-Minha paixão por programação vai além do código: gosto de entender problemas reais e transformá-los em aplicações funcionais, intuitivas e escaláveis. Ao longo da minha jornada, desenvolvi projetos que envolvem desde interfaces modernas com React até integrações robustas com APIs e bancos de dados. Tenho domínio em linguagens como JavaScript, Java e HTML/CSS, além de experiência com ferramentas como Node.js, MongoDB, MySQL e AWS.
+                Minha paixão por programação vai além do código: gosto de entender problemas reais e transformá-los em aplicações funcionais, intuitivas e escaláveis. Ao longo da minha jornada, desenvolvi projetos que envolvem desde interfaces modernas com React até integrações robustas com APIs e bancos de dados. Tenho domínio em linguagens como JavaScript, Java e HTML/CSS, além de experiência com ferramentas como Node.js, MongoDB, MySQL e AWS.
 
-Mais do que entregar código, busco entregar valor. Estou sempre aberto a novos desafios e oportunidades que me permitam crescer, colaborar e contribuir com soluções que façam a diferença.
-`}
+                Mais do que entregar código, busco entregar valor. Estou sempre aberto a novos desafios e oportunidades que me permitam crescer, colaborar e contribuir com soluções que façam a diferença.
+              `}
             linkCodigo={"https://github.com/Edvaldojs22/Portfolioej"}
           />
         )}
@@ -129,9 +129,9 @@ Mais do que entregar código, busco entregar valor. Estou sempre aberto a novos 
 
         <div className="projetos">
           <p onClick={() => mostraComponente("User")}>Home</p>
-          <p onClick={() => mostraComponente("AcerteAlvo")}>Kills virus</p>
-          <p onClick={() => mostraComponente("Barbearia")}>Jogo da velha</p>
           <p onClick={() => mostraComponente("Perdidos")}>Perdidos</p>
+          <p onClick={() => mostraComponente("Barbearia")}>Jogo da velha</p>
+          <p onClick={() => mostraComponente("AcerteAlvo")}>Kills virus</p>
         </div>
       </div>
 

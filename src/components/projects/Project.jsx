@@ -28,37 +28,38 @@ export default function Project({
           <p>{text}</p>
         </div>
 
-        <nav className="painel_links_projetos">
-          <a href={site} target="_blank">
-            {textSite}
-          </a>
-          <a href={linkCodigo} target="_blank">
-            Código GitHub
-          </a>
-        </nav>
-
-        <ul className="painel_skills">
-          {technologies.map(({ Icon, color, description, name }, index) => (
-            <li key={index}>
-              {active === index ? (
-                <Card
-                  Icon={Icon}
-                  visibleOn={true}
-                  description={description}
-                  color={color}
-                  name={name}
-                  handleClose={() => setActive(null)}
-                />
-              ) : (
-                <Icon color={color} onClick={() => setActive(index)} />
-              )}
-            </li>
-          ))}
-          <div className="divClick">
-            <GiClick className="iconClick" />
-            <FaHtml5 className="iconHtml" />
-          </div>
-        </ul>
+        <div className="painel_linksProjetos">
+          <nav>
+            <a href={site} target="_blank">
+              {textSite}
+            </a>
+            <a href={linkCodigo} target="_blank">
+              Código GitHub
+            </a>
+          </nav>
+          <ul className="painel_skills">
+            {technologies.map(({ Icon, color, description, name }, index) => (
+              <li key={index}>
+                {active === index ? (
+                  <Card
+                    Icon={Icon}
+                    visibleOn={true}
+                    description={description}
+                    color={color}
+                    name={name}
+                    handleClose={() => setActive(null)}
+                  />
+                ) : (
+                  <Icon color={color} onClick={() => setActive(index)} />
+                )}
+              </li>
+            ))}
+            <div className="divClick">
+              <GiClick className="iconClick" />
+              <FaHtml5 className="iconHtml" />
+            </div>
+          </ul>
+        </div>
       </div>
     </div>
   );
