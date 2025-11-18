@@ -88,7 +88,7 @@ export default function Portfolio() {
             img={IconVirus}
             h1text={"Kills virus"}
             text={
-              "Este foi um dos seus primeiros projetos, criado com o intuito de praticar lógica de programação usando HTML, CSS e JavaScript. A ideia central é simples e eficaz: o jogador precisa eliminar 5 vírus clicando neles para vencer o jogo. Essa mecânica permite explorar conceitos fundamentais como manipulação de DOM, eventos, timers e controle de fluxo."
+              "Este foi um dos meus primeiros projetos, criado com o intuito de praticar lógica de programação usando HTML, CSS e JavaScript. A ideia central é simples e eficaz: o jogador precisa eliminar 5 vírus clicando neles para vencer o jogo. Essa mecânica permite explorar conceitos fundamentais como manipulação de DOM, eventos, timers e controle de fluxo."
             }
             technologies={tecAlvo}
             site={"https://edvaldojs22.github.io/Acerte-o-alvo/"}
